@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone } from 'lucide-react';
 import Button from './Button';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logo.png';
 
 const navLinks = [
   { name: 'Accueil', href: '#home' },
+  { name: 'Expertises', href: '#expertises' },
   { name: 'Services', href: '#services' },
   { name: 'Projets', href: '#projects' },
   { name: 'Témoignages', href: '#testimonials' },
@@ -73,7 +74,7 @@ const Header: React.FC = () => {
                   Vericore
                 </span>
                 <span className="text-xs text-gray-600 -mt-1">
-                  Renovation & Design
+                  Maintenance & Rénovation
                 </span>
               </div>
             </a>

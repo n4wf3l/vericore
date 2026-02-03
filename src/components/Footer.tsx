@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapPin, Mail, Phone, Clock } from 'lucide-react';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logo.png';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -46,11 +46,11 @@ const Footer: React.FC = () => {
               <img src={logo} alt="Vericore" className="h-10 w-auto brightness-0 invert" />
               <div>
                 <h3 className="font-display text-xl font-bold text-white">Vericore</h3>
-                <p className="text-xs text-gray-400">Renovation & Design</p>
+                <p className="text-xs text-gray-400">Maintenance & Rénovation</p>
               </div>
             </div>
             <p className="text-sm text-gray-400 mb-4 leading-relaxed">
-              Votre partenaire de confiance pour tous vos travaux de rénovation et d'entretien à Bruxelles.
+              Spécialiste en maintenance et rénovation de bâtiments à Bruxelles. Solutions fiables pour particuliers, syndics et entreprises.
             </p>
             <div className="flex items-center gap-2 text-sm text-primary-400">
               <Clock className="w-4 h-4" />

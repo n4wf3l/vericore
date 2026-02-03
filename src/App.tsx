@@ -1,7 +1,9 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
+import BackToTopButton from './components/BackToTopButton';
 import Hero from './sections/Hero';
-import Services from './sections/Services';
+import ExpertisesSection from './sections/ExpertisesSection';
+import MaintenancePlansSection from './sections/MaintenancePlansSection';
 import Projects from './sections/Projects';
 import WhyVericore from './sections/WhyVericore';
 import Testimonials from './sections/Testimonials';
@@ -14,7 +16,8 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Services />
+        <ExpertisesSection />
+        <MaintenancePlansSection />
         <Projects />
         <WhyVericore />
         <Testimonials />
@@ -22,6 +25,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <BackToTopButton />
     </div>
   );
 }

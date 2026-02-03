@@ -24,7 +24,7 @@ const Services: React.FC = () => {
     <Section id="services" className="bg-gray-50">
       <SectionTitle
         subtitle="Nos expertises"
-        title="Services de Rénovation & Maintenance"
+        title="Nos Services de Maintenance & Rénovation"
       />
 
       {/* Category Filters */}

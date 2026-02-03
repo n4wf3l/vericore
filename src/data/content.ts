@@ -9,7 +9,9 @@ import {
   Layers, 
   PaintBucket,
   Hammer,
-  Building2
+  Building2,
+  Wind,
+  ClipboardCheck
 } from 'lucide-react';
 
 export interface Service {
@@ -24,78 +26,78 @@ export const services: Service[] = [
   {
     id: 'maintenance',
     icon: Wrench,
-    title: 'Maintenance & Entretien',
-    description: 'Service complet de maintenance pour tous types de bâtiments',
+    title: 'Maintenance & Entretien de Bâtiment',
+    description: 'Service complet de maintenance préventive et curative pour tous types de bâtiments',
     category: 'maintenance'
   },
   {
     id: 'renovation',
     icon: Home,
     title: 'Rénovation Intérieure',
-    description: 'Rénovation complète avec design moderne et sur-mesure',
+    description: 'Rénovation complète d\'espaces résidentiels et professionnels',
     category: 'renovation'
-  },
-  {
-    id: 'facade',
-    icon: Building2,
-    title: 'Nettoyage Façade & Terrasse',
-    description: 'Nettoyage professionnel haute pression',
-    category: 'specialty'
-  },
-  {
-    id: 'toiture',
-    icon: Sparkles,
-    title: 'Nettoyage Corniche & Toiture',
-    description: 'Entretien et nettoyage en hauteur sécurisé',
-    category: 'specialty'
-  },
-  {
-    id: 'plomberie',
-    icon: Droplets,
-    title: 'Plomberie',
-    description: 'Installation, réparation et dépannage rapide',
-    category: 'maintenance'
   },
   {
     id: 'electricite',
     icon: Zap,
     title: 'Électricité',
-    description: 'Travaux électriques conformes et sécurisés',
+    description: 'Installation, réparation et mise aux normes électriques',
     category: 'maintenance'
   },
   {
-    id: 'sanitaire',
-    icon: Bath,
-    title: 'Sanitaire',
-    description: 'Installation complète de salles de bains',
-    category: 'renovation'
+    id: 'plomberie',
+    icon: Droplets,
+    title: 'Plomberie',
+    description: 'Plomberie générale, dépannage et installation sanitaire',
+    category: 'maintenance'
   },
   {
-    id: 'carrelage',
-    icon: Grid3x3,
-    title: 'Carrelage',
-    description: 'Pose de carrelage sol et mur de qualité',
-    category: 'renovation'
+    id: 'ventilation',
+    icon: Wind,
+    title: 'Ventilation & VMC',
+    description: 'Installation et maintenance de systèmes de ventilation',
+    category: 'maintenance'
   },
   {
-    id: 'plafonnage',
-    icon: Layers,
-    title: 'Plafonnage',
-    description: 'Plafonnage lisse et finitions parfaites',
-    category: 'renovation'
-  },
-  {
-    id: 'cloison',
+    id: 'reparations',
     icon: Hammer,
-    title: 'Cloison',
-    description: 'Création et réaménagement d\'espaces',
+    title: 'Réparations Générales',
+    description: 'Interventions tous corps d\'état pour vos réparations',
+    category: 'maintenance'
+  },
+  {
+    id: 'amenagement',
+    icon: Layers,
+    title: 'Aménagement Intérieur',
+    description: 'Cloisons, plafonnage, carrelage et finitions',
     category: 'renovation'
+  },
+  {
+    id: 'suivi',
+    icon: ClipboardCheck,
+    title: 'Suivi de Chantiers',
+    description: 'Coordination et gestion de vos projets de rénovation',
+    category: 'specialty'
+  },
+  {
+    id: 'facade',
+    icon: Building2,
+    title: 'Nettoyage Façade & Toiture',
+    description: 'Entretien extérieur haute pression et sécurisé',
+    category: 'specialty'
   },
   {
     id: 'peinture',
     icon: PaintBucket,
     title: 'Peinture',
-    description: 'Peinture intérieure et extérieure premium',
+    description: 'Peinture intérieure et extérieure professionnelle',
+    category: 'renovation'
+  },
+  {
+    id: 'sanitaire',
+    icon: Bath,
+    title: 'Sanitaire',
+    description: 'Installation et rénovation de salles de bains',
     category: 'renovation'
   },
 ];
@@ -123,7 +125,7 @@ export const testimonials: Testimonial[] = [
     name: 'Marc Lefebvre',
     location: 'Schaerbeek',
     rating: 5,
-    text: 'Intervention d\'urgence un dimanche pour une fuite. Réactivité exceptionnelle et prix correct. Je recommande vivement.',
+    text: 'Intervention d\'urgence un dimanche pour une fuite. Réactivité exceptionnelle et prix transparent. Je recommande vivement.',
     service: 'Plomberie urgence'
   },
   {
@@ -131,7 +133,7 @@ export const testimonials: Testimonial[] = [
     name: 'Laura Van den Berg',
     location: 'Etterbeek',
     rating: 5,
-    text: 'Rénovation complète de notre appartement. Excellent conseil en design, finitions de haute qualité. Équipe très à l\'écoute.',
+    text: 'Rénovation complète de notre appartement. Excellent suivi de chantier, finitions de haute qualité. Équipe très à l\'écoute.',
     service: 'Rénovation complète'
   },
   {
@@ -139,8 +141,8 @@ export const testimonials: Testimonial[] = [
     name: 'Ahmed El Amrani',
     location: 'Anderlecht',
     rating: 5,
-    text: 'Très satisfait du nettoyage de façade. Résultat bluffant, façade comme neuve. Prix transparent et travail soigné.',
-    service: 'Nettoyage façade'
+    text: 'Très satisfait du service de maintenance. Travail conforme aux normes, prix transparent et suivi régulier. Parfait pour notre syndic.',
+    service: 'Maintenance immeuble'
   }
 ];
 
@@ -201,14 +203,14 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: 'Cuisine Design Contemporaine',
+    title: 'Rénovation Cuisine Contemporaine',
     category: 'Cuisine',
     image: 'https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=800&q=80',
     location: 'Woluwe'
   },
   {
     id: 3,
-    title: 'Salle de Bain Luxe',
+    title: 'Rénovation Salle de Bain',
     category: 'Sanitaire',
     image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80',
     location: 'Uccle'
@@ -222,14 +224,14 @@ export const projects: Project[] = [
   },
   {
     id: 5,
-    title: 'Bureau Professionnel',
+    title: 'Aménagement Bureau Professionnel',
     category: 'Aménagement',
     image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80',
     location: 'Etterbeek'
   },
   {
     id: 6,
-    title: 'Loft Industriel',
+    title: 'Rénovation Loft Industriel',
     category: 'Rénovation',
     image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80',
     location: 'Schaerbeek'
