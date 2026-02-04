@@ -1,9 +1,11 @@
+import { Award, Gem, Crown, Sparkles, type LucideIcon } from 'lucide-react';
+
 export interface Plan {
   id: string;
   name: string;
   badge: string;
-  emoji: string;
-  color: string;
+  icon: LucideIcon;
+  accentColor: string;
   tagline: string;
   ideal: string;
   features: string[];
@@ -16,8 +18,8 @@ export const plans: Plan[] = [
     id: 'bronze',
     name: 'Bronze',
     badge: 'Entretien & Prévention',
-    emoji: '🟤',
-    color: 'from-amber-900/20 to-amber-800/10',
+    icon: Award,
+    accentColor: 'amber',
     tagline: 'Idéal pour petits immeubles, commerces, propriétaires uniques',
     ideal: 'Petits immeubles, commerces, propriétaires uniques',
     features: [
@@ -35,8 +37,8 @@ export const plans: Plan[] = [
     id: 'silver',
     name: 'Silver',
     badge: 'Maintenance Active',
-    emoji: '⚪',
-    color: 'from-slate-400/20 to-slate-300/10',
+    icon: Gem,
+    accentColor: 'slate',
     tagline: 'Suivi régulier et interventions prioritaires',
     ideal: 'Immeubles résidentiels, copropriétés moyennes',
     features: [
@@ -55,8 +57,8 @@ export const plans: Plan[] = [
     id: 'gold',
     name: 'Gold',
     badge: 'Gestion Technique Complète',
-    emoji: '🟡',
-    color: 'from-yellow-500/20 to-yellow-400/10',
+    icon: Crown,
+    accentColor: 'yellow',
     tagline: 'Prise en charge globale et suivi approfondi',
     ideal: 'Immeubles de bureaux, sites multi-équipements',
     features: [
@@ -76,8 +78,8 @@ export const plans: Plan[] = [
     id: 'premium',
     name: 'Premium',
     badge: 'Partenaire Technique Dédié',
-    emoji: '🔴',
-    color: 'from-red-600/20 to-red-500/10',
+    icon: Sparkles,
+    accentColor: 'primary',
     tagline: 'Accompagnement stratégique sur-mesure',
     ideal: 'Grands sites, patrimoines complexes',
     features: [

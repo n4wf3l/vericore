@@ -1,159 +1,216 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import type { PanInfo } from 'framer-motion';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import PlanCard from './PlanCard';
-import { plans } from '../data/plans';
+import { plans, type Plan } from '../data/plans';
 
 const PlansTrioSlider: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [progress, setProgress] = useState(0);
+  const [dragDirection, setDragDirection] = useState(0);
+  const [isInView, setIsInView] = useState(false);
   const intervalRef = useRef<number | null>(null);
   const progressIntervalRef = useRef<number | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
-  const ROTATION_DURATION = 5000; // 5 seconds
-  const PROGRESS_TICK = 50; // Update progress every 50ms
+  const ROTATION_DURATION = 6000;
+  const PROGRESS_TICK = 50;
 
-  const startRotation = () => {
-    if (intervalRef.current) clearInterval(intervalRef.current);
-    if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
-    
+  const goToSlide = (index: number) => {
+    setActiveIndex(index);
     setProgress(0);
-    
-    // Progress animation
-    progressIntervalRef.current = window.setInterval(() => {
-      setProgress(prev => {
-        if (prev >= 100) return 0;
-        return prev + (100 / (ROTATION_DURATION / PROGRESS_TICK));
-      });
-    }, PROGRESS_TICK);
-
-    // Rotation
-    intervalRef.current = window.setInterval(() => {
-      setActiveIndex(prev => (prev + 1) % plans.length);
-      setProgress(0);
-    }, ROTATION_DURATION);
+    setIsPaused(true);
+    setTimeout(() => setIsPaused(false), 4000);
   };
 
-  const stopRotation = () => {
-    if (intervalRef.current) clearInterval(intervalRef.current);
-    if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
+  const nextSlide = () => {
+    goToSlide((activeIndex + 1) % plans.length);
+  };
+
+  const prevSlide = () => {
+    goToSlide((activeIndex - 1 + plans.length) % plans.length);
+  };
+
+  const handleDragEnd = (event: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
+    const threshold = 50;
+    if (info.offset.x > threshold) {
+      prevSlide();
+    } else if (info.offset.x < -threshold) {
+      nextSlide();
+    }
   };
 
   useEffect(() => {
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (!isInView) return;
+      if (e.key === 'ArrowLeft') prevSlide();
+      if (e.key === 'ArrowRight') nextSlide();
+    };
     
-    if (!prefersReducedMotion && !isPaused) {
-      startRotation();
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [activeIndex, isInView]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsInView(entry.isIntersecting);
+      },
+      { threshold: 0.3 }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
     }
 
     return () => {
-      stopRotation();
+      if (containerRef.current) {
+        observer.unobserve(containerRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
+    if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
+
+    if (!isPaused) {
+      setProgress(0);
+      progressIntervalRef.current = window.setInterval(() => {
+        setProgress(prev => {
+          if (prev >= 100) return 0;
+          return prev + (100 / (ROTATION_DURATION / PROGRESS_TICK));
+        });
+      }, PROGRESS_TICK);
+
+      intervalRef.current = window.setInterval(() => {
+        setActiveIndex(prev => (prev + 1) % plans.length);
+        setProgress(0);
+      }, ROTATION_DURATION);
+    }
+
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+      if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
     };
   }, [isPaused, activeIndex]);
 
-  const handleDotClick = (index: number) => {
-    setActiveIndex(index);
-    setProgress(0);
-    stopRotation();
-    setIsPaused(true);
-    
-    // Resume after 3 seconds
-    setTimeout(() => {
-      setIsPaused(false);
-    }, 3000);
-  };
-
-  const prevIndex = (activeIndex - 1 + plans.length) % plans.length;
-  const nextIndex = (activeIndex + 1) % plans.length;
-
   return (
-    <div className="relative">
-      {/* Trio Stack */}
-      <div 
-        className="relative h-[600px] md:h-[700px] flex items-center justify-center py-12"
-        onMouseEnter={() => setIsPaused(true)}
-        onMouseLeave={() => setIsPaused(false)}
-      >
-        <div className="relative w-full max-w-4xl">
-          {/* Previous card (top, small, faded) */}
-          <div className="absolute inset-0 flex items-center justify-center" style={{ transform: 'translateY(-60px)' }}>
-            <PlanCard 
-              plan={plans[prevIndex]} 
-              isActive={false}
-              position="prev"
-            />
-          </div>
+    <div 
+      ref={containerRef}
+      className="relative focus:outline-none min-h-[600px]" 
+      tabIndex={0}
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
+      {/* Desktop: Peek Effect Carousel */}
+      <div className="hidden lg:block relative overflow-hidden pt-12 pb-0">
+        <div className="flex items-center justify-center gap-6 px-20">
+          {/* Prev card peek */}
+          <motion.div 
+            className="w-64 opacity-40 cursor-pointer hover:opacity-60 transition-opacity"
+            onClick={prevSlide}
+          >
+            <PlanCard plan={plans[(activeIndex - 1 + plans.length) % plans.length]} isActive={false} position="prev" />
+          </motion.div>
 
-          {/* Current card (middle, large, bright) */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <PlanCard 
-              plan={plans[activeIndex]} 
-              isActive={true}
-              position="current"
-            />
-          </div>
+          {/* Current card */}
+          <motion.div 
+            className="flex-1 max-w-2xl"
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={0.2}
+            onDragEnd={handleDragEnd}
+          >
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={activeIndex}
+                initial={{ opacity: 0, x: dragDirection * 100 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -dragDirection * 100 }}
+                transition={{ duration: 0.3 }}
+              >
+                <PlanCard plan={plans[activeIndex]} isActive={true} position="current" />
+              </motion.div>
+            </AnimatePresence>
+          </motion.div>
 
-          {/* Next card (bottom, small, faded) */}
-          <div className="absolute inset-0 flex items-center justify-center" style={{ transform: 'translateY(60px)' }}>
-            <PlanCard 
-              plan={plans[nextIndex]} 
-              isActive={false}
-              position="next"
-            />
-          </div>
+          {/* Next card peek */}
+          <motion.div 
+            className="w-64 opacity-40 cursor-pointer hover:opacity-60 transition-opacity"
+            onClick={nextSlide}
+          >
+            <PlanCard plan={plans[(activeIndex + 1) % plans.length]} isActive={false} position="next" />
+          </motion.div>
         </div>
       </div>
 
-      {/* Pagination Dots with Progress */}
-      <div className="flex items-center justify-center gap-3 mt-8">
-        {plans.map((plan, index) => (
+      {/* Mobile: Single Card */}
+      <div className="lg:hidden relative pt-12 pb-0">
+        <motion.div
+          drag="x"
+          dragConstraints={{ left: 0, right: 0 }}
+          dragElastic={0.2}
+          onDragEnd={handleDragEnd}
+          className="px-4"
+        >
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeIndex}
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -50 }}
+              transition={{ duration: 0.3 }}
+            >
+              <PlanCard plan={plans[activeIndex]} isActive={true} position="current" />
+            </motion.div>
+          </AnimatePresence>
+        </motion.div>
+      </div>
+
+      {/* Arrow Controls */}
+      <button
+        onClick={prevSlide}
+        className="absolute left-2 top-2 w-12 h-12 lg:w-14 lg:h-14 bg-white hover:bg-gray-50 border-2 border-gray-300 rounded-full shadow-xl flex items-center justify-center transition-all hover:scale-110 z-10 hover:border-primary-600"
+        aria-label="Plan précédent"
+      >
+        <ChevronLeft className="w-6 h-6 lg:w-7 lg:h-7 text-gray-700" />
+      </button>
+
+      <button
+        onClick={nextSlide}
+        className="absolute right-0 bottom-0 w-12 h-12 lg:w-14 lg:h-14 bg-white hover:bg-gray-50 border-2 border-gray-300 rounded-full shadow-xl flex items-center justify-center transition-all hover:scale-110 z-10 hover:border-primary-600"
+        aria-label="Plan suivant"
+      >
+        <ChevronRight className="w-6 h-6 lg:w-7 lg:h-7 text-gray-700" />
+      </button>
+
+      {/* Dots Navigation */}
+      <div className="flex items-center justify-center gap-2 mt-8">
+        {plans.map((plan: Plan, index: number) => (
           <button
             key={plan.id}
-            onClick={() => handleDotClick(index)}
-            className="relative group"
+            onClick={() => goToSlide(index)}
+            className="relative p-2 group"
             aria-label={`Aller au plan ${plan.name}`}
           >
-            {/* Background circle */}
             <div className={`
               w-3 h-3 rounded-full transition-all duration-300
               ${index === activeIndex 
-                ? 'bg-primary-500 scale-125' 
-                : 'bg-white/30 group-hover:bg-white/50'
+                ? 'bg-primary-600 scale-125' 
+                : 'bg-gray-300 group-hover:bg-gray-400'
               }
             `} />
-            
-            {/* Progress ring (only for active) */}
-            {index === activeIndex && (
-              <svg 
-                className="absolute inset-0 -m-2 w-7 h-7" 
-                style={{ transform: 'rotate(-90deg)' }}
-              >
-                <circle
-                  cx="14"
-                  cy="14"
-                  r="12"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  fill="none"
-                  className="text-primary-400/30"
-                />
-                <motion.circle
-                  cx="14"
-                  cy="14"
-                  r="12"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  fill="none"
-                  className="text-primary-400"
-                  strokeDasharray={`${2 * Math.PI * 12}`}
-                  strokeDashoffset={`${2 * Math.PI * 12 * (1 - progress / 100)}`}
-                  style={{ transition: 'stroke-dashoffset 0.05s linear' }}
-                />
-              </svg>
-            )}
           </button>
         ))}
       </div>
+
+      {/* Keyboard hint */}
+      <p className="hidden lg:block text-center text-sm text-gray-400 mt-4">
+        Utilisez ← → pour naviguer
+      </p>
     </div>
   );
 };

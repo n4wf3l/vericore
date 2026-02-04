@@ -37,9 +37,10 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content, isOpen, o
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <div className="px-5 md:px-6 pb-5 md:pb-6 pt-2 text-gray-600 leading-relaxed">
-              {content}
-            </div>
+            <div 
+              className="px-5 md:px-6 pb-5 md:pb-6 pt-2 text-gray-600 leading-relaxed whitespace-pre-line [&>strong]:font-bold [&>strong]:text-gray-900"
+              dangerouslySetInnerHTML={{ __html: content }}
+            />
           </motion.div>
         )}
       </AnimatePresence>

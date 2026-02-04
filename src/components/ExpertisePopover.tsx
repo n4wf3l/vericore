@@ -13,16 +13,15 @@ interface ExpertisePopoverProps {
   description: string;
   icon: LucideIcon;
   onClose: () => void;
+  onHover?: () => void;
 }
 
 const ExpertisePopover: React.FC<ExpertisePopoverProps> = ({
   isOpen,
   anchorElement,
-  title,
-  teaser,
   description,
-  icon: Icon,
-  onClose
+  onClose,
+  onHover
 }) => {
   const popoverRef = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState({ top: 0, left: 0, maxHeight: 320, direction: 'down' });
@@ -128,20 +127,23 @@ const ExpertisePopover: React.FC<ExpertisePopoverProps> = ({
           zIndex: 9999
         }}
         className="pointer-events-auto"
-        onMouseEnter={(e) => e.stopPropagation()}
+        onMouseEnter={(e) => {
+          e.stopPropagation();
+          onHover?.();
+        }}
         onMouseLeave={onClose}
       >
-        <div className="mx-4 md:mx-6 bg-slate-950/98 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-2xl shadow-black/50 overflow-hidden">
+        <div className="mx-4 md:mx-6 bg-white/98 backdrop-blur-2xl border border-gray-200 rounded-2xl shadow-2xl shadow-gray-900/10 overflow-hidden">
           {/* Header */}
           {!isHoverCapable && (
-            <div className="flex items-center justify-between px-6 py-4 border-b border-white/10">
-              <span className="text-sm font-medium text-primary-400">Détails</span>
+            <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200">
+              <span className="text-sm font-medium text-gray-900">Détails</span>
               <button
                 onClick={onClose}
-                className="p-1 hover:bg-white/10 rounded-lg transition-colors"
+                className="p-1 hover:bg-gray-100 rounded-lg transition-colors"
                 aria-label="Fermer"
               >
-                <X className="w-4 h-4 text-gray-400" />
+                <X className="w-4 h-4 text-gray-600" />
               </button>
             </div>
           )}
@@ -151,16 +153,17 @@ const ExpertisePopover: React.FC<ExpertisePopoverProps> = ({
             className="overflow-y-auto px-6 py-5 md:px-8 md:py-6"
             style={{ maxHeight: `${position.maxHeight - (!isHoverCapable ? 100 : 60)}px` }}
           >
-            <p className="text-gray-200 text-sm md:text-base leading-relaxed">
-              {description}
-            </p>
+            <p 
+              className="text-gray-800 text-sm md:text-base leading-relaxed [&>strong]:font-bold [&>strong]:text-gray-900"
+              dangerouslySetInnerHTML={{ __html: description }}
+            />
           </div>
 
           {/* Footer hint */}
           {isHoverCapable && (
-            <div className="px-6 py-3 border-t border-white/5 bg-slate-900/30">
-              <p className="text-xs text-gray-500 text-center">
-                Appuyez sur <kbd className="px-1.5 py-0.5 bg-white/10 rounded text-gray-400">Esc</kbd> pour fermer
+            <div className="px-6 py-3 border-t border-gray-200 bg-gray-50/80">
+              <p className="text-xs text-gray-600 text-center">
+                Appuyez sur <kbd className="px-1.5 py-0.5 bg-gray-200 rounded text-gray-800">Esc</kbd> pour fermer
               </p>
             </div>
           )}

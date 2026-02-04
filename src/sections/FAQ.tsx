@@ -7,11 +7,28 @@ import { MessageCircle } from 'lucide-react';
 
 const FAQ: React.FC = () => {
   return (
-    <Section id="faq" className="bg-gray-50">
-      <SectionTitle
-        subtitle="Questions fréquentes"
-        title="Vous Avez des Questions ?"
-      />
+    <Section 
+      id="faq" 
+      className="relative bg-gray-900"
+    >
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/bg-worker.png"
+          alt="Vericore maintenance"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-gray-900/70 z-10" />
+      
+      <div className="relative z-20">
+        <SectionTitle
+          subtitle="Questions fréquentes"
+          title="Vous Avez des Questions ?"
+          className="[&_h2]:text-white [&_p]:text-primary-300"
+        />
 
       <div className="max-w-4xl mx-auto">
         <Accordion items={faqs} />
@@ -57,6 +74,7 @@ const FAQ: React.FC = () => {
             </a>
           </div>
         </motion.div>
+      </div>
       </div>
     </Section>
   );

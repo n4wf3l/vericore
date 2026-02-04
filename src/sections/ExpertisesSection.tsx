@@ -37,6 +37,13 @@ const ExpertisesSection: React.FC = () => {
     }, 150);
   }, []);
 
+  const handlePopoverHover = useCallback(() => {
+    // Cancel any pending close when hovering over popup
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current);
+    }
+  }, []);
+
   const handlePopoverClose = useCallback(() => {
     if (hoverTimeoutRef.current) {
       clearTimeout(hoverTimeoutRef.current);
@@ -49,11 +56,11 @@ const ExpertisesSection: React.FC = () => {
     : null;
 
   return (
-    <Section id="expertises" className="bg-gradient-to-b from-gray-900 to-slate-900 text-white">
+    <Section id="expertises" className="bg-white text-gray-900">
       <SectionTitle
         subtitle="Nos expertises"
         title="Une approche professionnelle pensée pour la gestion immobilière"
-        className="text-white"
+        className="text-gray-900"
       />
 
       {/* Instruction text */}
@@ -64,7 +71,7 @@ const ExpertisesSection: React.FC = () => {
         transition={{ duration: 0.5 }}
         className="text-center mb-12"
       >
-        <p className="text-gray-400 text-sm md:text-base">
+        <p className="text-gray-600 text-sm md:text-base">
           <span className="hidden md:inline">Survolez une carte pour voir les détails</span>
           <span className="md:hidden">Touchez une carte pour voir les détails</span>
         </p>
@@ -97,6 +104,7 @@ const ExpertisesSection: React.FC = () => {
           description={activeExpertiseData.description}
           icon={activeExpertiseData.icon}
           onClose={handlePopoverClose}
+          onHover={handlePopoverHover}
         />
       )}
 
@@ -108,7 +116,7 @@ const ExpertisesSection: React.FC = () => {
         transition={{ duration: 0.5, delay: 0.6 }}
         className="text-center mt-16"
       >
-        <p className="text-gray-300 text-lg mb-6">
+        <p className="text-gray-700 text-lg mb-6">
           Besoin d'un accompagnement sur mesure ?
         </p>
         <a

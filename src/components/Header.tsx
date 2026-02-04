@@ -6,10 +6,10 @@ import logo from '../assets/logo.png';
 
 const navLinks = [
   { name: 'Accueil', href: '#home' },
+  { name: 'À propos', href: '#about' },
   { name: 'Expertises', href: '#expertises' },
   { name: 'Services', href: '#services' },
   { name: 'Projets', href: '#projects' },
-  { name: 'Témoignages', href: '#testimonials' },
   { name: 'FAQ', href: '#faq' },
   { name: 'Contact', href: '#contact' },
 ];

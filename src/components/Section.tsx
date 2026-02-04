@@ -6,11 +6,12 @@ interface SectionProps {
   children: React.ReactNode;
   className?: string;
   id?: string;
+  style?: React.CSSProperties;
 }
 
-export const Section: React.FC<SectionProps> = ({ children, className, id }) => {
+export const Section: React.FC<SectionProps> = ({ children, className, id, style }) => {
   return (
-    <section id={id} className={cn('py-20 md:py-28', className)}>
+    <section id={id} className={cn('py-20 md:py-28', className)} style={style}>
       <div className="container-custom">
         {children}
       </div>

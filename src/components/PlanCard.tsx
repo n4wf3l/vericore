@@ -9,77 +9,101 @@ interface PlanCardProps {
   position: 'prev' | 'current' | 'next';
 }
 
+const accentColors = {
+  amber: {
+    border: 'border-t-4 border-t-amber-600',
+    bg: 'bg-amber-50',
+    badge: 'bg-amber-100 text-amber-800 border border-amber-200',
+    icon: 'text-amber-600',
+    button: 'bg-amber-600 hover:bg-amber-700 text-white'
+  },
+  slate: {
+    border: 'border-t-4 border-t-slate-500',
+    bg: 'bg-slate-50',
+    badge: 'bg-slate-100 text-slate-800 border border-slate-200',
+    icon: 'text-slate-600',
+    button: 'bg-slate-600 hover:bg-slate-700 text-white'
+  },
+  yellow: {
+    border: 'border-t-4 border-t-yellow-500',
+    bg: 'bg-yellow-50',
+    badge: 'bg-yellow-100 text-yellow-800 border border-yellow-200',
+    icon: 'text-yellow-600',
+    button: 'bg-yellow-600 hover:bg-yellow-700 text-white'
+  },
+  primary: {
+    border: 'border-t-4 border-t-primary-600',
+    bg: 'bg-primary-50',
+    badge: 'bg-primary-100 text-primary-800 border border-primary-200',
+    icon: 'text-primary-600',
+    button: 'bg-primary-600 hover:bg-primary-700 text-white'
+  }
+};
+
 const PlanCard: React.FC<PlanCardProps> = ({ plan, isActive, position }) => {
-  const scale = isActive ? 1.05 : 0.92;
-  const opacity = isActive ? 1 : 0.5;
-  const zIndex = isActive ? 20 : position === 'prev' ? 10 : 5;
+  const colors = accentColors[plan.accentColor as keyof typeof accentColors] || accentColors.primary;
 
   return (
-    <motion.div
-      animate={{ 
-        scale, 
-        opacity,
-        y: position === 'prev' ? -20 : position === 'next' ? 20 : 0
-      }}
-      transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
-      style={{ zIndex }}
+    <div
       className={`
-        relative w-full max-w-4xl mx-auto
-        bg-slate-950/30 backdrop-blur-2xl
-        border rounded-3xl shadow-2xl
-        transition-all duration-500
-        ${isActive 
-          ? 'border-primary-500/50 shadow-primary-500/20' 
-          : 'border-white/10'
-        }
+        relative w-full bg-white
+        border border-slate-200 rounded-2xl shadow-lg overflow-hidden
+        transition-all duration-300
+        ${isActive ? 'shadow-2xl' : 'shadow-md'}
+        ${colors.border}
       `}
     >
-      <div className={`absolute inset-0 bg-gradient-to-br ${plan.color} rounded-3xl opacity-30`} />
-      
-      <div className="relative p-8 md:p-10">
-        {/* Header */}
-        <div className="flex items-start justify-between mb-6">
-          <div>
-            <div className="flex items-center gap-3 mb-2">
-              <span className="text-4xl">{plan.emoji}</span>
-              <h3 className="text-3xl md:text-4xl font-bold text-white">{plan.name}</h3>
-            </div>
-            <p className="text-primary-400 font-semibold text-lg">{plan.badge}</p>
+      {/* Header */}
+      <div className={`${colors.bg} px-6 py-6 border-b border-slate-200`}>
+        <div className="flex items-center gap-4 mb-3">
+          <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm">
+            <plan.icon className={`w-6 h-6 ${colors.icon}`} />
           </div>
+          <div className="flex-1">
+            <h3 className="text-2xl font-bold text-gray-900">{plan.name}</h3>
+          </div>
+          <span className={`px-3 py-1 rounded-full text-xs font-semibold ${colors.badge}`}>
+            {plan.badge}
+          </span>
         </div>
-
-        {/* Tagline */}
-        <p className="text-gray-300 text-base md:text-lg mb-6 leading-relaxed">
+        <p className="text-sm text-gray-700 leading-snug">
           {plan.tagline}
         </p>
+      </div>
 
-        {/* Features */}
-        <div className="space-y-3 mb-8">
-          {plan.features.map((feature, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, x: -10 }}
-              animate={{ opacity: isActive ? 1 : 0.7, x: 0 }}
-              transition={{ delay: idx * 0.05 }}
-              className="flex items-start gap-3"
-            >
-              <Check className="w-5 h-5 text-primary-400 flex-shrink-0 mt-0.5" />
-              <span className="text-gray-200 text-sm md:text-base">{feature}</span>
-            </motion.div>
+      {/* Features */}
+      <div className="px-6 py-6">
+        <div className="space-y-2.5">
+          {plan.features.slice(0, 6).map((feature: string, idx: number) => (
+            <div key={idx} className="flex items-start gap-2.5">
+              <Check className={`w-4 h-4 ${colors.icon} flex-shrink-0 mt-0.5`} />
+              <span className="text-sm text-gray-700 leading-tight">{feature}</span>
+            </div>
           ))}
-        </div>
-
-        {/* Pricing */}
-        <div className="border-t border-white/10 pt-6">
-          <div className="flex items-baseline gap-2 mb-2">
-            <span className="text-2xl md:text-3xl font-bold text-white">{plan.price}</span>
-          </div>
-          <p className="text-gray-400 text-xs md:text-sm leading-relaxed">
-            {plan.priceNote}
-          </p>
+          {plan.features.length > 6 && (
+            <p className="text-xs text-gray-500 italic mt-3">+ {plan.features.length - 6} autres avantages</p>
+          )}
         </div>
       </div>
-    </motion.div>
+
+      {/* Price Bar */}
+      <div className="bg-gray-50 border-t border-slate-200 px-6 py-5">
+        <div className="flex items-end justify-between mb-4">
+          <div>
+            <div className="text-3xl font-bold text-gray-900">{plan.price}</div>
+            <p className="text-xs text-gray-500 mt-1 max-w-xs leading-tight">
+              {plan.priceNote}
+            </p>
+          </div>
+        </div>
+        <a
+          href="#contact"
+          className={`w-full inline-block text-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${colors.button} shadow-sm hover:shadow-md`}
+        >
+          Demander un audit
+        </a>
+      </div>
+    </div>
   );
 };
 

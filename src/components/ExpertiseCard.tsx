@@ -41,8 +41,8 @@ const ExpertiseCard: React.FC<ExpertiseCardProps> = ({
       onMouseLeave={onHoverEnd}
       className={`
         relative group cursor-pointer
-        bg-gradient-to-br from-slate-900/50 to-slate-800/30
-        backdrop-blur-md border border-white/10
+        bg-gradient-to-br from-white to-gray-50
+        backdrop-blur-md border border-gray-200
         rounded-2xl p-6 md:p-8
         transition-all duration-300
         hover:border-primary-500/30 hover:shadow-xl hover:shadow-primary-500/10
@@ -66,12 +66,12 @@ const ExpertiseCard: React.FC<ExpertiseCardProps> = ({
         </motion.div>
 
         {/* Title */}
-        <h3 className="text-xl md:text-2xl font-bold text-white mb-3 leading-tight">
+        <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 leading-tight">
           {title}
         </h3>
 
         {/* Teaser */}
-        <p className="text-gray-300 text-sm md:text-base leading-relaxed">
+        <p className="text-gray-600 text-sm md:text-base leading-relaxed">
           {teaser}
         </p>
       </div>
