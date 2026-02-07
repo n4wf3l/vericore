@@ -35,11 +35,9 @@ const ContactForm: React.FC = () => {
     }
     
     if (!accessKey || accessKey === 'YOUR_ACCESS_KEY_HERE') {
-      if (import.meta.env.DEV) {
-        console.error('❌ ERREUR: Access Key Web3Forms non configurée!');
-        console.error('➡️ Obtenez votre clé sur https://web3forms.com');
-        console.error('➡️ Ajoutez-la dans .env.local: VITE_WEB3FORMS_ACCESS_KEY=votre-clé');
-      }
+      console.error('❌ ERREUR: Access Key Web3Forms non configurée!');
+      console.error('➡️ Vérifiez les variables d\'environnement sur Hostinger');
+      console.error('➡️ VITE_WEB3FORMS_ACCESS_KEY doit être définie AVANT le build');
       setSubmitError('Configuration email manquante. Consultez la console (F12).');
       setIsSubmitting(false);
       return;
@@ -87,15 +85,11 @@ const ContactForm: React.FC = () => {
           reset();
         }, 5000);
       } else {
-        if (import.meta.env.DEV) {
-          console.error('❌ Erreur Web3Forms:', result.message);
-        }
+        console.error('❌ Erreur Web3Forms:', result.message);
         throw new Error(result.message || 'Erreur lors de l\'envoi');
       }
     } catch (error) {
-      if (import.meta.env.DEV) {
-        console.error('❌ Erreur lors de l\'envoi:', error);
-      }
+      console.error('❌ Erreur lors de l\'envoi:', error);
       setSubmitError(t('contact.form.error') || 'Une erreur est survenue. Veuillez réessayer.');
     } finally {
       setIsSubmitting(false);
