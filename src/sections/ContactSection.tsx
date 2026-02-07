@@ -23,7 +23,7 @@ const ContactSection: React.FC = () => {
       icon: Mail,
       title: t('contact.info.email'),
       content: t('common.email'),
-      link: 'mailto:vericoresrl@gmail.com'
+      link: 'mailto:contact@vericore.be'
     },
     {
       icon: MapPin,

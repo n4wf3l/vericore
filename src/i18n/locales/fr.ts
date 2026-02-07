@@ -3,7 +3,7 @@ export const fr = {
     brand: 'Vericore',
     tagline: 'Maintenance & Rénovation',
     phone: '+32 (0)3 96 84 73 74',
-    email: 'vericoresrl@gmail.com',
+    email: 'contact@vericore.be',
     address: 'Rue Esseghem 43, 1090 Bruxelles',
     city: 'Bruxelles, Belgique',
     cta: {

@@ -141,7 +141,7 @@ const Hero: React.FC = () => {
             className="hidden lg:flex flex-col gap-5"
           >
             {[
-              { number: '500+', label: t('hero.stats.projectsCompleted') },
+              { number: '150+', label: t('hero.stats.projectsCompleted') },
               { number: '24/7', label: t('hero.stats.emergency') }
             ].map((stat, index) => (
               <motion.div

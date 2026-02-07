@@ -61,8 +61,8 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       title: 'Email',
-      content: 'vericoresrl@gmail.com',
-      link: 'mailto:vericoresrl@gmail.com'
+      content: 'contact@vericore.be',
+      link: 'mailto:contact@vericore.be'
     },
     {
       icon: Clock,
@@ -72,7 +72,7 @@ const Contact: React.FC = () => {
     },
   ];
 
-  const mailtoLink = `mailto:vericoresrl@gmail.com?subject=Demande de devis&body=Bonjour,%0D%0A%0D%0AJe souhaite obtenir un devis pour...`;
+  const mailtoLink = `mailto:contact@vericore.be?subject=Demande de devis&body=Bonjour,%0D%0A%0D%0AJe souhaite obtenir un devis pour...`;
 
   return (
     <Section id="contact">
@@ -215,7 +215,7 @@ const Contact: React.FC = () => {
               <p className="text-center text-sm text-gray-500">
                 Ou envoyez-nous un email directement à{' '}
                 <a href={mailtoLink} className="text-primary-600 hover:underline font-medium">
-                  vericoresrl@gmail.com
+                  contact@vericore.be
                 </a>
               </p>
             </form>

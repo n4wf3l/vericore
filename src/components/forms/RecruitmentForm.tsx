@@ -44,7 +44,7 @@ const RecruitmentForm: React.FC = () => {
     setSelectedFile(null);
   };
 
-  const mailtoLink = `mailto:vericoresrl@gmail.com?subject=${t('contact.recruitment.form.emailSubject')} - ${position || t('contact.recruitment.form.positions.spontanee')}&body=${encodeURIComponent(t('contact.recruitment.form.emailBody'))}`;
+  const mailtoLink = `mailto:contact@vericore.be?subject=${t('contact.recruitment.form.emailSubject')} - ${position || t('contact.recruitment.form.positions.spontanee')}&body=${encodeURIComponent(t('contact.recruitment.form.emailBody'))}`;
 
   if (isSubmitted) {
     return (
