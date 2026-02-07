@@ -99,7 +99,7 @@ const MaintenancePlansSection: React.FC = () => {
           </a>
           
           <a
-            href="https://wa.me/3232396847374"
+            href="https://wa.me/32396847374"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-3 px-8 py-4 bg-white hover:bg-gray-50 border-2 border-primary-600 text-primary-600 font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-md"
