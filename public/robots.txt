@@ -1,0 +1,31 @@
+# Vericore SRL - Robots.txt
+# Mise à jour: 2026-02-07
+
+# Règles pour tous les robots
+User-agent: *
+Allow: /
+
+# Bloquer les pages administratives
+Disallow: /admin/
+Disallow: /staging/
+Disallow: /test/
+
+# Bloquer les paramètres de tracking
+Disallow: /*?utm_*
+Disallow: /*?ref=*
+Disallow: /*?source=*
+
+# Sitemap
+Sitemap: https://www.vericore.be/sitemap.xml
+
+# Règles pour les bots gourmands
+User-agent: GPTBot
+Crawl-delay: 10
+
+User-agent: CCBot
+Crawl-delay: 10
+
+# Règles pour Google (priorité maximale)
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
