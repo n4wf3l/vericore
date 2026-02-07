@@ -2,7 +2,7 @@ export const nl = {
   common: {
     brand: 'Vericore',
     tagline: 'Onderhoud & Renovatie',
-    phone: '+32 3 96 84 73 74',
+    phone: '+32 4 96 84 73 74',
     email: 'contact@vericore.be',
     address: 'Esseghemlaan 43, 1090 Brussel',
     city: 'Brussel, België',

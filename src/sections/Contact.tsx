@@ -302,7 +302,7 @@ const Contact: React.FC = () => {
                   Contactez-nous via WhatsApp pour une intervention rapide 24h/7
                 </p>
                 <a
-                  href="https://wa.me/32396847374"
+                  href="https://wa.me/32496847374"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -245,7 +245,7 @@ const ContactSection: React.FC = () => {
                   {t('contact.info.urgent.description')}
                 </p>
                 <a
-                  href="https://wa.me/32396847374"
+                  href="https://wa.me/32496847374"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

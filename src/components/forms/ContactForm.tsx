@@ -96,7 +96,7 @@ const ContactForm: React.FC = () => {
     }
   };
 
-  const whatsappLink = `https://wa.me/32396847374?text=${encodeURIComponent(t('contact.form.whatsappMessage'))}`;
+  const whatsappLink = `https://wa.me/32496847374?text=${encodeURIComponent(t('contact.form.whatsappMessage'))}`;
 
   if (isSubmitted) {
     return (
