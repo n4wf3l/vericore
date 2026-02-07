@@ -17,7 +17,7 @@ const ContactSection: React.FC = () => {
       icon: Phone,
       title: t('contact.info.phone'),
       content: t('common.phone'),
-      link: 'tel:+32396847374'
+      link: 'tel:+32496847374'
     },
     {
       icon: Mail,

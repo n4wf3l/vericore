@@ -50,7 +50,7 @@ export const en = {
     cta: {
       getQuote: 'Request a quote',
       whatsapp24: 'WhatsApp 24/7',
-      whatsappMessage: 'Hello, I would like to get a quote'
+      whatsappMessage: 'Hello, I am contacting you after visiting your website.'
     }
   },
   hero: {
@@ -579,6 +579,7 @@ export const en = {
       submit: 'Send',
       sending: 'Sending...',
       whatsapp: 'WhatsApp 24/7',
+      whatsappMessage: 'Hello, I am contacting you after visiting your website.',
       error: 'An error occurred. Please try again or contact us directly.',
       success: {
         title: 'Message sent!',

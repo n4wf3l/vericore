@@ -56,7 +56,7 @@ const Contact: React.FC = () => {
       icon: Phone,
       title: 'Téléphone',
       content: '+32 396 847 374',
-      link: 'tel:+32396847374'
+      link: 'tel:+32496847374'
     },
     {
       icon: Mail,

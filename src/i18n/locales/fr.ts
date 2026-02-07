@@ -50,7 +50,7 @@ export const fr = {
     cta: {
       getQuote: 'Demander un devis',
       whatsapp24: 'WhatsApp 24/7',
-      whatsappMessage: 'Bonjour, je souhaite obtenir un devis'
+      whatsappMessage: 'Bonjour, je vous contacte après avoir visité votre site web.'
     }
   },
   hero: {
@@ -581,6 +581,7 @@ export const fr = {
       submit: 'Envoyer',
       sending: 'Envoi en cours...',
       whatsapp: 'WhatsApp 24/7',
+      whatsappMessage: 'Bonjour, je vous contacte après avoir visité votre site web.',
       error: 'Une erreur est survenue. Veuillez réessayer ou nous contacter directement.',
       success: {
         title: 'Message envoyé !',

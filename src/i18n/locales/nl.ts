@@ -50,7 +50,7 @@ export const nl = {
     cta: {
       getQuote: 'Vraag een offerte aan',
       whatsapp24: 'WhatsApp 24/7',
-      whatsappMessage: 'Hallo, ik zou graag een offerte willen ontvangen'
+      whatsappMessage: 'Hallo, ik contacteer u na het bezoeken van uw website.'
     }
   },
   hero: {
@@ -581,6 +581,7 @@ export const nl = {
       submit: 'Verzenden',
       sending: 'Bezig met verzenden...',
       whatsapp: 'WhatsApp 24/7',
+      whatsappMessage: 'Hallo, ik contacteer u na het bezoeken van uw website.',
       error: 'Er is een fout opgetreden. Probeer het opnieuw of neem rechtstreeks contact met ons op.',
       success: {
         title: 'Bericht verzonden!',

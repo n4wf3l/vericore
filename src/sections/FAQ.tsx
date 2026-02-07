@@ -56,7 +56,7 @@ const FAQ: React.FC = () => {
             {t('faq.notFound.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+32396847374">
+            <a href="tel:+32496847374">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
