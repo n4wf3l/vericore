@@ -2,10 +2,16 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Section, SectionTitle } from '../components/Section';
 import Accordion from '../components/Accordion';
-import { faqs } from '../data/content';
 import { MessageCircle } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const FAQ: React.FC = () => {
+  const { t } = useTranslation();
+  
+  // Get FAQ from translations and add id
+  const faqsData = t('faq.questions', { returnObjects: true }) as Array<{ question: string; answer: string }>;
+  const faqs = faqsData.map((faq, index) => ({ ...faq, id: index + 1 }));
+
   return (
     <Section 
       id="faq" 
@@ -25,8 +31,8 @@ const FAQ: React.FC = () => {
       
       <div className="relative z-20">
         <SectionTitle
-          subtitle="Questions fréquentes"
-          title="Vous Avez des Questions ?"
+          subtitle={t('faq.subtitle')}
+          title={t('faq.title')}
           className="[&_h2]:text-white [&_p]:text-primary-300"
         />
 
@@ -44,10 +50,10 @@ const FAQ: React.FC = () => {
             <MessageCircle className="w-8 h-8 text-primary-600" />
           </div>
           <h3 className="font-bold text-xl text-gray-900 mb-2">
-            Vous ne trouvez pas votre réponse ?
+            {t('faq.notFound.title')}
           </h3>
           <p className="text-gray-600 mb-6">
-            Notre équipe est disponible pour répondre à toutes vos questions
+            {t('faq.notFound.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:+32396847374">
@@ -56,7 +62,7 @@ const FAQ: React.FC = () => {
                 whileTap={{ scale: 0.95 }}
                 className="bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all w-full sm:w-auto"
               >
-                Appelez-nous
+                {t('common.cta.callUs')}
               </motion.button>
             </a>
             <a 

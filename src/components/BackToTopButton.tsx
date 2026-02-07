@@ -44,7 +44,7 @@ const BackToTopButton: React.FC = () => {
           exit={{ opacity: 0, scale: 0.9, y: 8 }}
           transition={{ duration: 0.25, ease: [0.4, 0, 0.2, 1] }}
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 z-[999] group"
+          className="hidden lg:flex fixed bottom-6 right-6 z-[999] group"
           aria-label="Remonter en haut"
           type="button"
         >
@@ -53,16 +53,16 @@ const BackToTopButton: React.FC = () => {
             {/* Glass effect button */}
             <div className="
               w-12 h-12 rounded-full
-              bg-slate-950/90 backdrop-blur-2xl
-              border border-white/10
-              shadow-2xl shadow-black/20
+              bg-white/95 backdrop-blur-2xl
+              border border-gray-200/60
+              shadow-2xl shadow-black/10
               flex items-center justify-center
               transition-all duration-300
-              group-hover:bg-slate-900/95
-              group-hover:border-primary-400/40
+              group-hover:bg-white
+              group-hover:border-primary-400/60
               group-hover:shadow-primary-500/20
               group-hover:scale-110
-              group-focus-visible:ring-2 group-focus-visible:ring-primary-500 group-focus-visible:ring-offset-2 group-focus-visible:ring-offset-slate-950
+              group-focus-visible:ring-2 group-focus-visible:ring-primary-500 group-focus-visible:ring-offset-2 group-focus-visible:ring-offset-white
             ">
               {/* Arrow with subtle bob animation */}
               <motion.div
@@ -80,7 +80,7 @@ const BackToTopButton: React.FC = () => {
                   })
                 }}
               >
-                <ArrowUp className="w-5 h-5 text-primary-400 group-hover:text-primary-300 transition-colors" />
+                <ArrowUp className="w-5 h-5 text-primary-600 group-hover:text-primary-700 transition-colors" />
               </motion.div>
             </div>
 

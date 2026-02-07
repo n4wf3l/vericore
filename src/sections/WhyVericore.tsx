@@ -1,76 +1,68 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Section, SectionTitle } from '../components/Section';
 import { Card, CardHeader, CardContent } from '../components/Card';
 import { Shield, Clock, Award, Users, TrendingUp, Heart } from 'lucide-react';
 
 const WhyVericore: React.FC = () => {
+  const { t } = useTranslation();
+  
   const values = [
     {
       icon: Clock,
-      title: 'Réactivité 24/7',
-      description: 'Service d\'urgence disponible jour et nuit. Intervention rapide pour tous vos dépannages.'
+      key: 'availability'
     },
     {
       icon: Award,
-      title: 'Qualité Garantie',
-      description: 'Travaux conformes aux normes belges. Garantie sur toutes nos prestations.'
+      key: 'quality'
     },
     {
       icon: Shield,
-      title: 'Entreprise Certifiée',
-      description: 'Société agréée BE1005.585.934. Assurance complète pour votre tranquillité.'
+      key: 'certification'
     },
     {
       icon: Users,
-      title: 'Équipe Qualifiée',
-      description: 'Professionnels expérimentés et formés. Respect des règles de sécurité.'
+      key: 'team'
     },
     {
       icon: TrendingUp,
-      title: 'Prix Transparents',
-      description: 'Devis détaillé gratuit. Pas de frais cachés, tarification claire.'
+      key: 'transparency'
     },
     {
       icon: Heart,
-      title: 'Satisfaction Client',
-      description: 'À l\'écoute de vos besoins. Suivi personnalisé de chaque projet.'
+      key: 'satisfaction'
     }
   ];
 
   const process = [
     {
       number: '01',
-      title: 'Contact',
-      description: 'Appelez-nous ou remplissez le formulaire. Nous vous recontactons sous 24h.'
+      key: 'contact'
     },
     {
       number: '02',
-      title: 'Visite & Devis',
-      description: 'Visite technique gratuite. Devis détaillé avec planning et budget.'
+      key: 'visit'
     },
     {
       number: '03',
-      title: 'Planification',
-      description: 'Organisation des travaux selon vos disponibilités. Équipe dédiée.'
+      key: 'planning'
     },
     {
       number: '04',
-      title: 'Réalisation',
-      description: 'Exécution soignée dans les délais. Communication régulière.'
+      key: 'execution'
     },
     {
       number: '05',
-      title: 'Réception',
-      description: 'Vérification finale avec vous. Garantie et suivi après-vente.'
+      key: 'reception'
     }
   ];
 
   return (
     <Section id="why-vericore" className="bg-gray-50">
       <SectionTitle
-        subtitle="Pourquoi nous choisir"
-        title="Vericore, Votre Partenaire de Confiance"
+        subtitle={t('whyVericore.subtitle')}
+        title={t('whyVericore.title')}
       />
 
       {/* Values Grid */}
@@ -91,12 +83,12 @@ const WhyVericore: React.FC = () => {
                     <Icon className="w-6 h-6 text-primary-600" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    {value.title}
+                    {t(`whyVericore.reasons.${value.key}.title`)}
                   </h3>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 leading-relaxed">
-                    {value.description}
+                    {t(`whyVericore.reasons.${value.key}.description`)}
                   </p>
                 </CardContent>
               </Card>
@@ -114,10 +106,10 @@ const WhyVericore: React.FC = () => {
           className="text-center mb-12"
         >
           <h3 className="font-display text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            Notre Processus en 5 Étapes
+            {t('whyVericore.process.title')}
           </h3>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            De la première prise de contact à la réception finale, nous vous accompagnons à chaque étape.
+            {t('whyVericore.process.description')}
           </p>
         </motion.div>
 
@@ -148,10 +140,10 @@ const WhyVericore: React.FC = () => {
                 {/* Content */}
                 <div className="text-center">
                   <h4 className="font-bold text-lg text-gray-900 mb-2">
-                    {step.title}
+                    {t(`whyVericore.process.steps.${step.key}.title`)}
                   </h4>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    {step.description}
+                    {t(`whyVericore.process.steps.${step.key}.description`)}
                   </p>
                 </div>
               </motion.div>

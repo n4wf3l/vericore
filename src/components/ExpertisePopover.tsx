@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, type LucideIcon } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { useHeaderHeight } from '../hooks/useHeaderHeight';
 import { useHoverCapable } from '../hooks/useHoverCapable';
 
@@ -23,6 +24,7 @@ const ExpertisePopover: React.FC<ExpertisePopoverProps> = ({
   onClose,
   onHover
 }) => {
+  const { t } = useTranslation();
   const popoverRef = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState({ top: 0, left: 0, maxHeight: 320, direction: 'down' });
   const headerHeight = useHeaderHeight();
@@ -137,11 +139,11 @@ const ExpertisePopover: React.FC<ExpertisePopoverProps> = ({
           {/* Header */}
           {!isHoverCapable && (
             <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200">
-              <span className="text-sm font-medium text-gray-900">Détails</span>
+              <span className="text-sm font-medium text-gray-900">{t('expertises.popover.details')}</span>
               <button
                 onClick={onClose}
                 className="p-1 hover:bg-gray-100 rounded-lg transition-colors"
-                aria-label="Fermer"
+                aria-label={t('expertises.popover.close')}
               >
                 <X className="w-4 h-4 text-gray-600" />
               </button>
@@ -163,7 +165,7 @@ const ExpertisePopover: React.FC<ExpertisePopoverProps> = ({
           {isHoverCapable && (
             <div className="px-6 py-3 border-t border-gray-200 bg-gray-50/80">
               <p className="text-xs text-gray-600 text-center">
-                Appuyez sur <kbd className="px-1.5 py-0.5 bg-gray-200 rounded text-gray-800">Esc</kbd> pour fermer
+                {t('expertises.popover.escHint')} <kbd className="px-1.5 py-0.5 bg-gray-200 rounded text-gray-800">Esc</kbd>
               </p>
             </div>
           )}

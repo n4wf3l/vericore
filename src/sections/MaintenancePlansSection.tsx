@@ -1,9 +1,27 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FileCheck, MessageCircle } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import { FileCheck, MessageCircle, Award, Gem, Crown, Sparkles } from 'lucide-react';
 import PlansTrioSlider from '../components/PlansTrioSlider';
 
 const MaintenancePlansSection: React.FC = () => {
+  const { t } = useTranslation();
+
+  // Icon and color mapping
+  const iconMap = { bronze: Award, silver: Gem, gold: Crown, premium: Sparkles };
+  const accentColorMap = { bronze: 'amber', silver: 'slate', gold: 'yellow', premium: 'primary' };
+
+  // Get plans from translations
+  const plansData = t('plans.items', { returnObjects: true }) as Array<{
+    id: string; name: string; badge: string; tagline: string; ideal: string;
+    features: string[]; price: string; priceNote: string;
+  }>;
+  const plans = plansData.map(plan => ({
+    ...plan,
+    icon: iconMap[plan.id as keyof typeof iconMap],
+    accentColor: accentColorMap[plan.id as keyof typeof accentColorMap]
+  }));
+  
   return (
     <section 
       id="abonnements" 
@@ -19,18 +37,15 @@ const MaintenancePlansSection: React.FC = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            Nos abonnements de maintenance
+            {t('plans.title')}
           </h2>
-          <p className="text-gray-600 text-lg md:text-xl max-w-4xl mx-auto leading-relaxed">
-            Nous proposons plusieurs formules d'abonnement adaptées à la taille des bâtiments, 
-            aux équipements présents et au niveau de service souhaité. Chaque contrat est établi 
-            après analyse préalable du site, sur base de photos et d'une visite technique afin de 
-            définir une offre précise et adaptée. <span className="text-primary-600 font-semibold">Les tarifs ci-dessous sont donnés à titre indicatif.</span>
-          </p>
+          <p className="text-gray-600 text-lg md:text-xl max-w-4xl mx-auto leading-relaxed"
+            dangerouslySetInnerHTML={{ __html: t('plans.intro') }}
+          />
         </motion.div>
 
         {/* Trio Slider */}
-        <PlansTrioSlider />
+        <PlansTrioSlider plans={plans} />
 
         {/* Info Panels */}
         <motion.div
@@ -46,40 +61,23 @@ const MaintenancePlansSection: React.FC = () => {
               <div className="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center flex-shrink-0">
                 <FileCheck className="w-6 h-6 text-primary-600" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900">Modalités d'intervention</h3>
+              <h3 className="text-2xl font-bold text-gray-900">{t('plans.infoPanels.intervention.title')}</h3>
             </div>
             <p className="text-gray-600 leading-relaxed">
-              Nous intervenons aussi bien dans le cadre d'un abonnement de maintenance que pour des 
-              demandes ponctuelles. Les interventions à l'acte sont planifiées selon nos disponibilités 
-              opérationnelles et bénéficient du même niveau d'exigence technique et de qualité. Les clients 
-              sous contrat disposent de créneaux dédiés et de délais d'intervention garantis contractuellement.
+              {t('plans.infoPanels.intervention.description')}
             </p>
           </div>
 
           {/* Conditions */}
           <div className="bg-white border border-slate-200 rounded-2xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Conditions & fonctionnement</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">{t('plans.infoPanels.conditions.title')}</h3>
             <ul className="space-y-3 text-gray-600">
-              <li className="flex items-start gap-3">
-                <span className="text-primary-600 mt-1">•</span>
-                <span>Les tarifs sont indicatifs et définis définitivement après analyse technique du site.</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary-600 mt-1">•</span>
-                <span>Une visite sur place est systématiquement réalisée avant la signature du contrat.</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary-600 mt-1">•</span>
-                <span>Les interventions ponctuelles restent possibles sans abonnement, sous réserve de disponibilité.</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary-600 mt-1">•</span>
-                <span>Les travaux importants, rénovations, remplacements majeurs et fournitures font l'objet de devis séparés.</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary-600 mt-1">•</span>
-                <span>Toute intervention dépassant le volume inclus dans l'abonnement est facturée selon le tarif contractuel préférentiel.</span>
-              </li>
+              {(t('plans.infoPanels.conditions.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
+                <li key={index} className="flex items-start gap-3">
+                  <span className="text-primary-600 mt-1">•</span>
+                  <span>{item}</span>
+                </li>
+              ))}
             </ul>
           </div>
         </motion.div>
@@ -97,7 +95,7 @@ const MaintenancePlansSection: React.FC = () => {
             className="group inline-flex items-center gap-3 px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-primary-500/50"
           >
             <FileCheck className="w-5 h-5" />
-            <span>Demander un devis / audit technique</span>
+            <span>{t('plans.ctas.requestQuote')}</span>
           </a>
           
           <a
@@ -107,7 +105,7 @@ const MaintenancePlansSection: React.FC = () => {
             className="group inline-flex items-center gap-3 px-8 py-4 bg-white hover:bg-gray-50 border-2 border-primary-600 text-primary-600 font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-md"
           >
             <MessageCircle className="w-5 h-5" />
-            <span>WhatsApp 24/7</span>
+            <span>{t('plans.ctas.whatsapp')}</span>
           </a>
         </motion.div>
       </div>

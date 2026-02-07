@@ -229,49 +229,56 @@ export interface Project {
   category: string;
   image: string;
   location: string;
+  description: string;
 }
 
 export const projects: Project[] = [
   {
     id: 1,
-    title: 'Rénovation Appartement Moderne',
-    category: 'Rénovation complète',
-    image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80',
-    location: 'Ixelles'
+    title: 'Installation & maintenance de réseaux sanitaires (PEX / multicouche)',
+    category: 'Plomberie',
+    image: '/installation-maintenance.png',
+    location: 'Bruxelles',
+    description: 'Mise en place d\'un réseau de distribution eau chaude (rouge) et eau froide (bleu) avec raccords sertis et dérivations sécurisées. Vericore assure l\'installation, la mise en conformité, les réparations de fuites, ainsi que l\'optimisation des réseaux (débits, équilibrage, réduction des pertes). Objectif : une alimentation fiable, durable et propre, adaptée aux immeubles, commerces et habitations, avec intervention rapide en cas d\'urgence.'
   },
   {
     id: 2,
-    title: 'Rénovation Cuisine Contemporaine',
-    category: 'Cuisine',
-    image: 'https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=800&q=80',
-    location: 'Woluwe'
+    title: 'Plafonnage, réparations de plafonds & finitions intérieures',
+    category: 'Finitions',
+    image: '/plafonnage.png',
+    location: 'Bruxelles',
+    description: 'Intervention de remise en état et préparation de plafond : réparation, renforcement, rebouchage, ponçage et mise à niveau avant peinture ou finition. Vericore prend en charge les travaux de plafonnage, corrections après fissures/infiltrations, et finitions propres pour logements, commerces et immeubles, avec un rendu durable et conforme.'
   },
   {
     id: 3,
-    title: 'Rénovation Salle de Bain',
-    category: 'Sanitaire',
-    image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80',
-    location: 'Uccle'
+    title: 'Mise en conformité électrique & installation de tableaux électriques (RGIE)',
+    category: 'Électricité',
+    image: '/conformite-electrique.png',
+    location: 'Bruxelles',
+    description: 'Installation, rénovation et remise aux normes de tableaux électriques : disjoncteurs, différentiels, répartition des circuits, repérage et organisation du câblage pour une installation fiable, sécurisée et conforme au RGIE. Vericore intervient pour les dépannages, extensions de circuits, sécurisation d\'immeubles et préparation au contrôle (attestation), avec un travail soigné et une traçabilité claire des interventions.'
   },
   {
     id: 4,
-    title: 'Nettoyage Façade Historique',
-    category: 'Façade',
-    image: 'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=80',
-    location: 'Centre'
+    title: 'Plomberie & raccordements sanitaires (installation, réparation, étanchéité)',
+    category: 'Plomberie',
+    image: '/plomberie.png',
+    location: 'Bruxelles',
+    description: 'Intervention sur les raccordements sous évier / sanitaires : remplacement de flexibles, siphons et évacuations, correction de fuites, sécurisation des vannes et remise en état des connexions. Vericore assure une installation propre et durable, avec vérification d\'étanchéité, optimisation du débit et remise en conformité des raccords pour cuisines, salles de bain et locaux techniques (immeubles, commerces, habitations).'
   },
   {
     id: 5,
-    title: 'Aménagement Bureau Professionnel',
-    category: 'Aménagement',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80',
-    location: 'Etterbeek'
+    title: 'Chaudière / Chauffage – Entretien, dépannage & réglages (ECS + chauffage)',
+    category: 'Chauffage',
+    image: '/chaudiere.png',
+    location: 'Bruxelles',
+    description: 'Maintenance et dépannage de chaudières murales : contrôle de sécurité, réglage de température, optimisation du rendement, purge et vérification des raccordements (chauffage + eau chaude sanitaire). Vericore intervient pour les pannes, pertes de pression, absence d\'eau chaude, bruits anormaux et mises au point saisonnières, afin d\'assurer un fonctionnement fiable, économique et conforme pour appartements, immeubles et locaux professionnels.'
   },
   {
     id: 6,
-    title: 'Rénovation Loft Industriel',
-    category: 'Rénovation',
-    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80',
-    location: 'Schaerbeek'
+    title: 'Éclairage & luminaires – Installation, remplacement & mise aux normes',
+    category: 'Électricité',
+    image: '/eclairage.png',
+    location: 'Bruxelles',
+    description: 'Pose et remplacement de suspensions, appliques et points lumineux, avec raccordement propre, fixation sécurisée et vérification des circuits. Vericore intervient pour moderniser l\'éclairage (LED, ambiance, zones de travail), corriger les pannes (interrupteurs, douilles, connexions) et assurer une installation fiable, esthétique et conforme aux normes, pour logements, commerces et immeubles.'
   }
 ];

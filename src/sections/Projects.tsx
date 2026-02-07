@@ -1,22 +1,45 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Section, SectionTitle } from '../components/Section';
-import { projects } from '../data/content';
 import { X, MapPin } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 const Projects: React.FC = () => {
+  const { t } = useTranslation();
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
+
+  // Get projects from translations
+  const projectsData = t('projects.items', { returnObjects: true }) as Array<{
+    id: number; title: string; category: string; description: string; image: string; location: string;
+  }>;
+
+  const handleProjectSimilarClick = () => {
+    setSelectedProject(null);
+    // Small delay to allow modal close animation
+    setTimeout(() => {
+      const element = document.querySelector('#contact');
+      if (element) {
+        const offset = 80;
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: elementPosition - offset,
+          behavior: 'smooth'
+        });
+      }
+    }, 100);
+  };
 
   return (
     <Section id="projects">
       <SectionTitle
-        subtitle="Nos réalisations"
-        title="Projets Récents"
+        subtitle={t('projects.subtitle')}
+        title={t('projects.title')}
       />
 
       {/* Projects Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-        {projects.map((project, index) => (
+        {projectsData.map((project, index) => (
           <motion.div
             key={project.id}
             initial={{ opacity: 0, y: 30 }}
@@ -28,6 +51,13 @@ const Projects: React.FC = () => {
             className="group cursor-pointer"
           >
             <div className="relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3]">
+              {/* Logo */}
+              <img
+                src={logo}
+                alt="Vericore"
+                className="absolute top-3 left-3 h-8 w-auto z-10 opacity-90"
+              />
+              
               {/* Image */}
               <img
                 src={project.image}
@@ -73,7 +103,7 @@ const Projects: React.FC = () => {
               exit={{ scale: 0.8, opacity: 0 }}
               transition={{ type: 'spring', damping: 25 }}
               onClick={(e) => e.stopPropagation()}
-              className="relative max-w-5xl w-full bg-white rounded-2xl overflow-hidden shadow-2xl"
+              className="relative max-w-5xl w-full bg-white rounded-2xl overflow-hidden shadow-2xl max-h-[90vh] overflow-y-auto"
             >
               {/* Close Button */}
               <button
@@ -85,39 +115,44 @@ const Projects: React.FC = () => {
               </button>
 
               {/* Project Details */}
-              {projects.find(p => p.id === selectedProject) && (
+              {projectsData.find(p => p.id === selectedProject) && (
                 <div className="grid md:grid-cols-2">
-                  <div className="aspect-square md:aspect-auto">
+                  <div className="relative aspect-square md:aspect-auto">
+                    {/* Logo */}
                     <img
-                      src={projects.find(p => p.id === selectedProject)!.image}
-                      alt={projects.find(p => p.id === selectedProject)!.title}
+                      src={logo}
+                      alt="Vericore"
+                      className="absolute top-3 left-3 h-8 w-auto z-10 opacity-90"
+                    />
+                    
+                    <img
+                      src={projectsData.find(p => p.id === selectedProject)!.image}
+                      alt={projectsData.find(p => p.id === selectedProject)!.title}
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="p-8 md:p-12 flex flex-col justify-center">
                     <span className="inline-block px-3 py-1 bg-primary-100 text-primary-700 text-sm font-semibold rounded-full mb-4 w-fit">
-                      {projects.find(p => p.id === selectedProject)!.category}
+                      {projectsData.find(p => p.id === selectedProject)!.category}
                     </span>
                     <h3 className="text-3xl font-display font-bold text-gray-900 mb-4">
-                      {projects.find(p => p.id === selectedProject)!.title}
+                      {projectsData.find(p => p.id === selectedProject)!.title}
                     </h3>
                     <div className="flex items-center gap-2 text-gray-600 mb-6">
                       <MapPin className="w-5 h-5 text-primary-600" />
-                      <span>{projects.find(p => p.id === selectedProject)!.location}</span>
+                      <span>{projectsData.find(p => p.id === selectedProject)!.location}</span>
                     </div>
                     <p className="text-gray-600 leading-relaxed mb-8">
-                      Projet de rénovation complète réalisé avec soin et attention aux détails. 
-                      Résultat moderne et fonctionnel qui répond parfaitement aux attentes du client.
+                      {projectsData.find(p => p.id === selectedProject)!.description}
                     </p>
-                    <a href="#contact">
-                      <motion.button
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all"
-                      >
-                        Demander un projet similaire
-                      </motion.button>
-                    </a>
+                    <motion.button
+                      onClick={handleProjectSimilarClick}
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all"
+                    >
+                      {t('projects.cta')}
+                    </motion.button>
                   </div>
                 </div>
               )}

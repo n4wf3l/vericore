@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Mail, Briefcase, Phone, MapPin, Clock } from 'lucide-react';
 import { Section, SectionTitle } from '../components/Section';
 import ContactForm from '../components/forms/ContactForm';
@@ -8,31 +9,32 @@ import RecruitmentForm from '../components/forms/RecruitmentForm';
 type Tab = 'contact' | 'recruitment';
 
 const ContactSection: React.FC = () => {
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState<Tab>('contact');
 
   const contactInfo = [
     {
       icon: Phone,
-      title: 'Téléphone',
-      content: '+32 (0)3 96 84 73 74',
+      title: t('contact.info.phone'),
+      content: t('common.phone'),
       link: 'tel:+32396847374'
     },
     {
       icon: Mail,
-      title: 'Email',
-      content: 'vericoresrl@gmail.com',
+      title: t('contact.info.email'),
+      content: t('common.email'),
       link: 'mailto:vericoresrl@gmail.com'
     },
     {
       icon: MapPin,
-      title: 'Adresse',
-      content: 'Bruxelles, Belgique',
+      title: t('contact.info.address'),
+      content: t('common.address'),
       link: null
     },
     {
       icon: Clock,
-      title: 'Disponibilité',
-      content: 'Disponible 24h/7 pour urgences',
+      title: t('contact.info.hours'),
+      content: t('contact.info.hoursText'),
       link: null
     },
   ];
@@ -54,8 +56,8 @@ const ContactSection: React.FC = () => {
   return (
     <Section id="contact">
       <SectionTitle
-        subtitle="Contactez-nous"
-        title="Demandez Votre Devis Gratuit"
+        subtitle={t('contact.subtitle')}
+        title={t('contact.title')}
       />
 
       <div className="grid lg:grid-cols-2 gap-12">
@@ -86,7 +88,7 @@ const ContactSection: React.FC = () => {
               >
                 <span className="flex items-center justify-center gap-2">
                   <Mail className="w-5 h-5" />
-                  Contacter
+                  {t('contact.tabs.contact')}
                 </span>
                 {activeTab === 'contact' && (
                   <motion.div
@@ -111,7 +113,7 @@ const ContactSection: React.FC = () => {
               >
                 <span className="flex items-center justify-center gap-2">
                   <Briefcase className="w-5 h-5" />
-                  Recrutement
+                  {t('contact.tabs.recruitment')}
                 </span>
                 {activeTab === 'recruitment' && (
                   <motion.div
@@ -138,7 +140,7 @@ const ContactSection: React.FC = () => {
                     transition={{ duration: 0.3 }}
                   >
                     <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                      Remplissez le formulaire
+                      {t('contact.form.title')}
                     </h3>
                     <ContactForm />
                   </motion.div>
@@ -156,7 +158,7 @@ const ContactSection: React.FC = () => {
                     transition={{ duration: 0.3 }}
                   >
                     <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                      Postulez chez Vericore
+                      {t('contact.recruitment.title')}
                     </h3>
                     <RecruitmentForm />
                   </motion.div>
@@ -176,10 +178,10 @@ const ContactSection: React.FC = () => {
         >
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Autres moyens de contact
+              {t('contact.info.title')}
             </h3>
             <p className="text-gray-600 mb-6">
-              Vous préférez nous contacter directement ? Utilisez l'un de ces moyens.
+              {t('contact.info.description')}
             </p>
           </div>
 
@@ -238,9 +240,9 @@ const ContactSection: React.FC = () => {
                 <Phone className="w-7 h-7" />
               </div>
               <div className="flex-1">
-                <h4 className="font-bold text-xl mb-2">Besoin urgent ?</h4>
+                <h4 className="font-bold text-xl mb-2">{t('contact.info.urgent.title')}</h4>
                 <p className="text-green-50 mb-4 text-sm">
-                  Contactez-nous via WhatsApp pour une intervention rapide 24h/7
+                  {t('contact.info.urgent.description')}
                 </p>
                 <a
                   href="https://wa.me/32396847374"
@@ -252,7 +254,7 @@ const ContactSection: React.FC = () => {
                     whileTap={{ scale: 0.95 }}
                     className="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all"
                   >
-                    Ouvrir WhatsApp
+                    {t('contact.info.urgent.button')}
                   </motion.button>
                 </a>
               </div>

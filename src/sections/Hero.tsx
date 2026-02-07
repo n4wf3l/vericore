@@ -1,10 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, MessageCircle, CheckCircle, Clock, MapPin, Shield } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import Button from '../components/Button';
 import Badge from '../components/Badge';
 
 const Hero: React.FC = () => {
+  const { t } = useTranslation();
+  
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-20 pb-16 overflow-hidden">
       {/* Background Image */}
@@ -17,8 +20,8 @@ const Hero: React.FC = () => {
         />
       </div>
 
-      {/* Left-to-Right Gradient Overlay - Dark left (text), lighter right (trucks visible) */}
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/60 to-slate-950/15 z-10" />
+      {/* Left-to-Right Gradient Overlay - STRONGER on mobile for contrast */}
+      <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/80 to-slate-950/40 lg:from-slate-950/90 lg:via-slate-950/60 lg:to-slate-950/15 z-10" />
 
       {/* Content */}
       <div className="container-custom relative z-20">
@@ -29,59 +32,54 @@ const Hero: React.FC = () => {
             <div className="absolute inset-0 -inset-x-6 -inset-y-8 bg-slate-950/25 backdrop-blur-sm rounded-3xl border border-white/5 -z-10 hidden lg:block" />
             
             <div className="text-white max-w-3xl">
-              {/* Trust Badges */}
+              {/* Trust Badges - LIMIT 3 on mobile */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="flex flex-wrap gap-2.5 mb-6"
+                className="flex flex-wrap gap-2 sm:gap-2.5 mb-4 sm:mb-6"
               >
                 <Badge variant="primary" icon={Clock} className="bg-slate-900/60 text-white border-white/30 backdrop-blur-md text-xs font-semibold">
-                  Intervention 24h/7
+                  {t('hero.badges.intervention')}
                 </Badge>
                 <Badge variant="primary" icon={MapPin} className="bg-slate-900/60 text-white border-white/30 backdrop-blur-md text-xs font-semibold">
-                  Basé à Bruxelles · Déplacements Belgique
+                  {t('hero.badges.location')}
                 </Badge>
-                <Badge variant="primary" icon={Shield} className="bg-slate-900/60 text-white border-white/30 backdrop-blur-md text-xs font-semibold">
-                  Conforme & Assuré
+                <Badge variant="primary" icon={Shield} className="bg-slate-900/60 text-white border-white/30 backdrop-blur-md text-xs font-semibold hidden sm:inline-flex">
+                  {t('hero.badges.conformity')}
                 </Badge>
               </motion.div>
 
-              {/* Main Heading - SHORT */}
+              {/* Main Heading - SHORTER on mobile */}
               <motion.h1
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.15 }}
-                className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-5 leading-[1.15] text-shadow-lg"
-              >
-                Maintenance technique &{' '}
-                <span className="text-primary-400">
-                  rénovation
-                </span>{' '}
-                d'immeubles
-              </motion.h1>
+                className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-5 leading-tight lg:leading-[1.15] text-shadow-lg"
+                dangerouslySetInnerHTML={{ __html: t('hero.title') }}
+              />
 
-              {/* Subheading - VERY SHORT */}
+              {/* Subheading - SHORTER on mobile */}
               <motion.p
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-base md:text-lg text-gray-100 mb-7 leading-relaxed max-w-2xl"
+                className="text-sm sm:text-base md:text-lg text-gray-100 mb-5 sm:mb-7 leading-relaxed max-w-2xl"
               >
-                Une équipe multi-technique pour l'entretien, les urgences 24/7 et la mise en conformité. Devis clair sous 24h.
+                {t('hero.subtitle')}
               </motion.p>
 
-              {/* Key Points - ONLY 3 */}
+              {/* Key Points - HIDE on mobile to reduce above-fold clutter */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="space-y-2.5 mb-8"
+                className="hidden sm:block space-y-2.5 mb-8"
               >
                 {[
-                  'Intervention 24h/7 — urgences prioritaires',
-                  'Conforme aux normes belges + équipes assurées',
-                  'Transparence & reporting (devis, compte-rendus, traçabilité)'
+                  t('hero.trustPoints.availability'),
+                  t('hero.trustPoints.partnership'),
+                  t('hero.trustPoints.traceability')
                 ].map((point, index) => (
                   <div key={index} className="flex items-start gap-2.5">
                     <CheckCircle className="w-5 h-5 text-primary-400 flex-shrink-0 mt-0.5" />
@@ -90,45 +88,46 @@ const Hero: React.FC = () => {
                 ))}
               </motion.div>
 
-              {/* CTA Buttons */}
+              {/* CTA Buttons - Optimized for mobile */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
-                className="space-y-3.5"
+                className="space-y-3 sm:space-y-3.5"
               >
-                <div className="flex flex-col sm:flex-row gap-3.5">
-                  <a href="#contact">
-                    <Button variant="primary" size="lg" className="w-full sm:w-auto">
-                      Demander un devis
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-3.5">
+                  <a href="#contact" className="w-full sm:w-auto">
+                    <Button variant="primary" size="lg" className="w-full sm:w-auto text-base">
+                      {t('hero.primaryCta')}
                       <ArrowRight className="w-5 h-5 ml-2" />
                     </Button>
                   </a>
                   <a 
-                    href="https://wa.me/32396847374" 
+                    href={`https://wa.me/${t('common.phone').replace(/\D/g, '')}`}
                     target="_blank" 
                     rel="noopener noreferrer"
+                    className="w-full sm:w-auto"
                   >
                     <Button 
                       variant="outline" 
                       size="lg" 
-                      className="w-full sm:w-auto border-2 border-white/70 text-white hover:bg-white hover:text-gray-900"
+                      className="w-full sm:w-auto border-2 border-white/70 text-white hover:bg-white hover:text-gray-900 text-base"
                     >
                       <MessageCircle className="w-5 h-5 mr-2" />
-                      WhatsApp Urgence 24/7
+                      {t('hero.secondaryCta')}
                     </Button>
                   </a>
                 </div>
                 
-                {/* Micro Reassurance - ONE LINE */}
+                {/* Micro Reassurance - Compact on mobile */}
                 <motion.p
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.7 }}
                   className="text-xs text-gray-200 flex items-center gap-1.5 flex-wrap"
                 >
-                  <CheckCircle className="w-3.5 h-3.5 text-primary-400" />
-                  <span>Devis sous 24h • Prix transparents • Sans engagement</span>
+                  <CheckCircle className="w-3.5 h-3.5 text-primary-400 flex-shrink-0" />
+                  <span>{t('hero.microReassurance')}</span>
                 </motion.p>
               </motion.div>
             </div>
@@ -142,8 +141,8 @@ const Hero: React.FC = () => {
             className="hidden lg:flex flex-col gap-5"
           >
             {[
-              { number: '500+', label: 'Projets réalisés' },
-              { number: '24/7', label: 'Urgences' }
+              { number: '500+', label: t('hero.stats.projectsCompleted') },
+              { number: '24/7', label: t('hero.stats.emergency') }
             ].map((stat, index) => (
               <motion.div
                 key={index}

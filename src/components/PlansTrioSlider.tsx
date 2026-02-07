@@ -2,10 +2,16 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { PanInfo } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import PlanCard from './PlanCard';
-import { plans, type Plan } from '../data/plans';
+import type { Plan } from '../data/plans';
 
-const PlansTrioSlider: React.FC = () => {
+interface PlansTrioSliderProps {
+  plans: Plan[];
+}
+
+const PlansTrioSlider: React.FC<PlansTrioSliderProps> = ({ plans }) => {
+  const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -170,31 +176,31 @@ const PlansTrioSlider: React.FC = () => {
         </motion.div>
       </div>
 
-      {/* Arrow Controls */}
+      {/* Arrow Controls - HIDDEN on mobile, only on desktop */}
       <button
         onClick={prevSlide}
-        className="absolute left-2 top-2 w-12 h-12 lg:w-14 lg:h-14 bg-white hover:bg-gray-50 border-2 border-gray-300 rounded-full shadow-xl flex items-center justify-center transition-all hover:scale-110 z-10 hover:border-primary-600"
-        aria-label="Plan précédent"
+        className="hidden lg:flex absolute left-2 top-2 w-14 h-14 bg-white hover:bg-gray-50 border-2 border-gray-300 rounded-full shadow-xl items-center justify-center transition-all hover:scale-110 z-10 hover:border-primary-600"
+        aria-label={t('plans.previousPlan', { defaultValue: 'Plan précédent' })}
       >
-        <ChevronLeft className="w-6 h-6 lg:w-7 lg:h-7 text-gray-700" />
+        <ChevronLeft className="w-7 h-7 text-gray-700" />
       </button>
 
       <button
         onClick={nextSlide}
-        className="absolute right-0 bottom-0 w-12 h-12 lg:w-14 lg:h-14 bg-white hover:bg-gray-50 border-2 border-gray-300 rounded-full shadow-xl flex items-center justify-center transition-all hover:scale-110 z-10 hover:border-primary-600"
-        aria-label="Plan suivant"
+        className="hidden lg:flex absolute right-0 bottom-0 w-14 h-14 bg-white hover:bg-gray-50 border-2 border-gray-300 rounded-full shadow-xl items-center justify-center transition-all hover:scale-110 z-10 hover:border-primary-600"
+        aria-label={t('plans.nextPlan', { defaultValue: 'Plan suivant' })}
       >
-        <ChevronRight className="w-6 h-6 lg:w-7 lg:h-7 text-gray-700" />
+        <ChevronRight className="w-7 h-7 text-gray-700" />
       </button>
 
-      {/* Dots Navigation */}
+      {/* Dots Navigation - LARGER hit area on mobile */}
       <div className="flex items-center justify-center gap-2 mt-8">
         {plans.map((plan: Plan, index: number) => (
           <button
             key={plan.id}
             onClick={() => goToSlide(index)}
-            className="relative p-2 group"
-            aria-label={`Aller au plan ${plan.name}`}
+            className="relative p-3 lg:p-2 group"
+            aria-label={t('plans.goToPlan', { defaultValue: `Aller au plan ${plan.name}` })}
           >
             <div className={`
               w-3 h-3 rounded-full transition-all duration-300
@@ -207,9 +213,14 @@ const PlansTrioSlider: React.FC = () => {
         ))}
       </div>
 
-      {/* Keyboard hint */}
+      {/* Keyboard hint - Desktop only */}
       <p className="hidden lg:block text-center text-sm text-gray-400 mt-4">
-        Utilisez ← → pour naviguer
+        {t('plans.keyboardHint')}
+      </p>
+
+      {/* Swipe hint - Mobile only */}
+      <p className="lg:hidden text-center text-xs text-gray-500 mt-3">
+        {t('plans.swipeHint', { defaultValue: '← Glissez pour naviguer →' })}
       </p>
     </div>
   );

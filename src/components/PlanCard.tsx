@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import type { Plan } from '../data/plans';
 
 interface PlanCardProps {
@@ -41,6 +42,7 @@ const accentColors = {
 };
 
 const PlanCard: React.FC<PlanCardProps> = ({ plan, isActive, position }) => {
+  const { t } = useTranslation();
   const colors = accentColors[plan.accentColor as keyof typeof accentColors] || accentColors.primary;
 
   return (
@@ -81,7 +83,7 @@ const PlanCard: React.FC<PlanCardProps> = ({ plan, isActive, position }) => {
             </div>
           ))}
           {plan.features.length > 6 && (
-            <p className="text-xs text-gray-500 italic mt-3">+ {plan.features.length - 6} autres avantages</p>
+            <p className="text-xs text-gray-500 italic mt-3">+ {plan.features.length - 6} {t('plans.moreFeatures')}</p>
           )}
         </div>
       </div>
@@ -100,7 +102,7 @@ const PlanCard: React.FC<PlanCardProps> = ({ plan, isActive, position }) => {
           href="#contact"
           className={`w-full inline-block text-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${colors.button} shadow-sm hover:shadow-md`}
         >
-          Demander un audit
+          {t('plans.cta')}
         </a>
       </div>
     </div>

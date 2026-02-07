@@ -1,12 +1,43 @@
 import React, { useState, useRef, useCallback } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Section, SectionTitle } from '../components/Section';
 import ExpertiseCard from '../components/ExpertiseCard';
 import ExpertisePopover from '../components/ExpertisePopover';
-import { expertises } from '../data/expertises';
 import { useHoverCapable } from '../hooks/useHoverCapable';
+import { 
+  Clock, 
+  AlertTriangle, 
+  Truck, 
+  FileText, 
+  BarChart3,
+  Smartphone, 
+  FileSignature
+} from 'lucide-react';
+
+const iconMap = {
+  'intervention-247': Clock,
+  'gestion-urgences': AlertTriangle,
+  'logistique-stock': Truck,
+  'referencement-technique': FileText,
+  'reporting-suivi': BarChart3,
+  'reporting-digital': Smartphone,
+  'contrats-maintenance': FileSignature
+};
 
 const ExpertisesSection: React.FC = () => {
+  const { t } = useTranslation();
+  const expertises = t('expertises.items', { returnObjects: true }) as Array<{
+    id: string;
+    title: string;
+    teaser: string;
+    description: string;
+  }>;
+  
+  const expertisesWithIcons = expertises.map(exp => ({
+    ...exp,
+    icon: iconMap[exp.id as keyof typeof iconMap]
+  }));
   const [activeExpertise, setActiveExpertise] = useState<{
     id: string;
     element: HTMLElement;
@@ -19,8 +50,8 @@ const ExpertisesSection: React.FC = () => {
       clearTimeout(hoverTimeoutRef.current);
     }
 
-    // Delay opening on hover (desktop only)
-    const delay = isHoverCapable ? 200 : 0;
+    // Delay opening on hover (desktop only) - 1 second
+    const delay = isHoverCapable ? 1000 : 0;
     hoverTimeoutRef.current = setTimeout(() => {
       setActiveExpertise({ id, element });
     }, delay);
@@ -52,14 +83,14 @@ const ExpertisesSection: React.FC = () => {
   }, []);
 
   const activeExpertiseData = activeExpertise
-    ? expertises.find((e) => e.id === activeExpertise.id)
+    ? expertisesWithIcons.find((e) => e.id === activeExpertise.id)
     : null;
 
   return (
     <Section id="expertises" className="bg-white text-gray-900">
       <SectionTitle
-        subtitle="Nos expertises"
-        title="Une approche professionnelle pensée pour la gestion immobilière"
+        subtitle={t('expertises.subtitle')}
+        title={t('expertises.title')}
         className="text-gray-900"
       />
 
@@ -72,14 +103,14 @@ const ExpertisesSection: React.FC = () => {
         className="text-center mb-12"
       >
         <p className="text-gray-600 text-sm md:text-base">
-          <span className="hidden md:inline">Survolez une carte pour voir les détails</span>
-          <span className="md:hidden">Touchez une carte pour voir les détails</span>
+          <span className="hidden md:inline">{t('expertises.hoverHint')}</span>
+          <span className="md:hidden">{t('expertises.tapHint')}</span>
         </p>
       </motion.div>
 
       {/* Expertises Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
-        {expertises.map((expertise, index) => (
+        {expertisesWithIcons.map((expertise, index) => (
           <ExpertiseCard
             key={expertise.id}
             title={expertise.title}
@@ -117,13 +148,13 @@ const ExpertisesSection: React.FC = () => {
         className="text-center mt-16"
       >
         <p className="text-gray-700 text-lg mb-6">
-          Besoin d'un accompagnement sur mesure ?
+          {t('expertises.cta.text')}
         </p>
         <a
           href="#contact"
           className="inline-flex items-center gap-2 px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-primary-500/50"
         >
-          Discutons de votre projet
+          {t('expertises.cta.button')}
           <motion.span
             animate={{ x: [0, 4, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
