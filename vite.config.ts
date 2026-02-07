@@ -19,13 +19,6 @@ export default defineConfig({
   build: {
     // Minification avancée
     minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true, // Supprimer les console.log en production
-        drop_debugger: true,
-        pure_funcs: ['console.log', 'console.info', 'console.debug'],
-      },
-    },
     
     // Code splitting optimisé
     rollupOptions: {

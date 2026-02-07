@@ -3,8 +3,6 @@
  * Architecture 2026: Contenu structuré, E-E-A-T, conversion
  */
 
-import { useParams } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import SEOHead from '../components/SEOHead';
 import StructuredData from '../components/StructuredData';
 import OptimizedImage from '../components/OptimizedImage';
@@ -22,7 +20,6 @@ interface ServicePageProps {
  * Composant réutilisable pour les pages services
  */
 export const ServicePage: React.FC<ServicePageProps> = ({ service, city = 'Bruxelles' }) => {
-  const { t } = useTranslation();
   
   // Configuration SEO dynamique
   const seoConfig = generateServiceSEO(service, city);

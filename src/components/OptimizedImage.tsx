@@ -46,7 +46,7 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
   loading = 'lazy',
   sizes,
   format = 'webp',
-  quality = 85,
+  quality: _quality = 85,
   onLoad,
   onError,
   placeholder,

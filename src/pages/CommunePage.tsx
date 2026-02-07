@@ -4,21 +4,18 @@
  */
 
 import { useParams } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import SEOHead from '../components/SEOHead';
 import StructuredData from '../components/StructuredData';
 import OptimizedImage from '../components/OptimizedImage';
 import { generateCommuneSEO, COMPANY_INFO } from '../config/seo.config';
 import Button from '../components/Button';
 import { Phone, MessageSquare, CheckCircle2, MapPin } from 'lucide-react';
-import type { ServiceSchema } from '../types/seo';
 
 /**
  * Page dédiée à une commune de Bruxelles
  */
 export const CommunePage: React.FC = () => {
   const { commune } = useParams<{ commune: string }>();
-  const { t } = useTranslation();
   
   const communeName = commune
     ? commune

@@ -3,7 +3,7 @@
  * Conforme aux standards Google 2026
  */
 
-import { BASE_URL, COMPANY_INFO } from '../config/seo.config';
+import { BASE_URL } from '../config/seo.config';
 import { BRUSSELS_COMMUNES, VERICORE_SERVICES } from '../types/seo';
 
 export interface SitemapURL {

@@ -14,19 +14,19 @@ const PlansTrioSlider: React.FC<PlansTrioSliderProps> = ({ plans }) => {
   const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  const [progress, setProgress] = useState(0);
-  const [dragDirection, setDragDirection] = useState(0);
+  // const [progress, setProgress] = useState(0); // Not currently used in UI
+  const [dragDirection] = useState(0); // Used in animations
   const [isInView, setIsInView] = useState(false);
   const intervalRef = useRef<number | null>(null);
-  const progressIntervalRef = useRef<number | null>(null);
+  // const progressIntervalRef = useRef<number | null>(null); // For future progress bar
   const containerRef = useRef<HTMLDivElement>(null);
 
   const ROTATION_DURATION = 6000;
-  const PROGRESS_TICK = 50;
+  // const PROGRESS_TICK = 50; // For future progress bar
 
   const goToSlide = (index: number) => {
     setActiveIndex(index);
-    setProgress(0);
+    // setProgress(0); // Not currently used
     setIsPaused(true);
     setTimeout(() => setIsPaused(false), 4000);
   };
@@ -39,7 +39,7 @@ const PlansTrioSlider: React.FC<PlansTrioSliderProps> = ({ plans }) => {
     goToSlide((activeIndex - 1 + plans.length) % plans.length);
   };
 
-  const handleDragEnd = (event: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
+  const handleDragEnd = (_event: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
     const threshold = 50;
     if (info.offset.x > threshold) {
       prevSlide();
@@ -80,26 +80,27 @@ const PlansTrioSlider: React.FC<PlansTrioSliderProps> = ({ plans }) => {
 
   useEffect(() => {
     if (intervalRef.current) clearInterval(intervalRef.current);
-    if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
+    // Progress bar not currently implemented in UI
+    // if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
 
     if (!isPaused) {
-      setProgress(0);
-      progressIntervalRef.current = window.setInterval(() => {
-        setProgress(prev => {
-          if (prev >= 100) return 0;
-          return prev + (100 / (ROTATION_DURATION / PROGRESS_TICK));
-        });
-      }, PROGRESS_TICK);
+      // setProgress(0);
+      // progressIntervalRef.current = window.setInterval(() => {
+      //   setProgress(prev => {
+      //     if (prev >= 100) return 0;
+      //     return prev + (100 / (ROTATION_DURATION / PROGRESS_TICK));
+      //   });
+      // }, PROGRESS_TICK);
 
       intervalRef.current = window.setInterval(() => {
         setActiveIndex(prev => (prev + 1) % plans.length);
-        setProgress(0);
+        // setProgress(0);
       }, ROTATION_DURATION);
     }
 
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
-      if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
+      // if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
     };
   }, [isPaused, activeIndex]);
 

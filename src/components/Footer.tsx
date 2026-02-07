@@ -1,13 +1,12 @@
 import React from 'react';
 import { MapPin, Mail, Phone, Clock } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const location = useLocation();
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [

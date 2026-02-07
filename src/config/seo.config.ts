@@ -4,9 +4,10 @@
  */
 
 import type { LocalBusinessSchema, SEOConfig } from '../types/seo';
+import { env } from './env';
 
-/** URL de base du site (à configurer selon l'environnement) */
-export const BASE_URL = import.meta.env.VITE_BASE_URL || 'https://www.vericore.be';
+/** URL de base du site (automatique selon l'environnement) */
+export const BASE_URL = env.baseUrl;
 
 /** Informations de base de l'entreprise pour le SEO */
 export const COMPANY_INFO = {

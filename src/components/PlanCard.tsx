@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import type { Plan } from '../data/plans';
@@ -41,7 +40,7 @@ const accentColors = {
   }
 };
 
-const PlanCard: React.FC<PlanCardProps> = ({ plan, isActive, position }) => {
+const PlanCard: React.FC<PlanCardProps> = ({ plan, isActive, position: _position }) => {
   const { t } = useTranslation();
   const colors = accentColors[plan.accentColor as keyof typeof accentColors] || accentColors.primary;
 

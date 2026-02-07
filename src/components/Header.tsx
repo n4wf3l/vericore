@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone, Languages, Clock, FileText, CreditCard } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Button from './Button';
 import MobileLanguageOverlay from './mobile/MobileLanguageOverlay';
 import { scrollToSection } from '../lib/scrollToSection';
@@ -14,7 +14,6 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ onOpenLanguageSelector }) => {
   const { t } = useTranslation();
-  const location = useLocation();
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
