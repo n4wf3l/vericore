@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
-import { Send, Mail, Upload, X } from 'lucide-react';
+import { Send, Mail } from 'lucide-react';
 import RecruitmentInfoPanel from '../RecruitmentInfoPanel';
 import { useTranslation } from 'react-i18next';
 
@@ -21,7 +21,6 @@ const RecruitmentForm: React.FC = () => {
   const [isSubmitted, setIsSubmitted] = React.useState(false);
   const [isSubmitting, setIsSubmitting] = React.useState(false);
   const [submitError, setSubmitError] = React.useState<string | null>(null);
-  const [selectedFile, setSelectedFile] = React.useState<File | null>(null);
 
   const position = watch('position');
 
@@ -33,83 +32,83 @@ const RecruitmentForm: React.FC = () => {
     const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
     const emailTo = import.meta.env.VITE_EMAIL_TO;
     
-    console.log('🔧 Configuration Email (Recrutement):');
-    console.log('- Access Key:', accessKey ? (accessKey.length > 10 ? `${accessKey.substring(0, 8)}...` : '⚠️ TROP COURTE') : '❌ MANQUANTE');
-    console.log('- Email destinataire:', emailTo || '❌ MANQUANT');
-    console.log('- CV attaché:', selectedFile ? `${selectedFile.name} (${(selectedFile.size / 1024).toFixed(0)} KB)` : 'Non');
+    if (import.meta.env.DEV) {
+      console.log('🔧 Configuration Email (Recrutement):');
+      console.log('- Access Key:', accessKey ? (accessKey.length > 10 ? `${accessKey.substring(0, 8)}...` : '⚠️ TROP COURTE') : '❌ MANQUANTE');
+      console.log('- Email destinataire:', emailTo || '❌ MANQUANT');
+    }
     
     if (!accessKey || accessKey === 'YOUR_ACCESS_KEY_HERE') {
-      console.error('❌ ERREUR: Access Key Web3Forms non configurée!');
-      console.error('➡️ Obtenez votre clé sur https://web3forms.com');
-      console.error('➡️ Ajoutez-la dans .env.local: VITE_WEB3FORMS_ACCESS_KEY=votre-clé');
+      if (import.meta.env.DEV) {
+        console.error('❌ ERREUR: Access Key Web3Forms non configurée!');
+        console.error('➡️ Obtenez votre clé sur https://web3forms.com');
+        console.error('➡️ Ajoutez-la dans .env.local: VITE_WEB3FORMS_ACCESS_KEY=votre-clé');
+      }
       setSubmitError('Configuration email manquante. Consultez la console (F12).');
       setIsSubmitting(false);
       return;
     }
 
     try {
-      const formData = new FormData();
-      formData.append('access_key', accessKey);
-      formData.append('subject', `[Vericore - Recrutement] ${data.position} - ${data.name}`);
-      formData.append('from_name', data.name);
-      formData.append('email', data.email);
-      formData.append('phone', data.phone);
-      formData.append('position', data.position);
-      formData.append('availability', data.availability);
-      formData.append('experience', data.experience);
-      formData.append('message', data.message);
-      formData.append('to_email', emailTo);
-      
-      // Attach CV file if present
-      if (selectedFile) {
-        formData.append('attachment', selectedFile);
-      }
-
-      console.log('📤 Envoi candidature en cours...');
-      console.log('📧 Données:', {
-        poste: data.position,
-        candidat: data.name,
+      const payload = {
+        access_key: accessKey,
+        subject: `[Vericore - Recrutement] ${data.position} - ${data.name}`,
+        from_name: data.name,
         email: data.email,
-        cv: selectedFile?.name || 'Non'
-      });
+        phone: data.phone,
+        position: data.position,
+        availability: data.availability,
+        experience: data.experience,
+        message: data.message,
+        to_email: emailTo,
+      };
+
+      if (import.meta.env.DEV) {
+        console.log('📤 Envoi candidature en cours...');
+        console.log('📧 Données:', {
+          poste: data.position,
+          candidat: data.name,
+          email: data.email
+        });
+      }
       
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        body: formData,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
       });
 
       const result = await response.json();
       
-      console.log('📥 Réponse Web3Forms:', result);
+      if (import.meta.env.DEV) {
+        console.log('📥 Réponse Web3Forms:', result);
+      }
 
       if (result.success) {
-        console.log('✅ Candidature envoyée avec succès!');
+        if (import.meta.env.DEV) {
+          console.log('✅ Candidature envoyée avec succès!');
+        }
         setIsSubmitted(true);
         setTimeout(() => {
           setIsSubmitted(false);
           reset();
-          setSelectedFile(null);
         }, 5000);
       } else {
-        console.error('❌ Erreur Web3Forms:', result.message);
+        if (import.meta.env.DEV) {
+          console.error('❌ Erreur Web3Forms:', result.message);
+        }
         throw new Error(result.message || 'Erreur lors de l\'envoi');
       }
     } catch (error) {
-      console.error('❌ Erreur lors de l\'envoi:', error);
+      if (import.meta.env.DEV) {
+        console.error('❌ Erreur lors de l\'envoi:', error);
+      }
       setSubmitError(t('contact.recruitment.form.error') || 'Une erreur est survenue. Veuillez réessayer.');
     } finally {
       setIsSubmitting(false);
     }
-  };
-
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files[0]) {
-      setSelectedFile(e.target.files[0]);
-    }
-  };
-
-  const removeFile = () => {
-    setSelectedFile(null);
   };
 
   const mailtoLink = `mailto:contact@vericore.be?subject=${t('contact.recruitment.form.emailSubject')} - ${position || t('contact.recruitment.form.positions.spontanee')}&body=${encodeURIComponent(t('contact.recruitment.form.emailBody'))}`;
@@ -246,44 +245,6 @@ const RecruitmentForm: React.FC = () => {
             <option value="10+">{t('contact.recruitment.form.experiences.10+')}</option>
           </select>
           {errors.experience && <p className="text-red-500 text-sm mt-1">{errors.experience.message}</p>}
-        </div>
-
-        {/* CV Upload */}
-        <div>
-          <label htmlFor="rec-cv" className="block text-sm font-semibold text-gray-700 mb-2">
-            {t('contact.recruitment.form.cv')}
-          </label>
-          {!selectedFile ? (
-            <label
-              htmlFor="rec-cv"
-              className="w-full flex items-center justify-center gap-2 px-4 py-6 border-2 border-dashed border-gray-300 rounded-lg hover:border-primary-400 hover:bg-primary-50 transition-all cursor-pointer"
-            >
-              <Upload className="w-5 h-5 text-gray-400" />
-              <span className="text-sm text-gray-600">{t('contact.recruitment.form.cvUpload')}</span>
-              <input
-                id="rec-cv"
-                type="file"
-                accept=".pdf,.doc,.docx"
-                onChange={handleFileChange}
-                className="hidden"
-              />
-            </label>
-          ) : (
-            <div className="flex items-center justify-between px-4 py-3 border-2 border-primary-300 bg-primary-50 rounded-lg">
-              <div className="flex items-center gap-2">
-                <Upload className="w-5 h-5 text-primary-600" />
-                <span className="text-sm font-medium text-gray-700">{selectedFile.name}</span>
-              </div>
-              <button
-                type="button"
-                onClick={removeFile}
-                className="p-1 hover:bg-red-100 rounded-full transition-colors"
-              >
-                <X className="w-4 h-4 text-red-600" />
-              </button>
-            </div>
-          )}
-          <p className="text-xs text-gray-500 mt-1">{t('contact.recruitment.form.cvFormat')}</p>
         </div>
 
         {/* Message */}

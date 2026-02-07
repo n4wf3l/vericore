@@ -340,6 +340,7 @@ export const fr = {
     title: 'Projets Récents',
     location: 'Bruxelles',
     cta: 'Demander un projet similaire',
+    footer: 'Nous réalisons également l’installation & maintenance de réseaux sanitaires (PEX / multicouche) et bien plus encore.',
     categories: {
       plumbing: 'Plomberie',
       finishing: 'Finitions',
@@ -349,11 +350,11 @@ export const fr = {
     items: [
       {
         id: 'project1',
-        title: 'Installation & maintenance de réseaux sanitaires (PEX / multicouche)',
-        category: 'Plomberie',
-        description: 'Mise en place d\'un réseau de distribution eau chaude (rouge) et eau froide (bleu) avec raccords sertis et dérivations sécurisées. Vericore assure l\'installation, la mise en conformité, les réparations de fuites, ainsi que l\'optimisation des réseaux (débits, équilibrage, réduction des pertes). Objectif : une alimentation fiable, durable et propre, adaptée aux immeubles, commerces et habitations, avec intervention rapide en cas d\'urgence.',
-        image: '/installation-maintenance.png',
-        location: 'Ixelles'
+        title: 'Installation de systèmes d’interphonie & parlophones',
+        category: 'Électricité',
+        description: 'Installation complète de systèmes d’interphonie modernes pour immeubles, bureaux et copropriétés. Vericore assure le câblage, la configuration des postes intérieurs et extérieurs, la connexion vidéo HD, et l’intégration avec les systèmes de contrôle d’accès. Solutions filaires et IP, avec gestion à distance via smartphone. Objectif : sécurité renforcée, communication claire et contrôle d’accès fiable pour vos bâtiments.',
+        image: '/parlophone.png',
+        location: 'Bruxelles'
       },
       {
         id: 'project2',

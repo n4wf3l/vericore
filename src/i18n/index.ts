@@ -19,6 +19,7 @@ i18n
     resources,
     lng: savedLanguage,
     fallbackLng: 'fr',
+    debug: false, // Désactiver les logs en production
     interpolation: {
       escapeValue: false
     }

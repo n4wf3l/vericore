@@ -28,14 +28,18 @@ const ContactForm: React.FC = () => {
     const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
     const emailTo = import.meta.env.VITE_EMAIL_TO;
     
-    console.log('🔧 Configuration Email:');
-    console.log('- Access Key:', accessKey ? (accessKey.length > 10 ? `${accessKey.substring(0, 8)}...` : '⚠️ TROP COURTE') : '❌ MANQUANTE');
-    console.log('- Email destinataire:', emailTo || '❌ MANQUANT');
+    if (import.meta.env.DEV) {
+      console.log('🔧 Configuration Email:');
+      console.log('- Access Key:', accessKey ? (accessKey.length > 10 ? `${accessKey.substring(0, 8)}...` : '⚠️ TROP COURTE') : '❌ MANQUANTE');
+      console.log('- Email destinataire:', emailTo || '❌ MANQUANT');
+    }
     
     if (!accessKey || accessKey === 'YOUR_ACCESS_KEY_HERE') {
-      console.error('❌ ERREUR: Access Key Web3Forms non configurée!');
-      console.error('➡️ Obtenez votre clé sur https://web3forms.com');
-      console.error('➡️ Ajoutez-la dans .env.local: VITE_WEB3FORMS_ACCESS_KEY=votre-clé');
+      if (import.meta.env.DEV) {
+        console.error('❌ ERREUR: Access Key Web3Forms non configurée!');
+        console.error('➡️ Obtenez votre clé sur https://web3forms.com');
+        console.error('➡️ Ajoutez-la dans .env.local: VITE_WEB3FORMS_ACCESS_KEY=votre-clé');
+      }
       setSubmitError('Configuration email manquante. Consultez la console (F12).');
       setIsSubmitting(false);
       return;
@@ -54,8 +58,10 @@ const ContactForm: React.FC = () => {
         to_email: emailTo,
       };
       
-      console.log('📤 Envoi email en cours...');
-      console.log('📧 Données:', { ...payload, access_key: '***' });
+      if (import.meta.env.DEV) {
+        console.log('📤 Envoi email en cours...');
+        console.log('📧 Données:', { ...payload, access_key: '***' });
+      }
       
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -67,21 +73,29 @@ const ContactForm: React.FC = () => {
 
       const result = await response.json();
       
-      console.log('📥 Réponse Web3Forms:', result);
+      if (import.meta.env.DEV) {
+        console.log('📥 Réponse Web3Forms:', result);
+      }
 
       if (result.success) {
-        console.log('✅ Email envoyé avec succès!');
+        if (import.meta.env.DEV) {
+          console.log('✅ Email envoyé avec succès!');
+        }
         setIsSubmitted(true);
         setTimeout(() => {
           setIsSubmitted(false);
           reset();
         }, 5000);
       } else {
-        console.error('❌ Erreur Web3Forms:', result.message);
+        if (import.meta.env.DEV) {
+          console.error('❌ Erreur Web3Forms:', result.message);
+        }
         throw new Error(result.message || 'Erreur lors de l\'envoi');
       }
     } catch (error) {
-      console.error('❌ Erreur lors de l\'envoi:', error);
+      if (import.meta.env.DEV) {
+        console.error('❌ Erreur lors de l\'envoi:', error);
+      }
       setSubmitError(t('contact.form.error') || 'Une erreur est survenue. Veuillez réessayer.');
     } finally {
       setIsSubmitting(false);

@@ -340,6 +340,7 @@ export const nl = {
     title: 'Recente Projecten',
     location: 'Brussel',
     cta: 'Vraag een gelijkaardig project aan',
+    footer: 'Wij verzorgen ook de installatie & onderhoud van sanitaire netwerken (PEX / meerlagen) en nog veel meer.',
     categories: {
       plumbing: 'Loodgieterij',
       finishing: 'Afwerking',
@@ -349,11 +350,11 @@ export const nl = {
     items: [
       {
         id: 'project1',
-        title: 'Installatie & onderhoud van sanitaire netwerken (PEX / meerlagen)',
-        category: 'Loodgieterij',
-        description: 'Opzetten van een distributienetwerk warm water (rood) en koud water (blauw) met geklemde koppelingen en beveiligde aftakkingen. Vericore verzorgt de installatie, conformiteitsstelling, lekherstellingen, alsook de optimalisatie van netwerken (debieten, balancering, verliesreductie). Doelstelling: een betrouwbare, duurzame en schone voeding, aangepast aan gebouwen, handelszaken en woningen, met snelle interventie in geval van nood.',
-        image: '/installation-maintenance.png',
-        location: 'Elsene'
+        title: 'Installatie van intercomsystemen & parlofoons',
+        category: 'Elektriciteit',
+        description: 'Volledige installatie van moderne intercomsystemen voor gebouwen, kantoren en appartementen. Vericore verzorgt de bekabeling, configuratie van binnen- en buitenposten, HD-videoverbinding en integratie met toegangscontrolesystemen. Bedrade en IP-oplossingen met beheer op afstand via smartphone. Doelstelling: versterkte beveiliging, duidelijke communicatie en betrouwbare toegangscontrole voor uw gebouwen.',
+        image: '/parlophone.png',
+        location: 'Brussel'
       },
       {
         id: 'project2',

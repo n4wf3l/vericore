@@ -87,6 +87,19 @@ const Projects: React.FC = () => {
         ))}
       </div>
 
+      {/* Footer Text */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        className="mt-12 text-center"
+      >
+        <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+          {t('projects.footer')}
+        </p>
+      </motion.div>
+
       {/* Lightbox Modal */}
       <AnimatePresence>
         {selectedProject !== null && (

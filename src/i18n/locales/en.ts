@@ -338,6 +338,7 @@ export const en = {
     title: 'Recent Projects',
     location: 'Brussels',
     cta: 'Request a similar project',
+    footer: 'We also provide installation & maintenance of sanitary networks (PEX / multilayer) and much more.',
     categories: {
       plumbing: 'Plumbing',
       finishing: 'Finishing',
@@ -347,11 +348,11 @@ export const en = {
     items: [
       {
         id: 'project1',
-        title: 'Installation & maintenance of sanitary networks (PEX / multilayer)',
-        category: 'Plumbing',
-        description: 'Installation of a hot water (red) and cold water (blue) distribution network with crimped fittings and secure branches. Vericore ensures installation, compliance, leak repairs, as well as network optimization (flow rates, balancing, loss reduction). Objective: reliable, durable and clean supply, adapted to buildings, shops and homes, with rapid intervention in case of emergency.',
-        image: '/installation-maintenance.png',
-        location: 'Ixelles'
+        title: 'Installation of intercom systems & door phones',
+        category: 'Electrical',
+        description: 'Complete installation of modern intercom systems for buildings, offices and condominiums. Vericore handles wiring, configuration of indoor and outdoor stations, HD video connection, and integration with access control systems. Wired and IP solutions with remote management via smartphone. Objective: enhanced security, clear communication and reliable access control for your buildings.',
+        image: '/parlophone.png',
+        location: 'Brussels'
       },
       {
         id: 'project2',
