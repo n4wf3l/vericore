@@ -19,19 +19,87 @@ const RecruitmentForm: React.FC = () => {
   const { t } = useTranslation();
   const { register, handleSubmit, formState: { errors }, reset, watch } = useForm<RecruitmentFormData>();
   const [isSubmitted, setIsSubmitted] = React.useState(false);
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
+  const [submitError, setSubmitError] = React.useState<string | null>(null);
   const [selectedFile, setSelectedFile] = React.useState<File | null>(null);
 
   const position = watch('position');
 
-  const onSubmit = (data: RecruitmentFormData) => {
-    console.log('Recruitment Form Data:', data);
-    console.log('CV File:', selectedFile);
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      reset();
-      setSelectedFile(null);
-    }, 5000);
+  const onSubmit = async (data: RecruitmentFormData) => {
+    setIsSubmitting(true);
+    setSubmitError(null);
+
+    // Debug: Vérifier la configuration
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+    const emailTo = import.meta.env.VITE_EMAIL_TO;
+    
+    console.log('🔧 Configuration Email (Recrutement):');
+    console.log('- Access Key:', accessKey ? (accessKey.length > 10 ? `${accessKey.substring(0, 8)}...` : '⚠️ TROP COURTE') : '❌ MANQUANTE');
+    console.log('- Email destinataire:', emailTo || '❌ MANQUANT');
+    console.log('- CV attaché:', selectedFile ? `${selectedFile.name} (${(selectedFile.size / 1024).toFixed(0)} KB)` : 'Non');
+    
+    if (!accessKey || accessKey === 'YOUR_ACCESS_KEY_HERE') {
+      console.error('❌ ERREUR: Access Key Web3Forms non configurée!');
+      console.error('➡️ Obtenez votre clé sur https://web3forms.com');
+      console.error('➡️ Ajoutez-la dans .env.local: VITE_WEB3FORMS_ACCESS_KEY=votre-clé');
+      setSubmitError('Configuration email manquante. Consultez la console (F12).');
+      setIsSubmitting(false);
+      return;
+    }
+
+    try {
+      const formData = new FormData();
+      formData.append('access_key', accessKey);
+      formData.append('subject', `[Vericore - Recrutement] ${data.position} - ${data.name}`);
+      formData.append('from_name', data.name);
+      formData.append('email', data.email);
+      formData.append('phone', data.phone);
+      formData.append('position', data.position);
+      formData.append('availability', data.availability);
+      formData.append('experience', data.experience);
+      formData.append('message', data.message);
+      formData.append('to_email', emailTo);
+      
+      // Attach CV file if present
+      if (selectedFile) {
+        formData.append('attachment', selectedFile);
+      }
+
+      console.log('📤 Envoi candidature en cours...');
+      console.log('📧 Données:', {
+        poste: data.position,
+        candidat: data.name,
+        email: data.email,
+        cv: selectedFile?.name || 'Non'
+      });
+      
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const result = await response.json();
+      
+      console.log('📥 Réponse Web3Forms:', result);
+
+      if (result.success) {
+        console.log('✅ Candidature envoyée avec succès!');
+        setIsSubmitted(true);
+        setTimeout(() => {
+          setIsSubmitted(false);
+          reset();
+          setSelectedFile(null);
+        }, 5000);
+      } else {
+        console.error('❌ Erreur Web3Forms:', result.message);
+        throw new Error(result.message || 'Erreur lors de l\'envoi');
+      }
+    } catch (error) {
+      console.error('❌ Erreur lors de l\'envoi:', error);
+      setSubmitError(t('contact.recruitment.form.error') || 'Une erreur est survenue. Veuillez réessayer.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -233,16 +301,40 @@ const RecruitmentForm: React.FC = () => {
           {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
         </div>
 
+        {/* Error Message */}
+        {submitError && (
+          <div className="bg-red-50 border-2 border-red-300 rounded-lg p-4 text-red-700 text-sm">
+            {submitError}
+          </div>
+        )}
+
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4">
           <motion.button
             type="submit"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            className="flex-1 bg-primary-600 text-white px-6 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
+            disabled={isSubmitting}
+            whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
+            whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
+            className={`flex-1 px-6 py-4 rounded-lg font-semibold shadow-lg transition-all flex items-center justify-center gap-2 ${
+              isSubmitting 
+                ? 'bg-gray-400 cursor-not-allowed text-white' 
+                : 'bg-primary-600 hover:shadow-xl text-white'
+            }`}
           >
-            <Send className="w-5 h-5" />
-            {t('contact.recruitment.form.submit')}
+            {isSubmitting ? (
+              <>
+                <svg className="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                {t('contact.recruitment.form.sending') || 'Envoi en cours...'}
+              </>
+            ) : (
+              <>
+                <Send className="w-5 h-5" />
+                {t('contact.recruitment.form.submit')}
+              </>
+            )}
           </motion.button>
 
           <a

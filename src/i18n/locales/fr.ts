@@ -578,7 +578,9 @@ export const fr = {
       siteAddress: 'Adresse du site',
       message: 'Message',
       submit: 'Envoyer',
+      sending: 'Envoi en cours...',
       whatsapp: 'WhatsApp 24/7',
+      error: 'Une erreur est survenue. Veuillez réessayer ou nous contacter directement.',
       success: {
         title: 'Message envoyé !',
         description: 'Nous vous répondrons dans les plus brefs délais.'
@@ -643,9 +645,11 @@ export const fr = {
         message: 'Message / Présentation',
         presentation: 'Message / Présentation',
         submit: 'Envoyer la candidature',
+        sending: 'Envoi en cours...',
         emailButton: 'Envoyer par email',
         emailSubject: 'Candidature',
         emailBody: 'Bonjour,\n\nVeuillez trouver ci-joint ma candidature.',
+        error: 'Une erreur est survenue lors de l\'envoi. Veuillez réessayer ou nous contacter directement.',
         placeholders: {
           name: 'Jean Dupont',
           email: 'jean@exemple.be',

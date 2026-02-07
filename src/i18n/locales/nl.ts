@@ -578,7 +578,9 @@ export const nl = {
       siteAddress: 'Adres van de locatie',
       message: 'Bericht',
       submit: 'Verzenden',
+      sending: 'Bezig met verzenden...',
       whatsapp: 'WhatsApp 24/7',
+      error: 'Er is een fout opgetreden. Probeer het opnieuw of neem rechtstreeks contact met ons op.',
       success: {
         title: 'Bericht verzonden!',
         description: 'Wij zullen u zo snel mogelijk antwoorden.'
@@ -643,9 +645,11 @@ export const nl = {
         message: 'Bericht / Presentatie',
         presentation: 'Bericht / Presentatie',
         submit: 'Sollicitatie versturen',
+        sending: 'Bezig met verzenden...',
         emailButton: 'Versturen per email',
         emailSubject: 'Sollicitatie',
         emailBody: 'Hallo,\n\nGelieve mijn sollicitatie in bijlage te vinden.',
+        error: 'Er is een fout opgetreden bij het verzenden. Probeer het opnieuw of neem rechtstreeks contact met ons op.',
         placeholders: {
           name: 'Jan Janssen',
           email: 'jan@voorbeeld.be',

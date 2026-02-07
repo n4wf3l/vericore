@@ -576,7 +576,9 @@ export const en = {
       siteAddress: 'Site address',
       message: 'Message',
       submit: 'Send',
+      sending: 'Sending...',
       whatsapp: 'WhatsApp 24/7',
+      error: 'An error occurred. Please try again or contact us directly.',
       success: {
         title: 'Message sent!',
         description: 'We will respond to you as soon as possible.'
@@ -641,9 +643,11 @@ export const en = {
         message: 'Message / Presentation',
         presentation: 'Message / Presentation',
         submit: 'Send application',
+        sending: 'Sending...',
         emailButton: 'Send by email',
         emailSubject: 'Application',
         emailBody: 'Hello,\n\nPlease find attached my application.',
+        error: 'An error occurred while sending. Please try again or contact us directly.',
         placeholders: {
           name: 'John Smith',
           email: 'john@example.be',
