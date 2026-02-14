@@ -10,7 +10,9 @@ interface ExpertiseCardProps {
   delay?: number;
   onHoverStart: (element: HTMLElement) => void;
   onHoverEnd: () => void;
+  onClick?: (element: HTMLElement) => void;
   isActive: boolean;
+  isHoverCapable: boolean;
 }
 
 const ExpertiseCard: React.FC<ExpertiseCardProps> = ({
@@ -20,13 +22,21 @@ const ExpertiseCard: React.FC<ExpertiseCardProps> = ({
   delay = 0,
   onHoverStart,
   onHoverEnd,
-  isActive
+  onClick,
+  isActive,
+  isHoverCapable
 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
 
   const handleMouseEnter = () => {
-    if (cardRef.current) {
+    if (isHoverCapable && cardRef.current) {
       onHoverStart(cardRef.current);
+    }
+  };
+
+  const handleClick = () => {
+    if (!isHoverCapable && cardRef.current && onClick) {
+      onClick(cardRef.current);
     }
   };
 
@@ -38,7 +48,8 @@ const ExpertiseCard: React.FC<ExpertiseCardProps> = ({
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay }}
       onMouseEnter={handleMouseEnter}
-      onMouseLeave={onHoverEnd}
+      onMouseLeave={isHoverCapable ? onHoverEnd : undefined}
+      onClick={handleClick}
       className={`
         relative group cursor-pointer
         bg-gradient-to-br from-white to-gray-50

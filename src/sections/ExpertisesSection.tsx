@@ -46,16 +46,28 @@ const ExpertisesSection: React.FC = () => {
   const isHoverCapable = useHoverCapable();
 
   const handleHoverStart = useCallback((id: string, element: HTMLElement) => {
+    if (!isHoverCapable) return; // Only handle hover on desktop
+    
     if (hoverTimeoutRef.current) {
       clearTimeout(hoverTimeoutRef.current);
     }
 
     // Delay opening on hover (desktop only) - 1 second
-    const delay = isHoverCapable ? 1000 : 0;
     hoverTimeoutRef.current = setTimeout(() => {
       setActiveExpertise({ id, element });
-    }, delay);
+    }, 1000);
   }, [isHoverCapable]);
+
+  const handleClick = useCallback((id: string, element: HTMLElement) => {
+    if (isHoverCapable) return; // Only handle click on mobile
+    
+    // Toggle on mobile
+    if (activeExpertise?.id === id) {
+      setActiveExpertise(null);
+    } else {
+      setActiveExpertise({ id, element });
+    }
+  }, [isHoverCapable, activeExpertise]);
 
   const handleHoverEnd = useCallback(() => {
     if (hoverTimeoutRef.current) {
@@ -120,7 +132,9 @@ const ExpertisesSection: React.FC = () => {
             delay={index * 0.1}
             onHoverStart={(element) => handleHoverStart(expertise.id, element)}
             onHoverEnd={handleHoverEnd}
+            onClick={(element) => handleClick(expertise.id, element)}
             isActive={activeExpertise?.id === expertise.id}
+            isHoverCapable={isHoverCapable}
           />
         ))}
       </div>

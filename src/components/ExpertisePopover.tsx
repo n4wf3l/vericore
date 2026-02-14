@@ -129,11 +129,11 @@ const ExpertisePopover: React.FC<ExpertisePopoverProps> = ({
           zIndex: 9999
         }}
         className="pointer-events-auto"
-        onMouseEnter={(e) => {
+        onMouseEnter={isHoverCapable ? (e) => {
           e.stopPropagation();
           onHover?.();
-        }}
-        onMouseLeave={onClose}
+        } : undefined}
+        onMouseLeave={isHoverCapable ? onClose : undefined}
       >
         <div className="mx-4 md:mx-6 bg-white/98 backdrop-blur-2xl border border-gray-200 rounded-2xl shadow-2xl shadow-gray-900/10 overflow-hidden">
           {/* Header */}
