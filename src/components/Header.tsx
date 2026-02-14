@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone, Languages, Clock, FileText, CreditCard } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Button from './Button';
 import MobileLanguageOverlay from './mobile/MobileLanguageOverlay';
 import { scrollToSection } from '../lib/scrollToSection';
@@ -15,6 +15,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ onOpenLanguageSelector }) => {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
@@ -70,6 +71,17 @@ const Header: React.FC<HeaderProps> = ({ onOpenLanguageSelector }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollY]);
 
+  // Handle hash navigation when arriving on home page
+  useEffect(() => {
+    if (location.pathname === '/' && location.hash) {
+      // Small delay to ensure page is rendered
+      setTimeout(() => {
+        const id = location.hash.slice(1); // Remove the # 
+        scrollToSection(id);
+      }, 100);
+    }
+  }, [location.pathname, location.hash]);
+
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -87,15 +99,23 @@ const Header: React.FC<HeaderProps> = ({ onOpenLanguageSelector }) => {
       navigate(link.href);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-      // Scroll to section (anchor link) on current page
-      const element = document.querySelector(link.href);
-      if (element) {
-        const offset = 80;
-        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-        window.scrollTo({
-          top: elementPosition - offset,
-          behavior: 'smooth'
-        });
+      // Anchor link - check if we're on home page
+      const isOnHomePage = location.pathname === '/';
+      
+      if (isOnHomePage) {
+        // Already on home page, just scroll to section
+        const element = document.querySelector(link.href);
+        if (element) {
+          const offset = 80;
+          const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+          window.scrollTo({
+            top: elementPosition - offset,
+            behavior: 'smooth'
+          });
+        }
+      } else {
+        // Not on home page, navigate to home with hash
+        navigate('/' + link.href);
       }
     }
   };
@@ -228,7 +248,12 @@ const Header: React.FC<HeaderProps> = ({ onOpenLanguageSelector }) => {
                     <button
                       onClick={() => {
                         setIsOpen(false);
-                        scrollToSection('contact');
+                        const isOnHomePage = location.pathname === '/';
+                        if (isOnHomePage) {
+                          scrollToSection('contact');
+                        } else {
+                          navigate('/#contact');
+                        }
                       }}
                       className="w-full flex items-center gap-3 px-4 py-3 bg-primary-50 hover:bg-primary-100 text-primary-700 rounded-xl font-semibold transition-colors"
                     >
@@ -238,7 +263,12 @@ const Header: React.FC<HeaderProps> = ({ onOpenLanguageSelector }) => {
                     <button
                       onClick={() => {
                         setIsOpen(false);
-                        scrollToSection('plans');
+                        const isOnHomePage = location.pathname === '/';
+                        if (isOnHomePage) {
+                          scrollToSection('plans');
+                        } else {
+                          navigate('/#plans');
+                        }
                       }}
                       className="w-full flex items-center gap-3 px-4 py-3 bg-amber-50 hover:bg-amber-100 text-amber-700 rounded-xl font-semibold transition-colors"
                     >
