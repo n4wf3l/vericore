@@ -6,7 +6,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Button from './Button';
 import MobileLanguageOverlay from './mobile/MobileLanguageOverlay';
 import { scrollToSection } from '../lib/scrollToSection';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.jpeg';
 
 interface HeaderProps {
   onOpenLanguageSelector: () => void;
@@ -140,14 +140,6 @@ const Header: React.FC<HeaderProps> = ({ onOpenLanguageSelector }) => {
               className="flex items-center gap-3 group"
             >
               <img src={logo} alt={t('common.brand')} className="h-10 md:h-12 w-auto transition-transform group-hover:scale-110" />
-              <div className="flex flex-col">
-                <span className="font-display text-xl md:text-2xl font-bold text-gray-900">
-                  {t('common.brand')}
-                </span>
-                <span className="text-xs text-gray-600 -mt-1">
-                  {t('common.tagline')}
-                </span>
-              </div>
             </Link>
 
             {/* Desktop Navigation */}

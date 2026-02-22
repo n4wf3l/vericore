@@ -68,10 +68,10 @@ const AboutSection: React.FC = () => {
   };
 
   return (
-    <section id="about" className="py-20 md:py-28 bg-gradient-to-br from-slate-50 via-white to-blue-50/30 relative overflow-hidden">
+    <section id="about" className="py-20 md:py-28 bg-gradient-to-br from-slate-50 via-white to-red-50/30 relative overflow-hidden">
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-[0.03]" style={{
-        backgroundImage: `radial-gradient(circle at 1px 1px, rgb(59, 130, 246) 1px, transparent 0)`,
+        backgroundImage: `radial-gradient(circle at 1px 1px, rgb(227, 6, 19) 1px, transparent 0)`,
         backgroundSize: '40px 40px'
       }} />
 
@@ -144,7 +144,7 @@ const AboutSection: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="bg-white rounded-2xl p-8 shadow-xl border border-blue-100">
+            <div className="bg-white rounded-2xl p-8 shadow-xl border border-primary-100">
               <h3 className="font-display text-2xl font-bold text-gray-900 mb-8">
                 {t('about.method.title')}
               </h3>
@@ -200,7 +200,7 @@ const AboutSection: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-16"
         >
-          <div className="bg-gradient-to-br from-primary-50 via-blue-50 to-white rounded-2xl p-8 md:p-10 shadow-lg border border-primary-100">
+          <div className="bg-gradient-to-br from-primary-50 via-red-50 to-white rounded-2xl p-8 md:p-10 shadow-lg border border-primary-100">
             <div className="flex items-start gap-4 mb-6">
               <div className="w-12 h-12 rounded-full bg-primary-600 flex items-center justify-center flex-shrink-0">
                 <Shield className="w-6 h-6 text-white" />

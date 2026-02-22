@@ -227,6 +227,11 @@ export const nl = {
       badge: 'Toegewijde Technische Partner',
       description: 'Strategische begeleiding op maat'
     },
+    serenite: {
+      name: 'Pack Sereniteit Woning',
+      badge: 'Particulieren',
+      description: 'Gemoedsrust voor uw woning'
+    },
     cta: 'Vraag een audit aan',
     swipeHint: '← Veeg om te navigeren →',
     previousPlan: 'Vorig plan',
@@ -305,6 +310,24 @@ export const nl = {
         ],
         price: 'Op offerte',
         priceNote: 'Over het algemeen vanaf 1 600 € / maand — na volledige audit en precieze definitie van de scope'
+      },
+      {
+        id: 'serenite',
+        name: 'Pack Sereniteit Woning',
+        badge: 'Particulieren',
+        tagline: 'Gemoedsrust voor uw woning, het hele jaar door.',
+        ideal: 'Eigenaars, huurders, particulieren',
+        features: [
+          'Volledige check-up van de woning — regelmatige preventieve inspectie',
+          '–20 % op alle interventies (transparant tarief)',
+          'Administratief beheer bij schade (verzekeringen, opvolging werf)',
+          'Beveiligde klantarchivering (technische geschiedenis, snelle opvolging)',
+          'Eén technisch verantwoordelijke — uniek aanspreekpunt voor alle vakgebieden',
+          'Professioneel, proper en verzorgd werk',
+          'Gratis verplaatsing bij interventies'
+        ],
+        price: '9,99 € / maand',
+        priceNote: 'Zonder engagement — op elk moment opzegbaar'
       }
     ],
     custom: {

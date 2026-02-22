@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Check } from 'lucide-react';
-import logo from '../assets/white-logo.png';
+import logo from '../assets/icon..png';
 
 interface SplashScreenProps {
   onLanguageSelect: () => void;
@@ -109,17 +109,17 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onLanguageSelect }) => {
                 className="relative w-full sm:w-56 group"
                 style={{
                   background: selectedLanguage === lang.code 
-                    ? 'rgba(59, 130, 246, 0.25)' 
+                    ? 'rgba(227, 6, 19, 0.25)' 
                     : 'rgba(255, 255, 255, 0.08)',
                   border: selectedLanguage === lang.code
-                    ? '2px solid rgba(59, 130, 246, 0.6)'
+                    ? '2px solid rgba(227, 6, 19, 0.6)'
                     : '1px solid rgba(255, 255, 255, 0.15)',
                   backdropFilter: 'blur(12px)',
                   WebkitBackdropFilter: 'blur(12px)',
                   borderRadius: '16px',
                   transition: 'all 0.3s cubic-bezier(0.22, 1, 0.36, 1)',
                   boxShadow: selectedLanguage === lang.code
-                    ? '0 8px 32px rgba(59, 130, 246, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2)'
+                    ? '0 8px 32px rgba(227, 6, 19, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2)'
                     : '0 4px 16px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.08)'
                 }}
               >
@@ -144,7 +144,7 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onLanguageSelect }) => {
                       initial={{ scale: 0, rotate: -180 }}
                       animate={{ scale: 1, rotate: 0 }}
                       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                      className="w-7 h-7 rounded-full bg-blue-500 flex items-center justify-center shadow-lg"
+                      className="w-7 h-7 rounded-full bg-primary-500 flex items-center justify-center shadow-lg"
                     >
                       <Check className="w-4 h-4 text-white" strokeWidth={3} />
                     </motion.div>

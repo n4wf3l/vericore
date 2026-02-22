@@ -2,7 +2,7 @@ import React from 'react';
 import { MapPin, Mail, Phone, Clock } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import logo from '../assets/logo.png';
+import logo from '../assets/icon..png';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <img src={logo} alt={t('common.brand')} className="h-10 w-auto brightness-0 invert" />
+              <img src={logo} alt={t('common.brand')} className="h-10 w-auto" />
               <div>
                 <h3 className="font-display text-xl font-bold text-white">{t('common.brand')}</h3>
                 <p className="text-xs text-gray-400">{t('footer.about.subtitle')}</p>

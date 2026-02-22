@@ -84,7 +84,7 @@ const generateLocalBusinessSchema = (customData?: Partial<LocalBusinessSchema>) 
     name: schema.name,
     description: schema.description,
     url: schema.url,
-    logo: `${BASE_URL}/logo.png`,
+    logo: `${BASE_URL}/logo.jpeg`,
     image: schema.image || [`${BASE_URL}/og-image.jpg`],
     telephone: schema.telephone,
     email: schema.email,

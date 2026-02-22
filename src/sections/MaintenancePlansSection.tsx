@@ -1,15 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { FileCheck, MessageCircle, Award, Gem, Crown, Sparkles } from 'lucide-react';
+import { FileCheck, MessageCircle, Award, Gem, Crown, Sparkles, Home } from 'lucide-react';
 import PlansTrioSlider from '../components/PlansTrioSlider';
 
 const MaintenancePlansSection: React.FC = () => {
   const { t } = useTranslation();
 
   // Icon and color mapping
-  const iconMap = { bronze: Award, silver: Gem, gold: Crown, premium: Sparkles };
-  const accentColorMap = { bronze: 'amber', silver: 'slate', gold: 'yellow', premium: 'primary' };
+  const iconMap = { bronze: Award, silver: Gem, gold: Crown, premium: Sparkles, serenite: Home };
+  const accentColorMap = { bronze: 'amber', silver: 'slate', gold: 'yellow', premium: 'primary', serenite: 'green' };
 
   // Get plans from translations
   const plansData = t('plans.items', { returnObjects: true }) as Array<{

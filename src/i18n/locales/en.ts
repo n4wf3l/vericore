@@ -225,6 +225,11 @@ export const en = {
       badge: 'Dedicated Technical Partner',
       description: 'Customized strategic support'
     },
+    serenite: {
+      name: 'Serenity Home Pack',
+      badge: 'Individuals',
+      description: 'Peace of mind for your home'
+    },
     cta: 'Request an audit',
     swipeHint: '← Swipe to navigate →',
     previousPlan: 'Previous plan',
@@ -303,6 +308,24 @@ export const en = {
         ],
         price: 'On quote',
         priceNote: 'Generally from €1,600 / month — after complete audit and precise scope definition'
+      },
+      {
+        id: 'serenite',
+        name: 'Serenity Home Pack',
+        badge: 'Individuals',
+        tagline: 'Peace of mind for your home, all year round.',
+        ideal: 'Homeowners, tenants, individuals',
+        features: [
+          'Full home check-up — regular preventive inspection',
+          '–20% on all interventions (transparent pricing)',
+          'Administrative management in case of damage (insurance, site follow-up)',
+          'Secure client archiving (technical history, fast follow-up)',
+          'One technical manager — single point of contact for all trades',
+          'Professional, clean and careful work',
+          'Free travel for interventions'
+        ],
+        price: '€9.99 / month',
+        priceNote: 'No commitment — cancel anytime'
       }
     ],
     custom: {

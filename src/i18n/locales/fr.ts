@@ -227,6 +227,11 @@ export const fr = {
       badge: 'Partenaire Technique Dédié',
       description: 'Accompagnement stratégique sur-mesure'
     },
+    serenite: {
+      name: 'Pack Sérénité Habitat',
+      badge: 'Particuliers',
+      description: 'La tranquillité d\'esprit pour votre habitation'
+    },
     cta: 'Demander un audit',
     swipeHint: '← Glissez pour naviguer →',
     previousPlan: 'Plan précédent',
@@ -305,6 +310,24 @@ export const fr = {
         ],
         price: 'Sur devis',
         priceNote: 'Généralement à partir de 1 600 € / mois — après audit complet et définition précise du périmètre'
+      },
+      {
+        id: 'serenite',
+        name: 'Pack Sérénité Habitat',
+        badge: 'Particuliers',
+        tagline: 'La tranquillité d\'esprit pour votre habitation, toute l\'année.',
+        ideal: 'Propriétaires, locataires, particuliers',
+        features: [
+          'Check-up complet de l\'habitation — inspection préventive régulière',
+          '–20 % sur toutes les interventions (grille tarifaire transparente)',
+          'Gestion administrative en cas de sinistre (assurances, suivi chantier)',
+          'Archivage client sécurisé (historique technique, suivi rapide)',
+          'Un seul responsable technique — interlocuteur unique tous corps de métier',
+          'Travail professionnel, propre et soigné',
+          'Déplacement gratuit lors des interventions'
+        ],
+        price: '9,99 € / mois',
+        priceNote: 'Sans engagement — résiliable à tout moment'
       }
     ],
     custom: {

@@ -61,7 +61,7 @@ export const BlogPostPage: React.FC = () => {
       name: 'Vericore SRL',
       logo: {
         '@type': 'ImageObject',
-        url: `${BASE_URL}/logo.png`,
+        url: `${BASE_URL}/logo.jpeg`,
       },
     },
     datePublished: post.publishedAt,

@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Section, SectionTitle } from '../components/Section';
 import { X, MapPin } from 'lucide-react';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.jpeg';
 
 const Projects: React.FC = () => {
   const { t } = useTranslation();

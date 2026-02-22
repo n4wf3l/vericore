@@ -1,4 +1,4 @@
-import { Award, Gem, Crown, Sparkles, type LucideIcon } from 'lucide-react';
+import { Award, Gem, Crown, Sparkles, Home, type LucideIcon } from 'lucide-react';
 
 export interface Plan {
   id: string;
@@ -94,5 +94,25 @@ export const plans: Plan[] = [
     ],
     price: 'Sur devis',
     priceNote: 'Généralement à partir de 1 600 € / mois — après audit complet et définition précise du périmètre'
+  },
+  {
+    id: 'serenite',
+    name: 'Pack Sérénité Habitat',
+    badge: 'Particuliers',
+    icon: Home,
+    accentColor: 'green',
+    tagline: 'La tranquillité d\'esprit pour votre habitation, toute l\'année.',
+    ideal: 'Propriétaires, locataires, particuliers',
+    features: [
+      'Check-up complet de l\'habitation — inspection préventive régulière',
+      '–20 % sur toutes les interventions (grille tarifaire transparente)',
+      'Gestion administrative en cas de sinistre (assurances, suivi chantier)',
+      'Archivage client sécurisé (historique technique, suivi rapide)',
+      'Un seul responsable technique — interlocuteur unique tous corps de métier',
+      'Travail professionnel, propre et soigné',
+      'Déplacement gratuit lors des interventions'
+    ],
+    price: '9,99 € / mois',
+    priceNote: 'Sans engagement — résiliable à tout moment'
   }
 ];

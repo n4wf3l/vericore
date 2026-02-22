@@ -70,11 +70,11 @@ export const GoogleBusinessPage: React.FC = () => {
       
       <div className="min-h-screen bg-white pt-20">
         {/* Hero */}
-        <section className="bg-gradient-to-r from-blue-600 to-blue-800 py-16">
+        <section className="bg-gradient-to-r from-primary-600 to-primary-800 py-16">
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex items-center justify-center mb-6">
               <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center">
-                <MapPin className="w-10 h-10 text-blue-600" />
+                <MapPin className="w-10 h-10 text-primary-600" />
               </div>
             </div>
             
@@ -90,7 +90,7 @@ export const GoogleBusinessPage: React.FC = () => {
             <div className="flex justify-center">
               <Button
                 onClick={() => window.open('https://g.page/vericore', '_blank')}
-                className="bg-white text-blue-700 hover:bg-gray-100"
+                className="bg-white text-primary-700 hover:bg-gray-100"
               >
                 <Navigation className="w-5 h-5 mr-2" />
                 Voir notre fiche Google
@@ -134,7 +134,7 @@ export const GoogleBusinessPage: React.FC = () => {
                 },
               ].map((item, index) => (
                 <div key={index} className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
-                  <item.icon className="w-8 h-8 text-blue-600 mb-4" />
+                  <item.icon className="w-8 h-8 text-primary-600 mb-4" />
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
                     {item.title}
                   </h3>
@@ -143,7 +143,7 @@ export const GoogleBusinessPage: React.FC = () => {
                   </p>
                   <a
                     href={item.link}
-                    className="text-blue-600 hover:text-blue-700 font-medium text-sm"
+                    className="text-primary-600 hover:text-primary-700 font-medium text-sm"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -230,7 +230,7 @@ export const GoogleBusinessPage: React.FC = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {photoCategories.map((category, index) => (
                 <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">
+                  <div className="text-3xl font-bold text-primary-600 mb-2">
                     {category.count}
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -285,7 +285,7 @@ export const GoogleBusinessPage: React.FC = () => {
         </section>
 
         {/* CTA */}
-        <section className="bg-blue-700 py-16">
+        <section className="bg-primary-700 py-16">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold text-white mb-4">
               Suivez-nous sur Google
@@ -296,7 +296,7 @@ export const GoogleBusinessPage: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 onClick={() => window.open('https://g.page/vericore', '_blank')}
-                className="bg-white text-blue-700 hover:bg-gray-100"
+                className="bg-white text-primary-700 hover:bg-gray-100"
               >
                 <Navigation className="w-5 h-5 mr-2" />
                 Voir notre fiche
