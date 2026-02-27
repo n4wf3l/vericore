@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/bg-camions.jpg"
+          src="/bg-camions.png"
           alt="Vericore maintenance et rénovation"
           className="w-full h-full object-cover"
           loading="eager"
