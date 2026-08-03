@@ -45,7 +45,6 @@ function generateSitemapURLs() {
     { path: '/expertises', priority: 0.9 },
     { path: '/projects', priority: 0.8 },
     { path: '/faq', priority: 0.7 },
-    { path: '/contact', priority: 0.9 },
     { path: '/garanties', priority: 0.7 },
     { path: '/google-business', priority: 0.6 },
     { path: '/blog', priority: 0.8 },
@@ -70,19 +69,21 @@ function generateSitemapURLs() {
     });
   });
 
-  // Pages communales
-  BRUSSELS_COMMUNES.forEach(commune => {
-    const communeSlug = commune.toLowerCase()
-      .replace(/\s+/g, '-')
-      .replace(/'/g, '-');
-    
-    urls.push({
-      loc: `${BASE_URL}/renovation-${communeSlug}`,
-      lastmod: today,
-      changefreq: 'monthly',
-      priority: 0.7,
+  // Pages communales (exclut Bruxelles: déjà générée dans la boucle services)
+  BRUSSELS_COMMUNES
+    .filter(commune => commune.toLowerCase() !== 'bruxelles')
+    .forEach(commune => {
+      const communeSlug = commune.toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/'/g, '-');
+
+      urls.push({
+        loc: `${BASE_URL}/renovation-${communeSlug}`,
+        lastmod: today,
+        changefreq: 'monthly',
+        priority: 0.7,
+      });
     });
-  });
 
   // Articles de blog
   const blogPosts = [
@@ -113,19 +114,41 @@ function generateSitemapURLs() {
   return urls;
 }
 
+// Images à indexer par URL (Google Image Search)
+function getImagesForRoute(loc) {
+  const path = loc.replace(BASE_URL, '');
+  if (path === '' || path === '/') {
+    return [
+      { loc: `${BASE_URL}/og-image.jpg`, title: 'Vericore - Maintenance & Rénovation à Bruxelles' },
+      { loc: `${BASE_URL}/favicon.png`, title: 'Logo Vericore SRL' },
+    ];
+  }
+  if (path.match(/^\/(renovation|electricite|plomberie|chauffage|climatisation|menuiserie|peinture|carrelage)-/)) {
+    return [{ loc: `${BASE_URL}/og-image.jpg`, title: `Vericore - ${path.replace('/', '')}` }];
+  }
+  return [];
+}
+
 // Générer le XML du sitemap
 function generateSitemapXML(urls) {
   const urlElements = urls.map(url => {
+    const images = getImagesForRoute(url.loc);
+    const imageXml = images.map(img => `    <image:image>
+      <image:loc>${img.loc}</image:loc>
+      <image:title>${img.title}</image:title>
+    </image:image>`).join('\n');
+
     return `  <url>
     <loc>${url.loc}</loc>
     ${url.lastmod ? `<lastmod>${url.lastmod}</lastmod>` : ''}
     ${url.changefreq ? `<changefreq>${url.changefreq}</changefreq>` : ''}
-    ${url.priority !== undefined ? `<priority>${url.priority.toFixed(1)}</priority>` : ''}
+    ${url.priority !== undefined ? `<priority>${url.priority.toFixed(1)}</priority>` : ''}${imageXml ? '\n' + imageXml : ''}
   </url>`;
   }).join('\n');
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${urlElements}
 </urlset>`;
 }
@@ -143,11 +166,6 @@ Allow: /
 Disallow: /admin/
 Disallow: /staging/
 Disallow: /test/
-
-# Bloquer les paramètres de tracking
-Disallow: /*?utm_*
-Disallow: /*?ref=*
-Disallow: /*?source=*
 
 # Sitemap
 Sitemap: ${BASE_URL}/sitemap.xml

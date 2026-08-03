@@ -79,7 +79,7 @@ export const BlogPostPage: React.FC = () => {
   return (
     <>
       <SEOHead config={seoConfig} />
-      <StructuredData type="WebPage" data={articleSchema} />
+      <StructuredData type="Article" data={articleSchema} />
       <StructuredData 
         type="Breadcrumb" 
         data={[

@@ -14,7 +14,7 @@ import type {
 import { LOCAL_BUSINESS_SCHEMA, COMPANY_INFO, BASE_URL } from '../config/seo.config';
 
 interface StructuredDataProps {
-  type: 'LocalBusiness' | 'Service' | 'FAQPage' | 'Breadcrumb' | 'AggregateRating' | 'WebPage';
+  type: 'LocalBusiness' | 'Service' | 'FAQPage' | 'Breadcrumb' | 'AggregateRating' | 'WebPage' | 'Article';
   data?: any;
 }
 
@@ -43,6 +43,9 @@ export const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) =>
         break;
       case 'WebPage':
         schema = generateWebPageSchema(data);
+        break;
+      case 'Article':
+        schema = data;
         break;
     }
 
