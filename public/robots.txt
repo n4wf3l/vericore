@@ -1,5 +1,5 @@
 # Vericore SRL - Robots.txt
-# Mise à jour: 2026-02-07
+# Mise à jour: 2026-08-03
 
 # Règles pour tous les robots
 User-agent: *
@@ -9,11 +9,6 @@ Allow: /
 Disallow: /admin/
 Disallow: /staging/
 Disallow: /test/
-
-# Bloquer les paramètres de tracking
-Disallow: /*?utm_*
-Disallow: /*?ref=*
-Disallow: /*?source=*
 
 # Sitemap
 Sitemap: https://www.vericore.be/sitemap.xml

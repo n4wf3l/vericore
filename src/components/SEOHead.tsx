@@ -80,6 +80,26 @@ export const SEOHead: React.FC<SEOHeadProps> = ({ config = {} }) => {
     // Canonical URL
     setLinkTag('canonical', seoConfig.canonical);
 
+    // hreflang - alternates for multilingual SEO
+    const removeExistingHreflang = () => {
+      document
+        .querySelectorAll('link[rel="alternate"][hreflang]')
+        .forEach(el => el.remove());
+    };
+    const addHreflang = (hreflang: string, href: string) => {
+      const link = document.createElement('link');
+      link.rel = 'alternate';
+      link.hreflang = hreflang;
+      link.href = href;
+      document.head.appendChild(link);
+    };
+    removeExistingHreflang();
+    const canonicalPath = seoConfig.canonical.replace(BASE_URL, '') || '/';
+    addHreflang('fr-be', `${BASE_URL}${canonicalPath}`);
+    addHreflang('nl-be', `${BASE_URL}/nl${canonicalPath === '/' ? '' : canonicalPath}`);
+    addHreflang('en', `${BASE_URL}/en${canonicalPath === '/' ? '' : canonicalPath}`);
+    addHreflang('x-default', `${BASE_URL}${canonicalPath}`);
+
     // Open Graph
     setMetaTag('og:title', seoConfig.title, true);
     setMetaTag('og:description', seoConfig.description, true);

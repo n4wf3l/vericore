@@ -8,9 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     
     <!-- Favicon optimisé -->
-    <link rel="icon" type="image/svg+xml" href="/src/assets/icon..png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <!-- Viewport et optimisations mobiles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#1e40af" />
@@ -66,11 +69,22 @@
       }
     </style>
     
-    <!-- Google Search Console verification (à remplacer par votre code) -->
+    <!-- Google Search Console verification (à remplacer par le code fourni par le client) -->
     <meta name="google-site-verification" content="VOTRE_CODE_ICI" />
-    
-    <!-- Google Analytics / Tag Manager (à ajouter en production) -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script> -->
+
+    <!--
+      GA4 : décommenter et remplacer G-XXXXXXXXXX par l'ID GA4 du client.
+      Le prerender post-process supprime ces balises si l'ID n'a pas été remplacé.
+    -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
+    </script>
+    -->
   </head>
   <body>
     <div id="root"></div>
