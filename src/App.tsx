@@ -9,13 +9,21 @@ import HomePage from './pages/HomePage';
 import ExpertisesPage from './pages/ExpertisesPage';
 import ProjectsPage from './pages/ProjectsPage';
 import FAQPage from './pages/FAQPage';
+import BlogPage from './pages/BlogPage';
+import BlogPostPage from './pages/BlogPostPage';
+import GuaranteesPage from './pages/GuaranteesPage';
+import LegalPage from './pages/LegalPage';
+import GoogleBusinessPage from './pages/GoogleBusinessPage';
+import CommunePage from './pages/CommunePage';
+import SlugDispatcher from './pages/SlugDispatcher';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   const [showSplash, setShowSplash] = useState(false);
   const [showLanguageSelector, setShowLanguageSelector] = useState(false);
 
   useEffect(() => {
-    // Check if user has already selected a language
+    if ((window as unknown as { __PRERENDER_INJECTED?: unknown }).__PRERENDER_INJECTED) return;
     const hasSelectedLanguage = localStorage.getItem('vericore-language-selected');
     if (!hasSelectedLanguage) {
       setShowSplash(true);
@@ -47,6 +55,14 @@ function App() {
             <Route path="/expertises" element={<ExpertisesPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/faq" element={<FAQPage />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/:slug" element={<BlogPostPage />} />
+            <Route path="/garanties" element={<GuaranteesPage />} />
+            <Route path="/mentions-legales" element={<LegalPage />} />
+            <Route path="/google-business" element={<GoogleBusinessPage />} />
+            <Route path="/commune/:commune" element={<CommunePage />} />
+            <Route path="/:slug" element={<SlugDispatcher />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>
         <Footer />
