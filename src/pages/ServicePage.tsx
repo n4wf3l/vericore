@@ -10,6 +10,8 @@ import { generateServiceSEO } from '../config/seo.config';
 import Button from '../components/Button';
 import { Phone, MessageSquare, CheckCircle2, MapPin, Clock, Shield } from 'lucide-react';
 import type { ServiceSchema, FAQSchema } from '../types/seo';
+import { SERVICE_CONTENT, type ServiceContent } from '../data/serviceContent';
+import { getCommuneContent } from '../data/communeContent';
 
 interface ServicePageProps {
   service: string;
@@ -61,11 +63,11 @@ export const ServicePage: React.FC<ServicePageProps> = ({ service, city = 'Bruxe
       <StructuredData type="Service" data={serviceSchema} />
       <StructuredData type="FAQPage" data={faqSchema} />
       <StructuredData type="LocalBusiness" />
-      <StructuredData 
-        type="Breadcrumb" 
+      <StructuredData
+        type="Breadcrumb"
         data={[
           { name: 'Accueil', url: 'https://www.vericore.be' },
-          { name: 'Services', url: 'https://www.vericore.be/services' },
+          { name: 'Expertises', url: 'https://www.vericore.be/expertises' },
           { name: `${service} ${city}`, url: seoConfig.canonical },
         ]}
       />
@@ -302,119 +304,76 @@ export const ServicePage: React.FC<ServicePageProps> = ({ service, city = 'Bruxe
   );
 };
 
-/**
- * Fonction pour récupérer le contenu spécifique à chaque service
- * À personnaliser pour chaque service
- */
+const FALLBACK_AREAS = [
+  'Bruxelles centre', 'Schaerbeek', 'Evere', 'Ixelles', 'Etterbeek',
+  'Uccle', 'Anderlecht', 'Molenbeek', 'Forest', 'Saint-Gilles', 'Woluwe',
+];
+
 const getServiceContent = (service: string, city: string) => {
-  // Contenu par défaut (à personnaliser selon le service)
+  const serviceData: ServiceContent | undefined = SERVICE_CONTENT[service];
+  const communeData = getCommuneContent(city);
+  const isBruxellesCity = city.toLowerCase() === 'bruxelles';
+
+  if (serviceData) {
+    const localParagraphs = communeData && !isBruxellesCity
+      ? [communeData.typology, communeData.localNote].filter((p): p is string => Boolean(p))
+      : [];
+
+    const areasCovered = communeData
+      ? [city, ...communeData.quartiers]
+      : [city, ...FALLBACK_AREAS];
+
+    return {
+      heroSubtitle: serviceData.heroSubtitle(city),
+      trustBadges: serviceData.trustBadges,
+      aboutTitle: serviceData.aboutTitle(city),
+      description: [...serviceData.description(city), ...localParagraphs],
+      targetAudience: serviceData.targetAudience,
+      areasCovered,
+      process: serviceData.process,
+      pricingFactors: serviceData.pricingFactors,
+      faq: serviceData.faq(city),
+    };
+  }
+
   return {
     heroSubtitle: `Expert en ${service} à ${city}. Devis gratuit sous 24h, intervention rapide, garantie décennale.`,
-    
     trustBadges: [
       { icon: Clock, text: 'Intervention 24/7' },
       { icon: Shield, text: 'Garantie décennale' },
       { icon: CheckCircle2, text: 'Devis gratuit' },
       { icon: MapPin, text: `Partout à ${city}` },
     ],
-    
     aboutTitle: `${service} professionnelle à ${city}`,
-    
     description: [
       `Vericore est votre partenaire de confiance pour tous vos travaux de ${service} à ${city} et dans toute la Région de Bruxelles-Capitale.`,
       `Avec plus de 10 ans d'expérience, notre équipe de professionnels certifiés intervient rapidement pour tous vos besoins en ${service}, qu'il s'agisse de travaux neufs, de rénovation ou de dépannage d'urgence.`,
       `Nous garantissons un travail de qualité, conforme aux normes belges, avec une garantie décennale pour votre tranquillité d'esprit.`,
     ],
-    
     targetAudience: [
-      {
-        title: 'Particuliers',
-        description: `${service} pour maisons, appartements, rénovations complètes ou ponctuelles.`,
-      },
-      {
-        title: 'Professionnels',
-        description: `${service} pour bureaux, commerces, locaux professionnels.`,
-      },
-      {
-        title: 'Syndics',
-        description: `${service} pour copropriétés, parties communes, entretien régulier.`,
-      },
+      { title: 'Particuliers', description: `${service} pour maisons, appartements, rénovations complètes ou ponctuelles.` },
+      { title: 'Professionnels', description: `${service} pour bureaux, commerces, locaux professionnels.` },
+      { title: 'Syndics', description: `${service} pour copropriétés, parties communes, entretien régulier.` },
     ],
-    
-    areasCovered: [
-      city,
-      'Bruxelles centre',
-      'Schaerbeek',
-      'Evere',
-      'Ixelles',
-      'Etterbeek',
-      'Uccle',
-      'Anderlecht',
-      'Molenbeek',
-      'Forest',
-      'Saint-Gilles',
-      'Woluwe',
-    ],
-    
+    areasCovered: [city, ...FALLBACK_AREAS],
     process: [
-      {
-        title: 'Contact',
-        description: 'Appelez-nous ou demandez un devis en ligne',
-      },
-      {
-        title: 'Devis gratuit',
-        description: 'Visite sur place et estimation détaillée sous 24h',
-      },
-      {
-        title: 'Intervention',
-        description: 'Travaux réalisés par nos professionnels certifiés',
-      },
-      {
-        title: 'Garantie',
-        description: 'Garantie décennale et service après-vente',
-      },
+      { title: 'Contact', description: 'Appelez-nous ou demandez un devis en ligne' },
+      { title: 'Devis gratuit', description: 'Visite sur place et estimation détaillée sous 24h' },
+      { title: 'Intervention', description: 'Travaux réalisés par nos professionnels certifiés' },
+      { title: 'Garantie', description: 'Garantie décennale et service après-vente' },
     ],
-    
     pricingFactors: [
-      {
-        title: 'Type de travaux',
-        description: 'Neuf, rénovation, dépannage - chaque intervention est unique',
-      },
-      {
-        title: 'Surface et complexité',
-        description: 'La taille du projet et sa complexité technique',
-      },
-      {
-        title: 'Matériaux',
-        description: 'Choix des matériaux et équipements (standard, premium)',
-      },
-      {
-        title: 'Délais',
-        description: 'Intervention standard ou urgente',
-      },
+      { title: 'Type de travaux', description: 'Neuf, rénovation, dépannage - chaque intervention est unique' },
+      { title: 'Surface et complexité', description: 'La taille du projet et sa complexité technique' },
+      { title: 'Matériaux', description: 'Choix des matériaux et équipements (standard, premium)' },
+      { title: 'Délais', description: 'Intervention standard ou urgente' },
     ],
-    
     faq: [
-      {
-        question: `Quel est le délai pour obtenir un devis de ${service} à ${city} ?`,
-        answer: `Nous vous fournissons un devis gratuit sous 24h après la visite sur place. Pour les demandes urgentes, nous pouvons intervenir le jour même.`,
-      },
-      {
-        question: `Intervenez-vous en urgence pour les dépannages de ${service} ?`,
-        answer: `Oui, nous proposons un service d'urgence 24/7 pour tous les dépannages à ${city} et dans toute la région de Bruxelles.`,
-      },
-      {
-        question: `Quelle garantie offrez-vous sur vos travaux de ${service} ?`,
-        answer: `Tous nos travaux sont couverts par une garantie décennale. Nous sommes assurés et nos techniciens sont certifiés.`,
-      },
-      {
-        question: `Quel est le coût moyen pour des travaux de ${service} à ${city} ?`,
-        answer: `Le coût varie selon la nature des travaux, la surface et les matériaux. Contactez-nous pour un devis gratuit et personnalisé.`,
-      },
-      {
-        question: `Travaillez-vous aussi en dehors de ${city} ?`,
-        answer: `Oui, nous intervenons dans toute la Région de Bruxelles-Capitale et ses environs (Brabant wallon et flamand).`,
-      },
+      { question: `Quel est le délai pour obtenir un devis de ${service} à ${city} ?`, answer: `Nous vous fournissons un devis gratuit sous 24h après la visite sur place. Pour les demandes urgentes, nous pouvons intervenir le jour même.` },
+      { question: `Intervenez-vous en urgence pour les dépannages de ${service} ?`, answer: `Oui, nous proposons un service d'urgence 24/7 pour tous les dépannages à ${city} et dans toute la région de Bruxelles.` },
+      { question: `Quelle garantie offrez-vous sur vos travaux de ${service} ?`, answer: `Tous nos travaux sont couverts par une garantie décennale. Nous sommes assurés et nos techniciens sont certifiés.` },
+      { question: `Quel est le coût moyen pour des travaux de ${service} à ${city} ?`, answer: `Le coût varie selon la nature des travaux, la surface et les matériaux. Contactez-nous pour un devis gratuit et personnalisé.` },
+      { question: `Travaillez-vous aussi en dehors de ${city} ?`, answer: `Oui, nous intervenons dans toute la Région de Bruxelles-Capitale et ses environs (Brabant wallon et flamand).` },
     ],
   };
 };
