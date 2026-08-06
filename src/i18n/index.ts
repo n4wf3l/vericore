@@ -10,8 +10,18 @@ const resources = {
   en: { translation: en }
 };
 
-// Get saved language from localStorage or default to French
-const savedLanguage = localStorage.getItem('vericore-language') || 'fr';
+// Detect language from URL first (/nl/*, /en/*, else FR)
+const detectLanguageFromUrl = (): string | null => {
+  if (typeof window === 'undefined') return null;
+  const path = window.location.pathname;
+  if (path === '/nl' || path.startsWith('/nl/')) return 'nl';
+  if (path === '/en' || path.startsWith('/en/')) return 'en';
+  if (path === '/' || (!path.startsWith('/nl') && !path.startsWith('/en'))) return 'fr';
+  return null;
+};
+
+// URL langue > localStorage > défaut FR
+const savedLanguage = detectLanguageFromUrl() || localStorage.getItem('vericore-language') || 'fr';
 
 i18n
   .use(initReactI18next)

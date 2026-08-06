@@ -9,59 +9,16 @@ import { BASE_URL, COMPANY_INFO } from '../config/seo.config';
 import { MapPin, Phone, Mail, Clock, Star, Navigation, MessageSquare } from 'lucide-react';
 import Button from '../components/Button';
 
+const GBP_URL = 'https://www.google.com/maps/search/?api=1&query=Vericore+Jette';
+const GBP_REVIEW_URL = 'https://www.google.com/maps/search/?api=1&query=Vericore+Jette';
+
 export const GoogleBusinessPage: React.FC = () => {
   const seoConfig = {
     title: 'Notre Fiche Google Business | Vericore à Bruxelles',
-    description: 'Retrouvez Vericore sur Google Maps. Avis clients, horaires, photos de nos réalisations et contact direct pour vos travaux à Bruxelles.',
+    description: 'Retrouvez Vericore sur Google Maps. Coordonnées, avis clients et contact direct pour vos travaux à Bruxelles.',
     h1: 'Vericore sur Google Business',
     canonical: `${BASE_URL}/google-business`,
   };
-
-  // Posts Google Business (à générer automatiquement)
-  const recentPosts = [
-    {
-      date: '2026-02-05',
-      title: '🎉 Nouvelle réalisation à Schaerbeek',
-      content: 'Rénovation complète d\'une maison 4 façades. Découvrez le avant/après !',
-      image: '/images/posts/schaerbeek-renovation.jpg',
-    },
-    {
-      date: '2026-02-03',
-      title: '❄️ Entretien chaudière hiver',
-      content: 'Profitez de notre offre spéciale entretien chaudière. Devis gratuit !',
-      image: '/images/posts/entretien-chaudiere.jpg',
-    },
-    {
-      date: '2026-02-01',
-      title: '⚡ Installation électrique certifiée',
-      content: 'Mise aux normes RGIE complète à Evere. Intervention rapide et propre.',
-      image: '/images/posts/electricite-evere.jpg',
-    },
-  ];
-
-  // Photos pour GBP (catégories)
-  const photoCategories = [
-    {
-      name: 'Réalisations',
-      description: 'Photos avant/après de nos chantiers',
-      count: 45,
-    },
-    {
-      name: 'Équipe',
-      description: 'Nos techniciens au travail',
-      count: 12,
-    },
-    {
-      name: 'Matériel',
-      description: 'Équipements professionnels',
-      count: 8,
-    },
-    {
-      name: 'Bureau',
-      description: 'Nos locaux à Bruxelles',
-      count: 5,
-    },
-  ];
 
   return (
     <>
@@ -89,7 +46,7 @@ export const GoogleBusinessPage: React.FC = () => {
 
             <div className="flex justify-center">
               <Button
-                onClick={() => window.open('https://g.page/vericore', '_blank')}
+                onClick={() => window.open(GBP_URL, '_blank')}
                 className="bg-white text-primary-700 hover:bg-gray-100"
               >
                 <Navigation className="w-5 h-5 mr-2" />
@@ -161,86 +118,28 @@ export const GoogleBusinessPage: React.FC = () => {
             <div className="text-center mb-12">
               <div className="flex items-center justify-center gap-2 mb-4">
                 <Star className="w-8 h-8 text-yellow-400 fill-current" />
-                <span className="text-4xl font-bold text-gray-900">4.8</span>
+                <span className="text-4xl font-bold text-gray-900">5,0</span>
                 <span className="text-gray-600">/5</span>
               </div>
               <p className="text-xl text-gray-700">
-                Basé sur 127 avis Google
+                Sur les avis Google déjà déposés
               </p>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-lg text-center">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                Laissez-nous un avis !
+                Laissez-nous un avis
               </h2>
               <p className="text-gray-600 mb-6">
-                Vous avez fait appel à nos services ? Partagez votre expérience sur Google
+                Vous avez fait appel à nos services ? Partagez votre expérience sur Google.
               </p>
               <Button
-                onClick={() => window.open('https://g.page/vericore/review', '_blank')}
+                onClick={() => window.open(GBP_REVIEW_URL, '_blank')}
                 className="bg-yellow-500 hover:bg-yellow-600 text-white"
               >
                 <Star className="w-5 h-5 mr-2" />
                 Laisser un avis Google
               </Button>
-            </div>
-          </div>
-        </section>
-
-        {/* Posts récents */}
-        <section className="py-16">
-          <div className="max-w-7xl mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-              Nos dernières actualités
-            </h2>
-            
-            <div className="grid md:grid-cols-3 gap-8">
-              {recentPosts.map((post, index) => (
-                <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-                  <div className="h-48 bg-gray-200">
-                    {/* Image placeholder */}
-                    <div className="w-full h-full flex items-center justify-center text-gray-400">
-                      Photo
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <p className="text-sm text-gray-500 mb-2">
-                      {new Date(post.date).toLocaleDateString('fr-BE')}
-                    </p>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                      {post.title}
-                    </h3>
-                    <p className="text-gray-600">
-                      {post.content}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Photos */}
-        <section className="bg-gray-50 py-16">
-          <div className="max-w-7xl mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-              Nos photos sur Google
-            </h2>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {photoCategories.map((category, index) => (
-                <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center">
-                  <div className="text-3xl font-bold text-primary-600 mb-2">
-                    {category.count}
-                  </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    {category.name}
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    {category.description}
-                  </p>
-                </div>
-              ))}
             </div>
           </div>
         </section>
@@ -263,12 +162,12 @@ export const GoogleBusinessPage: React.FC = () => {
                   answer: 'Oui ! Notre fiche Google Business permet de nous contacter directement par téléphone, message ou via le formulaire de contact.',
                 },
                 {
-                  question: 'Les avis Google sont-ils vérifiés ?',
-                  answer: 'Absolument. Tous les avis sur notre fiche Google Business sont authentiques et vérifiés par Google.',
+                  question: 'Comment laisser un avis ?',
+                  answer: 'Rendez-vous sur notre fiche Google, cliquez sur "Écrire un avis" et attribuez votre note. Nous vous en remercions par avance.',
                 },
                 {
-                  question: 'Comment voir vos réalisations ?',
-                  answer: 'Consultez l\'onglet "Photos" de notre fiche Google pour voir nos réalisations avant/après et notre équipe en action.',
+                  question: 'Puis-je voir vos réalisations sur Google ?',
+                  answer: 'Nous alimentons régulièrement notre fiche Google avec des photos de chantiers récents. Consultez l\'onglet "Photos" pour les découvrir.',
                 },
               ].map((item, index) => (
                 <div key={index} className="bg-white p-6 rounded-lg shadow-md">
@@ -295,7 +194,7 @@ export const GoogleBusinessPage: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
-                onClick={() => window.open('https://g.page/vericore', '_blank')}
+                onClick={() => window.open(GBP_URL, '_blank')}
                 className="bg-white text-primary-700 hover:bg-gray-100"
               >
                 <Navigation className="w-5 h-5 mr-2" />

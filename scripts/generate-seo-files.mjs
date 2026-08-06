@@ -11,7 +11,26 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // Configuration
-const BASE_URL = 'https://www.vericore.be';
+const BASE_URL = 'https://vericore.be';
+
+// URL slugs par langue et par service (miroir de src/data/serviceContent.ts)
+const SERVICE_SLUGS_BY_LANG = {
+  fr: {
+    renovation: 'renovation', electricite: 'electricien', plomberie: 'plombier',
+    chauffage: 'chauffagiste', climatisation: 'climatisation', menuiserie: 'menuisier',
+    peinture: 'peintre', carrelage: 'carreleur',
+  },
+  nl: {
+    renovation: 'renovatie', electricite: 'elektricien', plomberie: 'loodgieter',
+    chauffage: 'verwarmingsinstallateur', climatisation: 'airco-installateur',
+    menuiserie: 'schrijnwerker', peinture: 'schilder', carrelage: 'tegelzetter',
+  },
+  en: {
+    renovation: 'renovation', electricite: 'electrician', plomberie: 'plumber',
+    chauffage: 'heating', climatisation: 'air-conditioning',
+    menuiserie: 'carpenter', peinture: 'painter', carrelage: 'tiler',
+  },
+};
 
 // Communes de Bruxelles
 const BRUSSELS_COMMUNES = [
@@ -27,20 +46,40 @@ const VERICORE_SERVICES = [
   'climatisation', 'menuiserie', 'peinture', 'carrelage'
 ];
 
-// Générer toutes les URLs
+const LANGS = ['fr', 'nl', 'en'];
+const langPrefix = (lang) => (lang === 'fr' ? '' : `/${lang}`);
+
+/** Ajoute un trailing slash sauf pour la racine (matche le comportement Hostinger, évite les redirections) */
+const withTrailingSlash = (path) => {
+  if (path === '' || path === '/') return path;
+  return path.endsWith('/') ? path : `${path}/`;
+};
+
+// Génère les URLs pour toutes les langues avec alternates hreflang
 function generateSitemapURLs() {
   const today = new Date().toISOString().split('T')[0];
   const urls = [];
 
-  // Page d'accueil
-  urls.push({
-    loc: BASE_URL,
-    lastmod: today,
-    changefreq: 'weekly',
-    priority: 1.0,
-  });
+  const pushWithAlternates = (path, opts) => {
+    const slashed = withTrailingSlash(path);
+    LANGS.forEach(lang => {
+      const alternates = LANGS.map(l => ({
+        hreflang: l === 'fr' ? 'fr-be' : l === 'nl' ? 'nl-be' : 'en',
+        href: `${BASE_URL}${langPrefix(l)}${slashed}`,
+      }));
+      alternates.push({ hreflang: 'x-default', href: `${BASE_URL}${slashed}` });
+      urls.push({
+        loc: `${BASE_URL}${langPrefix(lang)}${slashed}`,
+        lastmod: today,
+        changefreq: opts.changefreq,
+        priority: opts.priority,
+        alternates,
+      });
+    });
+  };
 
-  // Pages principales
+  pushWithAlternates('/', { changefreq: 'weekly', priority: 1.0 });
+
   const mainPages = [
     { path: '/expertises', priority: 0.9 },
     { path: '/projects', priority: 0.8 },
@@ -49,67 +88,47 @@ function generateSitemapURLs() {
     { path: '/google-business', priority: 0.6 },
     { path: '/blog', priority: 0.8 },
   ];
+  mainPages.forEach(p => pushWithAlternates(p.path, { changefreq: 'weekly', priority: p.priority }));
 
-  mainPages.forEach(page => {
-    urls.push({
-      loc: `${BASE_URL}${page.path}`,
-      lastmod: today,
-      changefreq: 'weekly',
-      priority: page.priority,
-    });
-  });
+  // Pour chaque service × commune : générer les 3 URLs localisées avec hreflang correct
+  const communeSlugs = BRUSSELS_COMMUNES.map(c =>
+    c.toLowerCase().replace(/\s+/g, '-').replace(/'/g, '-')
+  );
 
-  // Pages services
-  VERICORE_SERVICES.forEach(service => {
-    urls.push({
-      loc: `${BASE_URL}/${service}-bruxelles`,
-      lastmod: today,
-      changefreq: 'monthly',
-      priority: 0.8,
-    });
-  });
-
-  // Pages communales (exclut Bruxelles: déjà générée dans la boucle services)
-  BRUSSELS_COMMUNES
-    .filter(commune => commune.toLowerCase() !== 'bruxelles')
-    .forEach(commune => {
-      const communeSlug = commune.toLowerCase()
-        .replace(/\s+/g, '-')
-        .replace(/'/g, '-');
-
-      urls.push({
-        loc: `${BASE_URL}/renovation-${communeSlug}`,
-        lastmod: today,
-        changefreq: 'monthly',
-        priority: 0.7,
+  VERICORE_SERVICES.forEach(serviceKey => {
+    communeSlugs.forEach(communeSlug => {
+      const priority = communeSlug === 'bruxelles' ? 0.8 : 0.7;
+      LANGS.forEach(lang => {
+        const localSlug = SERVICE_SLUGS_BY_LANG[lang][serviceKey];
+        const alternates = LANGS.map(l => ({
+          hreflang: l === 'fr' ? 'fr-be' : l === 'nl' ? 'nl-be' : 'en',
+          href: `${BASE_URL}${langPrefix(l)}/${SERVICE_SLUGS_BY_LANG[l][serviceKey]}-${communeSlug}/`,
+        }));
+        alternates.push({
+          hreflang: 'x-default',
+          href: `${BASE_URL}/${SERVICE_SLUGS_BY_LANG.fr[serviceKey]}-${communeSlug}/`,
+        });
+        urls.push({
+          loc: `${BASE_URL}${langPrefix(lang)}/${localSlug}-${communeSlug}/`,
+          lastmod: today,
+          changefreq: 'monthly',
+          priority,
+          alternates,
+        });
       });
     });
+  });
 
-  // Articles de blog
   const blogPosts = [
     'cout-renovation-bruxelles-2026',
     'electricite-mise-aux-normes-rgie-bruxelles',
     '10-erreurs-renovation-eviter'
   ];
-
   blogPosts.forEach(slug => {
-    urls.push({
-      loc: `${BASE_URL}/blog/${slug}`,
-      lastmod: today,
-      changefreq: 'monthly',
-      priority: 0.6,
-    });
+    pushWithAlternates(`/blog/${slug}`, { changefreq: 'monthly', priority: 0.6 });
   });
 
-  // Pages légales
-  urls.push(
-    {
-      loc: `${BASE_URL}/mentions-legales`,
-      lastmod: today,
-      changefreq: 'yearly',
-      priority: 0.3,
-    }
-  );
+  pushWithAlternates('/mentions-legales', { changefreq: 'yearly', priority: 0.3 });
 
   return urls;
 }
@@ -138,16 +157,21 @@ function generateSitemapXML(urls) {
       <image:title>${img.title}</image:title>
     </image:image>`).join('\n');
 
+    const alternatesXml = (url.alternates || []).map(a =>
+      `    <xhtml:link rel="alternate" hreflang="${a.hreflang}" href="${a.href}" />`
+    ).join('\n');
+
     return `  <url>
     <loc>${url.loc}</loc>
     ${url.lastmod ? `<lastmod>${url.lastmod}</lastmod>` : ''}
     ${url.changefreq ? `<changefreq>${url.changefreq}</changefreq>` : ''}
-    ${url.priority !== undefined ? `<priority>${url.priority.toFixed(1)}</priority>` : ''}${imageXml ? '\n' + imageXml : ''}
+    ${url.priority !== undefined ? `<priority>${url.priority.toFixed(1)}</priority>` : ''}${alternatesXml ? '\n' + alternatesXml : ''}${imageXml ? '\n' + imageXml : ''}
   </url>`;
   }).join('\n');
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${urlElements}
 </urlset>`;

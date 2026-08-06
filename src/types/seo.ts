@@ -28,6 +28,8 @@ export interface SEOConfig {
   noIndex?: boolean;
   /** Désactiver le suivi des liens */
   noFollow?: boolean;
+  /** Alternates hreflang explicites (utilisés pour les pages avec slugs différents par langue) */
+  alternates?: { hreflang: string; href: string }[];
 }
 
 export interface LocalBusinessSchema {

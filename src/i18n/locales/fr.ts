@@ -721,7 +721,7 @@ export const fr = {
     contact: 'Contact',
     available247: 'Disponible 24h/7',
     whatsappAvailable: 'WhatsApp disponible',
-    vat: 'TVA : BE0799.820.685',
+    vat: 'TVA : BE1005.585.934',
     copyright: '© {{year}} Vericore SRL. Tous droits réservés.',
     legal: 'Mentions légales',
     privacy: 'Politique de confidentialité'

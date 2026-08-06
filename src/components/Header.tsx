@@ -4,6 +4,7 @@ import { Menu, X, Phone, Languages, Clock, FileText, CreditCard } from 'lucide-r
 import { useTranslation } from 'react-i18next';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Button from './Button';
+import MegaMenu from './MegaMenu';
 import MobileLanguageOverlay from './mobile/MobileLanguageOverlay';
 import { scrollToSection } from '../lib/scrollToSection';
 import logo from '../assets/logo.jpeg';
@@ -144,7 +145,19 @@ const Header: React.FC<HeaderProps> = ({ onOpenLanguageSelector }) => {
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center gap-8">
-              {navLinks.map((link) => (
+              {navLinks.slice(0, 2).map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={(e) => handleNavClick(e, link)}
+                  className="text-gray-700 hover:text-primary-600 font-medium transition-colors relative group"
+                >
+                  {link.name}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-600 transition-all group-hover:w-full" />
+                </a>
+              ))}
+              <MegaMenu />
+              {navLinks.slice(2).map((link) => (
                 <a
                   key={link.name}
                   href={link.href}

@@ -7,14 +7,14 @@ import type { BlogPost, BlogAuthor } from '../types/blog';
 
 export const blogAuthors: Record<string, BlogAuthor> = {
   'jean-dupont': {
-    name: 'Jean Dupont',
-    role: 'Expert en rénovation',
-    bio: 'Plus de 15 ans d\'expérience dans la rénovation à Bruxelles. Passionné par les techniques modernes de construction.',
+    name: 'Équipe Vericore',
+    role: 'Rédaction Vericore',
+    bio: 'Contenu rédigé par l\'équipe Vericore, entreprise de maintenance et rénovation de bâtiments à Bruxelles.',
   },
   'marie-martin': {
-    name: 'Marie Martin',
-    role: 'Électricienne certifiée',
-    bio: 'Spécialiste en installations électriques et domotique. Formatrice agréée RGIE.',
+    name: 'Équipe Vericore',
+    role: 'Rédaction Vericore',
+    bio: 'Contenu rédigé par l\'équipe Vericore, entreprise de maintenance et rénovation de bâtiments à Bruxelles.',
   },
 };
 

@@ -3,12 +3,29 @@ import react from '@vitejs/plugin-react'
 import { visualizer } from 'rollup-plugin-visualizer'
 import prerender from '@prerenderer/rollup-plugin'
 
-const SERVICES = [
-  'renovation', 'electricite', 'plomberie', 'chauffage',
-  'climatisation', 'menuiserie', 'peinture', 'carrelage',
-]
+// URL slugs par langue et par service (doit rester synchro avec src/data/serviceContent.ts)
+const SERVICE_SLUGS_BY_LANG: Record<string, Record<string, string>> = {
+  fr: {
+    renovation: 'renovation', electricite: 'electricien', plomberie: 'plombier',
+    chauffage: 'chauffagiste', climatisation: 'climatisation', menuiserie: 'menuisier',
+    peinture: 'peintre', carrelage: 'carreleur',
+  },
+  nl: {
+    renovation: 'renovatie', electricite: 'elektricien', plomberie: 'loodgieter',
+    chauffage: 'verwarmingsinstallateur', climatisation: 'airco-installateur',
+    menuiserie: 'schrijnwerker', peinture: 'schilder', carrelage: 'tegelzetter',
+  },
+  en: {
+    renovation: 'renovation', electricite: 'electrician', plomberie: 'plumber',
+    chauffage: 'heating', climatisation: 'air-conditioning',
+    menuiserie: 'carpenter', peinture: 'painter', carrelage: 'tiler',
+  },
+}
 
-const COMMUNES_SLUGS = [
+const SERVICE_KEYS = Object.keys(SERVICE_SLUGS_BY_LANG.fr)
+
+const CITY_SLUGS = [
+  'bruxelles',
   'anderlecht', 'auderghem', 'berchem-sainte-agathe',
   'etterbeek', 'evere', 'forest', 'ganshoren', 'ixelles', 'jette',
   'koekelberg', 'molenbeek-saint-jean', 'saint-gilles', 'saint-josse-ten-noode',
@@ -21,7 +38,7 @@ const BLOG_POSTS = [
   '10-erreurs-renovation-eviter',
 ]
 
-const PRERENDER_ROUTES = [
+const STATIC_PAGES = [
   '/',
   '/expertises',
   '/projects',
@@ -30,9 +47,38 @@ const PRERENDER_ROUTES = [
   '/garanties',
   '/mentions-legales',
   '/google-business',
-  ...SERVICES.map(s => `/${s}-bruxelles`),
-  ...COMMUNES_SLUGS.map(c => `/renovation-${c}`),
+]
+
+/** Génère toutes les URLs métier-commune pour une langue donnée. */
+const generateServiceCityRoutes = (lang: string): string[] => {
+  const slugs = SERVICE_SLUGS_BY_LANG[lang]
+  const prefix = lang === 'fr' ? '' : `/${lang}`
+  const routes: string[] = []
+  SERVICE_KEYS.forEach(key => {
+    const serviceSlug = slugs[key]
+    CITY_SLUGS.forEach(city => {
+      routes.push(`${prefix}/${serviceSlug}-${city}`)
+    })
+  })
+  return routes
+}
+
+const withLangPrefix = (routes: string[], prefix: string) =>
+  routes.map(r => (r === '/' ? `/${prefix}` : `/${prefix}${r}`))
+
+const PRERENDER_ROUTES = [
+  // Pages statiques (3 langues)
+  ...STATIC_PAGES,
+  ...withLangPrefix(STATIC_PAGES, 'nl'),
+  ...withLangPrefix(STATIC_PAGES, 'en'),
+  // Blog articles (3 langues)
   ...BLOG_POSTS.map(slug => `/blog/${slug}`),
+  ...BLOG_POSTS.map(slug => `/nl/blog/${slug}`),
+  ...BLOG_POSTS.map(slug => `/en/blog/${slug}`),
+  // Landing pages métier × commune (8 × 19 × 3 = 456 URLs)
+  ...generateServiceCityRoutes('fr'),
+  ...generateServiceCityRoutes('nl'),
+  ...generateServiceCityRoutes('en'),
 ]
 
 // https://vite.dev/config/
@@ -60,7 +106,7 @@ export default defineConfig({
             /<meta name="google-site-verification" content="VOTRE_CODE_ICI"\s*\/?>/,
             ''
           )
-          .replace(/https?:\/\/localhost:\d+/g, 'https://www.vericore.be')
+          .replace(/https?:\/\/localhost:\d+/g, 'https://vericore.be')
       },
     }),
   ],
