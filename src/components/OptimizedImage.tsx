@@ -183,11 +183,12 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
         </picture>
       )}
 
-      {/* Message d'erreur */}
+      {/* Fallback silencieux si l'image n'est pas trouvée (dégradé neutre, pas de message) */}
       {hasError && (
-        <div className="absolute inset-0 flex items-center justify-center bg-gray-100 text-gray-500">
-          <span className="text-sm">Image indisponible</span>
-        </div>
+        <div
+          className="absolute inset-0 bg-gradient-to-br from-gray-200 via-gray-300 to-gray-400"
+          aria-hidden="true"
+        />
       )}
     </div>
   );

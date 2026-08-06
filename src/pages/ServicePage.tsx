@@ -3,28 +3,56 @@
  * Architecture 2026: Contenu structuré, E-E-A-T, conversion
  */
 
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import SEOHead from '../components/SEOHead';
 import StructuredData from '../components/StructuredData';
-import OptimizedImage from '../components/OptimizedImage';
-import { generateServiceSEO } from '../config/seo.config';
+import { generateServiceSEO, COMPANY_INFO } from '../config/seo.config';
 import Button from '../components/Button';
 import { Phone, MessageSquare, CheckCircle2, MapPin, Clock, Shield } from 'lucide-react';
 import type { ServiceSchema, FAQSchema } from '../types/seo';
-import { SERVICE_CONTENT, type ServiceContent } from '../data/serviceContent';
-import { getCommuneContent } from '../data/communeContent';
+import { getServiceContentByLang, SERVICE_CONTENT, type ServiceContent, type Lang } from '../data/serviceContent';
+import { getCommuneContentByLang } from '../data/communeContent';
+import { getServiceLabels } from '../data/uiLabels';
+
+const WHATSAPP_URL = `https://wa.me/${COMPANY_INFO.whatsapp.replace(/\s|\+/g, '')}`;
+
+const SERVICE_IMAGE: Record<string, string> = {
+  renovation: '/installation-maintenance.png',
+  electricite: '/eclairage.png',
+  plomberie: '/plomberie.png',
+  chauffage: '/chaudiere.png',
+  climatisation: '/chaudiere.png',
+  menuiserie: '/bg-worker.png',
+  peinture: '/plafonnage.png',
+  carrelage: '/bureaux.png',
+};
+
+const getServiceImage = (service: string): string =>
+  SERVICE_IMAGE[service] || '/bg-worker.png';
 
 interface ServicePageProps {
   service: string;
   city?: string;
+  lang?: Lang;
 }
 
 /**
  * Composant réutilisable pour les pages services
  */
-export const ServicePage: React.FC<ServicePageProps> = ({ service, city = 'Bruxelles' }) => {
-  
+export const ServicePage: React.FC<ServicePageProps> = ({ service, city = 'Bruxelles', lang = 'fr' }) => {
+  const navigate = useNavigate();
+  const { i18n } = useTranslation();
+  const labels = getServiceLabels(lang);
+
+  useEffect(() => {
+    if (i18n.language !== lang) i18n.changeLanguage(lang);
+    document.documentElement.lang = lang === 'fr' ? 'fr-BE' : lang === 'nl' ? 'nl-BE' : 'en';
+  }, [i18n, lang]);
+
   // Configuration SEO dynamique
-  const seoConfig = generateServiceSEO(service, city);
+  const seoConfig = generateServiceSEO(service, city, lang);
 
   // Données structurées pour le service
   const serviceSchema: ServiceSchema = {
@@ -33,7 +61,7 @@ export const ServicePage: React.FC<ServicePageProps> = ({ service, city = 'Bruxe
     serviceType: service,
     provider: {
       name: 'Vericore SRL',
-      url: 'https://www.vericore.be',
+      url: 'https://vericore.be',
     },
     areaServed: [city, 'Bruxelles', 'Région de Bruxelles-Capitale'],
     availableChannel: {
@@ -42,8 +70,8 @@ export const ServicePage: React.FC<ServicePageProps> = ({ service, city = 'Bruxe
     },
   };
 
-  // Contenu spécifique par service
-  const serviceContent = getServiceContent(service, city);
+  // Contenu spécifique par service (dans la langue courante)
+  const serviceContent = getServiceContent(service, city, lang);
 
   // FAQ spécifique au service
   const faqSchema: FAQSchema = {
@@ -51,7 +79,12 @@ export const ServicePage: React.FC<ServicePageProps> = ({ service, city = 'Bruxe
   };
 
   const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    const existing = document.getElementById('contact');
+    if (existing) {
+      existing.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate(lang === 'fr' ? '/#contact' : `/${lang}/#contact`);
+    }
   };
 
   return (
@@ -66,23 +99,24 @@ export const ServicePage: React.FC<ServicePageProps> = ({ service, city = 'Bruxe
       <StructuredData
         type="Breadcrumb"
         data={[
-          { name: 'Accueil', url: 'https://www.vericore.be' },
-          { name: 'Expertises', url: 'https://www.vericore.be/expertises' },
+          { name: 'Accueil', url: 'https://vericore.be' },
+          { name: 'Expertises', url: 'https://vericore.be/expertises' },
           { name: `${service} ${city}`, url: seoConfig.canonical },
         ]}
       />
 
       <div className="min-h-screen bg-white pt-20">
         {/* Hero Section avec image optimisée */}
-        <section className="relative h-[400px] lg:h-[500px] bg-gradient-to-r from-primary-900 to-primary-700">
-          <OptimizedImage
-            src={`/images/services/${service}-hero`}
-            alt={`${service} professionnelle à ${city} - Vericore`}
-            className="absolute inset-0 w-full h-full opacity-30"
-            objectFit="cover"
+        <section className="relative h-[400px] lg:h-[500px] bg-gradient-to-r from-primary-900 to-primary-700 overflow-hidden">
+          <img
+            src={getServiceImage(service)}
+            alt=""
+            aria-hidden="true"
+            className="absolute inset-0 w-full h-full object-cover opacity-25"
             loading="eager"
           />
-          
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-900/60 to-primary-700/40" aria-hidden="true" />
+
           <div className="relative z-10 max-w-7xl mx-auto px-4 h-full flex flex-col justify-center">
             <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
               {seoConfig.h1}
@@ -93,35 +127,34 @@ export const ServicePage: React.FC<ServicePageProps> = ({ service, city = 'Bruxe
             
             {/* CTA Hero */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
+              <Button
                 onClick={scrollToContact}
                 className="bg-white text-primary-700 hover:bg-gray-100 lg:hidden"
               >
                 <Phone className="w-5 h-5 mr-2" />
-                Devis Gratuit 24h
+                {labels.cta.devisShort}
               </Button>
-              <Button 
-                onClick={() => window.open(`https://wa.me/32470123456`, '_blank')}
+              <Button
+                onClick={() => window.open(WHATSAPP_URL, '_blank')}
                 className="bg-green-600 hover:bg-green-700 text-white lg:hidden"
               >
                 <MessageSquare className="w-5 h-5 mr-2" />
-                WhatsApp 24/7
+                {labels.cta.whatsappShort}
               </Button>
-              
-              {/* Desktop */}
-              <Button 
+
+              <Button
                 onClick={scrollToContact}
                 className="hidden lg:inline-flex bg-white text-primary-700 hover:bg-gray-100"
               >
                 <Phone className="w-5 h-5 mr-2" />
-                Devis Gratuit sous 24h
+                {labels.cta.devisLong}
               </Button>
-              <Button 
-                onClick={() => window.open(`https://wa.me/32470123456`, '_blank')}
+              <Button
+                onClick={() => window.open(WHATSAPP_URL, '_blank')}
                 className="hidden lg:inline-flex bg-green-600 hover:bg-green-700 text-white"
               >
                 <MessageSquare className="w-5 h-5 mr-2" />
-                Contactez-nous sur WhatsApp
+                {labels.cta.whatsappLong}
               </Button>
             </div>
           </div>
@@ -159,13 +192,13 @@ export const ServicePage: React.FC<ServicePageProps> = ({ service, city = 'Bruxe
               </div>
               
               <div>
-                <OptimizedImage
-                  src={`/images/services/${service}-detail`}
-                  alt={`Exemple de ${service} réalisée à ${city}`}
-                  className="rounded-lg shadow-xl"
+                <img
+                  src={getServiceImage(service)}
+                  alt={`Illustration ${service} - Vericore intervient à ${city}`}
+                  className="rounded-lg shadow-xl w-full h-auto object-cover aspect-[3/2]"
+                  loading="lazy"
                   width={600}
                   height={400}
-                  loading="lazy"
                 />
               </div>
             </div>
@@ -176,7 +209,7 @@ export const ServicePage: React.FC<ServicePageProps> = ({ service, city = 'Bruxe
         <section className="bg-gray-50 py-16">
           <div className="max-w-7xl mx-auto px-4">
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-              Pour qui ?
+              {labels.sections.forWho}
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               {serviceContent.targetAudience.map((target, index) => (
@@ -196,7 +229,7 @@ export const ServicePage: React.FC<ServicePageProps> = ({ service, city = 'Bruxe
           <div className="max-w-7xl mx-auto px-4">
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
               <MapPin className="w-8 h-8 inline-block mr-2 text-primary-600" />
-              Zones couvertes à Bruxelles
+              {labels.sections.areasCovered(city)}
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {serviceContent.areasCovered.map((area, index) => (
@@ -213,7 +246,7 @@ export const ServicePage: React.FC<ServicePageProps> = ({ service, city = 'Bruxe
         <section className="bg-primary-50 py-16">
           <div className="max-w-7xl mx-auto px-4">
             <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-              Notre processus en 4 étapes
+              {labels.sections.process}
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {serviceContent.process.map((step, index) => (
@@ -235,7 +268,7 @@ export const ServicePage: React.FC<ServicePageProps> = ({ service, city = 'Bruxe
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-4">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
-              Facteurs influençant le prix
+              {labels.sections.pricing}
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               {serviceContent.pricingFactors.map((factor, index) => (
@@ -257,7 +290,7 @@ export const ServicePage: React.FC<ServicePageProps> = ({ service, city = 'Bruxe
         <section className="bg-gray-50 py-16">
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-              Questions fréquentes
+              {labels.sections.faq}
             </h2>
             <div className="space-y-6">
               {serviceContent.faq.map((item, index) => (
@@ -276,25 +309,25 @@ export const ServicePage: React.FC<ServicePageProps> = ({ service, city = 'Bruxe
         <section className="bg-primary-700 py-16">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold text-white mb-4">
-              Besoin de {service} à {city} ?
+              {labels.sections.finalCta(service, city)}
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Devis gratuit sous 24h • Intervention rapide • Garantie décennale
+              {labels.sections.finalCtaSubtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
+              <Button
                 onClick={scrollToContact}
                 className="bg-white text-primary-700 hover:bg-gray-100"
               >
                 <Phone className="w-5 h-5 mr-2" />
-                Demander un devis gratuit
+                {labels.sections.finalCtaDevis}
               </Button>
-              <Button 
-                onClick={() => window.open(`https://wa.me/32470123456`, '_blank')}
+              <Button
+                onClick={() => window.open(WHATSAPP_URL, '_blank')}
                 className="bg-green-600 hover:bg-green-700 text-white"
               >
                 <MessageSquare className="w-5 h-5 mr-2" />
-                WhatsApp 24/7
+                {labels.sections.finalCtaWhatsapp}
               </Button>
             </div>
           </div>
@@ -309,14 +342,20 @@ const FALLBACK_AREAS = [
   'Uccle', 'Anderlecht', 'Molenbeek', 'Forest', 'Saint-Gilles', 'Woluwe',
 ];
 
-const getServiceContent = (service: string, city: string) => {
-  const serviceData: ServiceContent | undefined = SERVICE_CONTENT[service];
-  const communeData = getCommuneContent(city);
+const getServiceContent = (service: string, city: string, lang: Lang = 'fr') => {
+  const serviceData: ServiceContent | undefined = getServiceContentByLang(service, lang) ?? SERVICE_CONTENT[service];
+  const communeData = getCommuneContentByLang(city, lang);
   const isBruxellesCity = city.toLowerCase() === 'bruxelles';
 
   if (serviceData) {
-    const localParagraphs = communeData && !isBruxellesCity
-      ? [communeData.typology, communeData.localNote].filter((p): p is string => Boolean(p))
+    // Contexte commune : typologie + note locale + contexte chantier spécifique
+    // Injecté aussi pour Bruxelles (chantier centre-ville = enjeu unique)
+    const localParagraphs = communeData
+      ? [
+          isBruxellesCity ? null : communeData.typology,
+          communeData.constructionContext,
+          communeData.localNote,
+        ].filter((p): p is string => Boolean(p))
       : [];
 
     const areasCovered = communeData

@@ -60,9 +60,9 @@ export const LegalPage: React.FC = () => {
               </h2>
               <p>
                 Ce site est hébergé par :<br />
-                [Nom de l'hébergeur]<br />
-                [Adresse de l'hébergeur]<br />
-                [Téléphone de l'hébergeur]
+                Hostinger International Ltd.<br />
+                61 Lordou Vironos Street, 6023 Larnaca, Chypre<br />
+                <a href="https://www.hostinger.com" className="text-primary-600 hover:underline">www.hostinger.com</a>
               </p>
             </section>
 

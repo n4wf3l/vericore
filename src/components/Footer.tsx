@@ -1,13 +1,43 @@
 import React from 'react';
 import { MapPin, Mail, Phone, Clock } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import logo from '../assets/icon..png';
+import { SERVICE_URL_SLUGS, type Lang, type ServiceKey } from '../data/serviceContent';
+
+// Top communes bruxelloises pour maillage interne (les plus recherchées)
+const TOP_COMMUNES = ['bruxelles', 'ixelles', 'uccle', 'schaerbeek', 'etterbeek', 'saint-gilles'];
+const TOP_SERVICES: ServiceKey[] = ['plomberie', 'electricite', 'chauffage', 'renovation'];
+
+const SERVICE_DISPLAY: Record<Lang, Record<ServiceKey, string>> = {
+  fr: {
+    renovation: 'Rénovation', electricite: 'Électricien', plomberie: 'Plombier',
+    chauffage: 'Chauffagiste', climatisation: 'Climatisation', menuiserie: 'Menuisier',
+    peinture: 'Peintre', carrelage: 'Carreleur',
+  },
+  nl: {
+    renovation: 'Renovatie', electricite: 'Elektricien', plomberie: 'Loodgieter',
+    chauffage: 'Verwarmingsinstallateur', climatisation: 'Airco', menuiserie: 'Schrijnwerker',
+    peinture: 'Schilder', carrelage: 'Tegelzetter',
+  },
+  en: {
+    renovation: 'Renovation', electricite: 'Electrician', plomberie: 'Plumber',
+    chauffage: 'Heating engineer', climatisation: 'Air conditioning', menuiserie: 'Carpenter',
+    peinture: 'Painter', carrelage: 'Tiler',
+  },
+};
+
+const capitalizeCommune = (slug: string): string =>
+  slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join('-');
 
 const Footer: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const currentYear = new Date().getFullYear();
+  const lang = (i18n.language || 'fr').slice(0, 2) as Lang;
+  const langPrefix = lang === 'fr' ? '' : `/${lang}`;
+  const serviceSlugs = SERVICE_URL_SLUGS[lang] ?? SERVICE_URL_SLUGS.fr;
+  const serviceLabels = SERVICE_DISPLAY[lang] ?? SERVICE_DISPLAY.fr;
 
   const quickLinks = [
     { name: t('nav.home'), href: '/', isRoute: true },
@@ -17,14 +47,17 @@ const Footer: React.FC = () => {
     { name: t('nav.contact'), href: '#contact', isRoute: false },
   ];
 
-  const services = [
-    t('services.maintenance.title'),
-    t('services.renovation.title'),
-    t('services.plumbing.title'),
-    t('services.electrical.title'),
-    t('services.tiling.title'),
-    t('services.painting.title'),
-  ];
+  // Liens SEO : chaque service pointe vers sa page /{métier}-bruxelles dans la langue courante
+  const serviceLinks = TOP_SERVICES.map(key => ({
+    label: serviceLabels[key],
+    to: `${langPrefix}/${serviceSlugs[key]}-bruxelles`,
+  }));
+
+  // Colonne zones : top communes en Rénovation (haut volume + SEO local)
+  const zoneLinks = TOP_COMMUNES.map(city => ({
+    label: capitalizeCommune(city),
+    to: `${langPrefix}/${serviceSlugs.renovation}-${city}`,
+  }));
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, link: { href: string; isRoute: boolean }) => {
     e.preventDefault();
@@ -87,15 +120,36 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Services (liens internes SEO) */}
           <div>
             <h4 className="font-semibold text-white text-lg mb-4">{t('footer.services')}</h4>
             <ul className="space-y-2">
-              {services.map((service) => (
-                <li key={service}>
-                  <span className="text-sm text-gray-400">
-                    {service}
-                  </span>
+              {serviceLinks.map(link => (
+                <li key={link.to}>
+                  <Link
+                    to={link.to}
+                    onClick={() => window.scrollTo({ top: 0 })}
+                    className="text-sm text-gray-400 hover:text-primary-400 transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <h4 className="font-semibold text-white text-lg mt-6 mb-4">
+              {lang === 'nl' ? 'Zones' : lang === 'en' ? 'Areas' : 'Zones'}
+            </h4>
+            <ul className="space-y-2">
+              {zoneLinks.map(link => (
+                <li key={link.to}>
+                  <Link
+                    to={link.to}
+                    onClick={() => window.scrollTo({ top: 0 })}
+                    className="text-sm text-gray-400 hover:text-primary-400 transition-colors"
+                  >
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>

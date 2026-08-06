@@ -1,21 +1,64 @@
 # SPA fallback + cache — Vericore
 
+# Page 404 personnalisée (renvoie un vrai code HTTP 404)
+ErrorDocument 404 /404.html
+
+# Empêche Apache d'ajouter automatiquement un trailing slash aux URLs de dossier
+# (évite la redirection chain /plombier-uccle → /plombier-uccle/)
+<IfModule mod_dir.c>
+  DirectorySlash Off
+  DirectoryIndex index.html
+</IfModule>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
 
-  # Force HTTPS (à activer une fois le certificat en place)
-  # RewriteCond %{HTTPS} off
-  # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  # Force HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  # Redirect apex → www (à ajuster selon la config du client)
-  # RewriteCond %{HTTP_HOST} ^vericore\.be$ [NC]
-  # RewriteRule ^(.*)$ https://www.vericore.be/$1 [L,R=301]
+  # Redirect www → apex (vericore.be canonique)
+  RewriteCond %{HTTP_HOST} ^www\.vericore\.be$ [NC]
+  RewriteRule ^(.*)$ https://vericore.be/$1 [L,R=301]
 
-  # Ne pas réécrire les fichiers/dossiers existants (index.html prérendus par route)
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^ index.html [L]
+  # FR est à la racine sans préfixe : redirect /fr/xxx → /xxx
+  RewriteRule ^fr/?$ / [L,R=301]
+  RewriteRule ^fr/(.*)$ /$1 [L,R=301]
+
+  # Redirections métier : anciennes URLs "trade" → nouvelles URLs "profession" (SEO)
+  # FR
+  RewriteRule ^plomberie-(.+)$ /plombier-$1 [L,R=301]
+  RewriteRule ^electricite-(.+)$ /electricien-$1 [L,R=301]
+  RewriteRule ^chauffage-(.+)$ /chauffagiste-$1 [L,R=301]
+  RewriteRule ^menuiserie-(.+)$ /menuisier-$1 [L,R=301]
+  RewriteRule ^peinture-(.+)$ /peintre-$1 [L,R=301]
+  RewriteRule ^carrelage-(.+)$ /carreleur-$1 [L,R=301]
+  # NL
+  RewriteRule ^nl/plomberie-(.+)$ /nl/loodgieter-$1 [L,R=301]
+  RewriteRule ^nl/electricite-(.+)$ /nl/elektricien-$1 [L,R=301]
+  RewriteRule ^nl/chauffage-(.+)$ /nl/verwarmingsinstallateur-$1 [L,R=301]
+  RewriteRule ^nl/climatisation-(.+)$ /nl/airco-installateur-$1 [L,R=301]
+  RewriteRule ^nl/menuiserie-(.+)$ /nl/schrijnwerker-$1 [L,R=301]
+  RewriteRule ^nl/peinture-(.+)$ /nl/schilder-$1 [L,R=301]
+  RewriteRule ^nl/carrelage-(.+)$ /nl/tegelzetter-$1 [L,R=301]
+  RewriteRule ^nl/renovation-(.+)$ /nl/renovatie-$1 [L,R=301]
+  # EN
+  RewriteRule ^en/plomberie-(.+)$ /en/plumber-$1 [L,R=301]
+  RewriteRule ^en/electricite-(.+)$ /en/electrician-$1 [L,R=301]
+  RewriteRule ^en/chauffage-(.+)$ /en/heating-$1 [L,R=301]
+  RewriteRule ^en/climatisation-(.+)$ /en/air-conditioning-$1 [L,R=301]
+  RewriteRule ^en/menuiserie-(.+)$ /en/carpenter-$1 [L,R=301]
+  RewriteRule ^en/peinture-(.+)$ /en/painter-$1 [L,R=301]
+  RewriteRule ^en/carrelage-(.+)$ /en/tiler-$1 [L,R=301]
+
+  # Servir index.html si l'URL correspond à un dossier prérendu
+  # (grâce à DirectorySlash Off, aucun trailing slash n'est ajouté par Apache)
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^(.+)$ /$1/index.html [L]
+
+  # Toute URL non résolue → 404.html avec vrai statut 404 (ErrorDocument ci-dessus)
+  # Pas de SPA fallback en 200 : Google reçoit un vrai 404 pour les URLs inexistantes
 </IfModule>
 
 # Cache long pour assets hashés

@@ -21,10 +21,19 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onLanguageSelect }) => {
   const handleLanguageSelect = (langCode: string) => {
     setSelectedLanguage(langCode);
     i18n.changeLanguage(langCode);
-    
-    // Delay to show selection animation before closing splash
+    localStorage.setItem('vericore-language', langCode);
+
+    // Delay to show selection animation before navigating
     setTimeout(() => {
       onLanguageSelect();
+      // Navigation vers la variante URL correspondant à la langue choisie
+      const path = window.location.pathname;
+      const stripped =
+        path === '/nl' || path === '/en' ? '/'
+        : path.startsWith('/nl/') || path.startsWith('/en/') ? path.slice(3)
+        : path;
+      const target = langCode === 'fr' ? (stripped || '/') : (stripped === '/' ? `/${langCode}` : `/${langCode}${stripped}`);
+      if (target !== path) window.location.assign(target + window.location.search + window.location.hash);
     }, 500);
   };
 

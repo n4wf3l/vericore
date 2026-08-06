@@ -94,11 +94,23 @@ export const SEOHead: React.FC<SEOHeadProps> = ({ config = {} }) => {
       document.head.appendChild(link);
     };
     removeExistingHreflang();
-    const canonicalPath = seoConfig.canonical.replace(BASE_URL, '') || '/';
-    addHreflang('fr-be', `${BASE_URL}${canonicalPath}`);
-    addHreflang('nl-be', `${BASE_URL}/nl${canonicalPath === '/' ? '' : canonicalPath}`);
-    addHreflang('en', `${BASE_URL}/en${canonicalPath === '/' ? '' : canonicalPath}`);
-    addHreflang('x-default', `${BASE_URL}${canonicalPath}`);
+    if (seoConfig.alternates && seoConfig.alternates.length > 0) {
+      // Alternates explicites (pages avec slugs traduits comme services/communes)
+      seoConfig.alternates.forEach(a => addHreflang(a.hreflang, a.href));
+    } else {
+      // Fallback pour pages avec slug identique dans toutes les langues
+      const canonicalPath = seoConfig.canonical.replace(BASE_URL, '') || '/';
+      const stripLang = (p: string): string =>
+        p.startsWith('/nl/') ? p.slice(3) :
+        p === '/nl' ? '/' :
+        p.startsWith('/en/') ? p.slice(3) :
+        p === '/en' ? '/' : p;
+      const basePath = stripLang(canonicalPath);
+      addHreflang('fr-be', `${BASE_URL}${basePath}`);
+      addHreflang('nl-be', `${BASE_URL}/nl${basePath === '/' ? '' : basePath}`);
+      addHreflang('en', `${BASE_URL}/en${basePath === '/' ? '' : basePath}`);
+      addHreflang('x-default', `${BASE_URL}${basePath}`);
+    }
 
     // Open Graph
     setMetaTag('og:title', seoConfig.title, true);

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Hero from '../sections/Hero';
 import TrustStripMobile from '../components/mobile/TrustStripMobile';
 import AboutSection from '../sections/AboutSection';
@@ -10,6 +11,18 @@ import SEOHead from '../components/SEOHead';
 import StructuredData from '../components/StructuredData';
 
 const HomePage: React.FC = () => {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash !== '#contact') return;
+    const scrollWhenReady = () => {
+      const target = document.getElementById('contact');
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+      else setTimeout(scrollWhenReady, 100);
+    };
+    scrollWhenReady();
+  }, [hash]);
+
   return (
     <>
       <SEOHead />
@@ -20,7 +33,7 @@ const HomePage: React.FC = () => {
           name: 'Vericore - Maintenance & Rénovation de Bâtiments à Bruxelles',
           description:
             'Spécialiste en maintenance et rénovation de bâtiments à Bruxelles. Service 24h/7, devis gratuit.',
-          url: 'https://www.vericore.be',
+          url: 'https://vericore.be',
         }}
       />
       <StructuredData

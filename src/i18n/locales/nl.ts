@@ -721,7 +721,7 @@ export const nl = {
     contact: 'Contact',
     available247: 'Beschikbaar 24/7',
     whatsappAvailable: 'WhatsApp beschikbaar',
-    vat: 'BTW: BE0799.820.685',
+    vat: 'BTW: BE1005.585.934',
     copyright: '© {{year}} Vericore SRL. Alle rechten voorbehouden.',
     legal: 'Juridische vermeldingen',
     privacy: 'Privacybeleid'

@@ -5,6 +5,7 @@
 
 import type { LocalBusinessSchema, SEOConfig } from '../types/seo';
 import { env } from './env';
+import { SERVICE_URL_SLUGS, type ServiceKey } from '../data/serviceContent';
 
 /** URL de base du site (automatique selon l'environnement) */
 export const BASE_URL = env.baseUrl;
@@ -16,12 +17,12 @@ export const COMPANY_INFO = {
   slogan: 'Votre partenaire de confiance pour tous vos travaux à Bruxelles',
   description: 'Entreprise générale de construction et rénovation à Bruxelles. Expert en électricité, plomberie, chauffage, menuiserie et tous corps d\'état. Service 24/7, devis gratuit.',
   email: 'contact@vericore.be',
-  phone: '+32 2 123 45 67',
-  whatsapp: '+32 470 12 34 56',
+  phone: '+32 496 84 73 74',
+  whatsapp: '+32 496 84 73 74',
   address: {
-    street: 'Avenue Louise 123',
-    city: 'Bruxelles',
-    postalCode: '1050',
+    street: 'Rue Esseghem 43',
+    city: 'Jette',
+    postalCode: '1090',
     country: 'Belgique',
     countryCode: 'BE',
   },
@@ -31,11 +32,11 @@ export const COMPANY_INFO = {
     instagram: 'https://instagram.com/vericore',
   },
   geo: {
-    latitude: 50.8503,
-    longitude: 4.3517,
+    latitude: 50.8788,
+    longitude: 4.3287,
   },
   foundingYear: 2020,
-  vatNumber: 'BE0123.456.789',
+  vatNumber: 'BE1005.585.934',
 } as const;
 
 /**
@@ -119,19 +120,64 @@ export const generateServiceSEO = (
   };
 
   const serviceLabel = serviceLabels[service as keyof typeof serviceLabels]?.[lang] || service;
+  const citySlug = city.toLowerCase().replace(/\s+/g, '-');
+  const langPrefix = lang === 'fr' ? '' : `/${lang}`;
+  const urlSlug = SERVICE_URL_SLUGS[lang]?.[service as ServiceKey] || service;
+
+  const t = {
+    fr: {
+      title: `${serviceLabel} ${city} - Devis Gratuit 24h | ${COMPANY_INFO.name}`,
+      description: `Expert ${serviceLabel.toLowerCase()} à ${city}. Service professionnel, devis gratuit sous 24h, garantie décennale. Interventions rapides dans toute la région.`,
+      h1: `${serviceLabel} professionnelle à ${city}`,
+      keywords: [
+        `${service} ${city}`,
+        `${service} professionnel ${city}`,
+        `devis ${service} ${city}`,
+        `prix ${service} ${city}`,
+        `entreprise ${service} ${city}`,
+      ],
+    },
+    nl: {
+      title: `${serviceLabel} ${city} - Gratis offerte 24u | ${COMPANY_INFO.name}`,
+      description: `Expert in ${serviceLabel.toLowerCase()} in ${city}. Professionele service, gratis offerte binnen 24u, tienjarige garantie. Snelle interventies in de hele regio.`,
+      h1: `Professionele ${serviceLabel.toLowerCase()} in ${city}`,
+      keywords: [
+        `${serviceLabel.toLowerCase()} ${city}`,
+        `professionele ${serviceLabel.toLowerCase()} ${city}`,
+        `offerte ${serviceLabel.toLowerCase()} ${city}`,
+        `prijs ${serviceLabel.toLowerCase()} ${city}`,
+        `bedrijf ${serviceLabel.toLowerCase()} ${city}`,
+      ],
+    },
+    en: {
+      title: `${serviceLabel} ${city} - Free quote within 24h | ${COMPANY_INFO.name}`,
+      description: `Expert ${serviceLabel.toLowerCase()} in ${city}. Professional service, free quote within 24h, 10-year warranty. Quick response throughout the region.`,
+      h1: `Professional ${serviceLabel.toLowerCase()} in ${city}`,
+      keywords: [
+        `${serviceLabel.toLowerCase()} ${city}`,
+        `professional ${serviceLabel.toLowerCase()} ${city}`,
+        `${serviceLabel.toLowerCase()} quote ${city}`,
+        `${serviceLabel.toLowerCase()} price ${city}`,
+        `${serviceLabel.toLowerCase()} company ${city}`,
+      ],
+    },
+  }[lang];
+
+  // Hreflang alternates avec les slugs traduits par langue
+  const alternates = (['fr', 'nl', 'en'] as const).map(l => ({
+    hreflang: l === 'fr' ? 'fr-be' : l === 'nl' ? 'nl-be' : 'en',
+    href: `${BASE_URL}${l === 'fr' ? '' : `/${l}`}/${SERVICE_URL_SLUGS[l][service as ServiceKey] || service}-${citySlug}/`,
+  }));
+  alternates.push({
+    hreflang: 'x-default',
+    href: `${BASE_URL}/${SERVICE_URL_SLUGS.fr[service as ServiceKey] || service}-${citySlug}/`,
+  });
 
   return {
-    title: `${serviceLabel} ${city} - Devis Gratuit 24h | ${COMPANY_INFO.name}`,
-    description: `Expert ${serviceLabel.toLowerCase()} à ${city}. Service professionnel, devis gratuit sous 24h, garantie décennale. Interventions rapides dans toute la région.`,
-    h1: `${serviceLabel} professionnelle à ${city}`,
-    canonical: `${BASE_URL}/${service}-${city.toLowerCase().replace(/\s+/g, '-')}`,
-    keywords: [
-      `${service} ${city}`,
-      `${service} professionnel ${city}`,
-      `devis ${service} ${city}`,
-      `prix ${service} ${city}`,
-      `entreprise ${service} ${city}`,
-    ],
+    ...t,
+    // Trailing slash pour matcher le comportement Hostinger (évite 1 redirection SEO)
+    canonical: `${BASE_URL}${langPrefix}/${urlSlug}-${citySlug}/`,
+    alternates,
     schemaType: 'Service',
     ogType: 'website',
     lang,
@@ -145,19 +191,54 @@ export const generateCommuneSEO = (
   commune: string,
   lang: 'fr' | 'nl' | 'en' = 'fr'
 ): SEOConfig => {
+  const communeSlug = commune.toLowerCase().replace(/\s+/g, '-');
+  const langPrefix = lang === 'fr' ? '' : `/${lang}`;
+
+  const t = {
+    fr: {
+      title: `Rénovation ${commune} - Tous travaux | ${COMPANY_INFO.name}`,
+      description: `Entreprise de rénovation à ${commune}. Électricité, plomberie, chauffage, menuiserie. Devis gratuit 24h, intervention rapide, garantie décennale.`,
+      h1: `Entreprise de rénovation à ${commune}`,
+      keywords: [
+        `rénovation ${commune}`,
+        `travaux ${commune}`,
+        `entreprise générale ${commune}`,
+        `construction ${commune}`,
+        `rénovation maison ${commune}`,
+        `rénovation appartement ${commune}`,
+      ],
+    },
+    nl: {
+      title: `Renovatie ${commune} - Alle werken | ${COMPANY_INFO.name}`,
+      description: `Renovatiebedrijf in ${commune}. Elektriciteit, loodgieterij, verwarming, schrijnwerk. Gratis offerte 24u, snelle interventie, tienjarige garantie.`,
+      h1: `Renovatiebedrijf in ${commune}`,
+      keywords: [
+        `renovatie ${commune}`,
+        `werken ${commune}`,
+        `algemeen bedrijf ${commune}`,
+        `bouw ${commune}`,
+        `renovatie huis ${commune}`,
+        `renovatie appartement ${commune}`,
+      ],
+    },
+    en: {
+      title: `Renovation ${commune} - All trades | ${COMPANY_INFO.name}`,
+      description: `Renovation company in ${commune}. Electricity, plumbing, heating, carpentry. Free quote within 24h, quick response, 10-year warranty.`,
+      h1: `Renovation company in ${commune}`,
+      keywords: [
+        `renovation ${commune}`,
+        `works ${commune}`,
+        `general contractor ${commune}`,
+        `construction ${commune}`,
+        `house renovation ${commune}`,
+        `apartment renovation ${commune}`,
+      ],
+    },
+  }[lang];
+
   return {
-    title: `Rénovation ${commune} - Tous travaux | ${COMPANY_INFO.name}`,
-    description: `Entreprise de rénovation à ${commune}. Électricité, plomberie, chauffage, menuiserie. Devis gratuit 24h, intervention rapide, garantie décennale.`,
-    h1: `Entreprise de rénovation à ${commune}`,
-    canonical: `${BASE_URL}/renovation-${commune.toLowerCase().replace(/\s+/g, '-')}`,
-    keywords: [
-      `rénovation ${commune}`,
-      `travaux ${commune}`,
-      `entreprise générale ${commune}`,
-      `construction ${commune}`,
-      `rénovation maison ${commune}`,
-      `rénovation appartement ${commune}`,
-    ],
+    ...t,
+    canonical: `${BASE_URL}${langPrefix}/renovation-${communeSlug}/`,
     schemaType: 'Service',
     ogType: 'website',
     lang,

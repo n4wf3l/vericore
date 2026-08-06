@@ -19,7 +19,16 @@ const MobileLanguageOverlay: React.FC<MobileLanguageOverlayProps> = ({ isOpen, o
 
   const handleLanguageChange = (langCode: string) => {
     i18n.changeLanguage(langCode);
+    localStorage.setItem('vericore-language', langCode);
     onClose();
+    // Navigation vers l'URL correspondant à la langue choisie
+    const path = window.location.pathname;
+    const stripped =
+      path === '/nl' || path === '/en' ? '/'
+      : path.startsWith('/nl/') || path.startsWith('/en/') ? path.slice(3)
+      : path;
+    const target = langCode === 'fr' ? (stripped || '/') : (stripped === '/' ? `/${langCode}` : `/${langCode}${stripped}`);
+    if (target !== path) window.location.assign(target + window.location.search + window.location.hash);
   };
 
   return (

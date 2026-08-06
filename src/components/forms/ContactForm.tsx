@@ -11,6 +11,7 @@ interface ContactFormData {
   requestType: string;
   siteAddress?: string;
   message: string;
+  rgpdConsent: boolean;
 }
 
 const ContactForm: React.FC = () => {
@@ -215,6 +216,21 @@ const ContactForm: React.FC = () => {
         />
         {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
       </div>
+
+      {/* Consentement RGPD */}
+      <div className="flex items-start gap-3 pt-2">
+        <input
+          type="checkbox"
+          id="rgpdConsent"
+          {...register('rgpdConsent', { required: 'Vous devez accepter la politique de confidentialité pour envoyer ce message.' })}
+          className="mt-1 h-4 w-4 flex-shrink-0 rounded border-gray-300 text-primary-600 focus:ring-primary-500"
+        />
+        <label htmlFor="rgpdConsent" className="text-sm text-gray-600 leading-snug">
+          J'accepte que mes données personnelles (nom, téléphone, email, adresse) soient utilisées par Vericore SRL pour traiter ma demande. Elles ne seront jamais transmises à des tiers. Voir la{' '}
+          <a href="/mentions-legales" className="text-primary-600 hover:underline">politique de confidentialité</a>.
+        </label>
+      </div>
+      {errors.rgpdConsent && <p className="text-red-500 text-sm">{errors.rgpdConsent.message}</p>}
 
       {/* Error Message */}
       {submitError && (
