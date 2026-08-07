@@ -5,7 +5,6 @@
 import { useParams, Link } from 'react-router-dom';
 import SEOHead from '../components/SEOHead';
 import StructuredData from '../components/StructuredData';
-import OptimizedImage from '../components/OptimizedImage';
 import { getPostBySlug, blogAuthors } from '../data/blog';
 import { BASE_URL } from '../config/seo.config';
 import { Clock, User, Calendar, Tag, ArrowLeft } from 'lucide-react';
@@ -142,10 +141,10 @@ export const BlogPostPage: React.FC = () => {
 
         {/* Image principale */}
         <div className="max-w-5xl mx-auto px-4 py-8">
-          <OptimizedImage
+          <img
             src={post.featuredImage}
             alt={post.featuredImageAlt}
-            className="w-full rounded-lg shadow-xl"
+            className="w-full rounded-lg shadow-xl object-cover aspect-[1200/630]"
             loading="eager"
             width={1200}
             height={630}

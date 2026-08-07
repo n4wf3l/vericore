@@ -89,19 +89,6 @@ Les montants dépendent de vos revenus (3 catégories : jusqu'à 45 000 €, 45 
 
 **Attention aux conditions** : les factures doivent être postérieures à l'obtention de l'accord de principe, les entreprises doivent être enregistrées à la BCE, et le dossier doit être soumis dans les 12 mois après la fin des travaux.
 
-## Exemples réels de chantiers récents
-
-Voici trois cas concrets de projets récents en Région bruxelloise (chiffres arrondis, matériaux et main-d'œuvre inclus, hors mobilier) :
-
-### Appartement 75 m² à Schaerbeek (Helmet)
-Rénovation moyenne : refonte électrique RGIE, chauffage gaz condensation neuf, salle de bain avec douche à l'italienne, cuisine ouverte milieu de gamme, peinture complète. **Budget : 62 000 € TVAC**. Délai : 10 semaines. Primes Renolution récupérées : 4 800 €.
-
-### Maison unifamiliale 130 m² à Uccle (Dieweg)
-Rénovation lourde avec écorénovation : isolation par l'extérieur, remplacement des châssis en triple vitrage, pompe à chaleur air/eau, plancher chauffant au rez, rénovation complète électricité et plomberie, restauration des parquets massifs, salle de bain premium. **Budget : 195 000 € TVAC**. Délai : 6 mois. Primes Renolution : 28 000 €.
-
-### Loft 90 m² à [Molenbeek](/renovation-molenbeek-saint-jean/) (Historique)
-Traitement humidité ascensionnelle, dépose complète des chapes, isolation sous chape, chauffage au sol, mise aux normes RGIE, cuisine et salle de bain design. **Budget : 118 000 € TVAC**. Délai : 4 mois. Primes Renolution : 9 500 €.
-
 ## Conseils pour optimiser votre budget
 
 **Demandez 3 devis contradictoires.** Pour un vote en assemblée générale de copropriété, c'est légalement requis. Même pour un particulier, ça vous donne un ordre de grandeur et une base de négociation.
@@ -132,7 +119,7 @@ Nous intervenons dans toutes les communes bruxelloises. Voir aussi nos pages dé
     publishedAt: '2026-02-01',
     category: 'renovation',
     tags: ['prix', 'budget', 'rénovation', 'bruxelles', 'devis'],
-    featuredImage: '/images/blog/renovation-prix-bruxelles.jpg',
+    featuredImage: '/installation-maintenance.png',
     featuredImageAlt: 'Chantier de rénovation à Bruxelles',
     readingTime: 12,
     relatedServices: ['renovation', 'electricite', 'plomberie', 'chauffage'],
@@ -255,7 +242,7 @@ Pour un diagnostic gratuit de votre installation, [contactez-nous](/#contact) ou
     publishedAt: '2026-01-28',
     category: 'electricite',
     tags: ['électricité', 'RGIE', 'normes', 'sécurité', 'conformité'],
-    featuredImage: '/images/blog/electricite-rgie.jpg',
+    featuredImage: '/conformite-electrique.png',
     featuredImageAlt: 'Tableau électrique aux normes RGIE',
     readingTime: 10,
     relatedServices: ['electricite'],
@@ -381,7 +368,7 @@ Pour en savoir plus sur les prix et les primes, lire aussi : [Combien coûte une
     publishedAt: '2026-01-25',
     category: 'conseils',
     tags: ['conseils', 'rénovation', 'erreurs', 'guide'],
-    featuredImage: '/images/blog/erreurs-renovation.jpg',
+    featuredImage: '/bg-worker.png',
     featuredImageAlt: 'Erreurs courantes en rénovation',
     readingTime: 12,
     relatedServices: ['renovation', 'electricite', 'plomberie'],
