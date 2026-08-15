@@ -73,6 +73,11 @@ export const nl = {
       projectsCompleted: 'Projecten gerealiseerd',
       emergency: 'Noodgevallen'
     },
+    contact: {
+      badge: 'Noodgeval 24/7',
+      title: 'Snelle interventie nodig?',
+      callLabel: 'Bel ons'
+    },
     microReassurance: 'Offerte binnen 24u • Transparante prijzen • Geen verplichting'
   },
   about: {
