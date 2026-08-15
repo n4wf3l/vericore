@@ -73,6 +73,11 @@ export const fr = {
       projectsCompleted: 'Projets réalisés',
       emergency: 'Urgences'
     },
+    contact: {
+      badge: 'Urgence 24/7',
+      title: "Besoin d'une intervention rapide ?",
+      callLabel: 'Appelez-nous'
+    },
     microReassurance: 'Devis sous 24h • Prix transparents • Sans engagement'
   },
   about: {

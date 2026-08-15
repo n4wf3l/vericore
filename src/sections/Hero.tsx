@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, MessageCircle, CheckCircle, Clock, MapPin, Shield } from 'lucide-react';
+import { ArrowRight, MessageCircle, CheckCircle, Clock, MapPin, Shield, Phone } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import Button from '../components/Button';
 import Badge from '../components/Badge';
@@ -133,37 +133,65 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Stats Cards - ONLY 2, Smaller, High Contrast */}
+          {/* Carte de contact rapide (desktop uniquement, remplace les stats) */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="hidden lg:flex flex-col gap-5"
+            className="hidden lg:block"
           >
-            {[
-              { number: '24/7', label: t('hero.stats.emergency') },
-              { number: '10 ans', label: t('hero.stats.warranty', { defaultValue: 'Garantie décennale' }) }
-            ].map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.6 + index * 0.15 }}
-                whileHover={{ y: -4, scale: 1.02 }}
-                className="relative overflow-hidden rounded-2xl bg-slate-950/30 backdrop-blur-2xl border border-white/12 shadow-xl transition-all duration-300 hover:bg-slate-950/40 hover:border-white/20 hover:shadow-2xl"
-              >
-                {/* Subtle glass sheen */}
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/8 via-transparent to-transparent" />
-                
-                {/* Content - Compact */}
-                <div className="relative p-6">
-                  <div className="text-5xl font-extrabold text-white tracking-tight mb-1.5">
-                    {stat.number}
-                  </div>
-                  <div className="text-sm text-white/70 font-medium leading-tight">{stat.label}</div>
+            <div className="relative overflow-hidden rounded-2xl bg-slate-950/30 backdrop-blur-2xl border border-white/12 shadow-xl">
+              {/* Glass sheen */}
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/8 via-transparent to-transparent" />
+
+              <div className="relative p-7 space-y-5">
+                {/* Badge urgence */}
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/20 border border-red-400/40 text-red-100 text-xs font-semibold">
+                  <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse" />
+                  {t('hero.contact.badge', { defaultValue: 'Urgence 24/7' })}
                 </div>
-              </motion.div>
-            ))}
+
+                {/* Titre */}
+                <h3 className="text-white text-xl font-bold leading-tight">
+                  {t('hero.contact.title', { defaultValue: 'Besoin d\'une intervention rapide ?' })}
+                </h3>
+
+                {/* Numéro de téléphone en gros */}
+                <a
+                  href={`tel:${t('common.phone').replace(/\s/g, '')}`}
+                  className="group flex items-center gap-3 text-white hover:text-primary-300 transition-colors"
+                >
+                  <div className="w-10 h-10 rounded-lg bg-primary-500/20 border border-primary-400/30 flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-5 h-5 text-primary-300" />
+                  </div>
+                  <div>
+                    <div className="text-xs text-white/60 uppercase tracking-wide">
+                      {t('hero.contact.callLabel', { defaultValue: 'Appelez-nous' })}
+                    </div>
+                    <div className="text-lg font-bold group-hover:underline">
+                      {t('common.phone')}
+                    </div>
+                  </div>
+                </a>
+
+                {/* Bouton WhatsApp */}
+                <a
+                  href={`https://wa.me/${t('common.phone').replace(/\D/g, '')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full px-4 py-3 rounded-xl bg-green-600 hover:bg-green-500 text-white font-semibold text-sm transition-colors"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  {t('common.cta.whatsapp', { defaultValue: 'WhatsApp 24/7' })}
+                </a>
+
+                {/* Micro-réassurance */}
+                <div className="pt-1 flex items-center gap-2 text-xs text-white/70">
+                  <CheckCircle className="w-3.5 h-3.5 text-primary-300 flex-shrink-0" />
+                  <span>{t('hero.microReassurance')}</span>
+                </div>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>

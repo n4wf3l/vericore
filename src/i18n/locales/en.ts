@@ -73,6 +73,11 @@ export const en = {
       projectsCompleted: 'Projects completed',
       emergency: 'Emergencies'
     },
+    contact: {
+      badge: '24/7 Emergency',
+      title: 'Need a quick response?',
+      callLabel: 'Call us'
+    },
     microReassurance: 'Quote within 24h • Transparent pricing • No commitment'
   },
   about: {
