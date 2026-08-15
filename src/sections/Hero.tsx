@@ -141,8 +141,8 @@ const Hero: React.FC = () => {
             className="hidden lg:flex flex-col gap-5"
           >
             {[
-              { number: '150+', label: t('hero.stats.projectsCompleted') },
-              { number: '24/7', label: t('hero.stats.emergency') }
+              { number: '24/7', label: t('hero.stats.emergency') },
+              { number: '10 ans', label: t('hero.stats.warranty', { defaultValue: 'Garantie décennale' }) }
             ].map((stat, index) => (
               <motion.div
                 key={index}

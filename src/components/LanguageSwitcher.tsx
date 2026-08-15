@@ -3,25 +3,14 @@ import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, Check } from 'lucide-react';
+import { buildPathForLang } from '../lib/urlLang';
+import type { Lang } from '../data/serviceContent';
 
 const languages = [
-  { code: 'fr', name: 'Français', flag: 'FR' },
-  { code: 'nl', name: 'Nederlands', flag: 'NL' },
-  { code: 'en', name: 'English', flag: 'EN' }
+  { code: 'fr' as Lang, name: 'Français', flag: 'FR' },
+  { code: 'nl' as Lang, name: 'Nederlands', flag: 'NL' },
+  { code: 'en' as Lang, name: 'English', flag: 'EN' }
 ];
-
-/** Retire tout préfixe /nl ou /en du path pour retomber sur le path FR canonique */
-const stripLangPrefix = (pathname: string): string => {
-  if (pathname === '/nl' || pathname === '/en') return '/';
-  if (pathname.startsWith('/nl/') || pathname.startsWith('/en/')) return pathname.slice(3);
-  return pathname;
-};
-
-const buildPathForLang = (pathname: string, lang: string): string => {
-  const base = stripLangPrefix(pathname);
-  if (lang === 'fr') return base || '/';
-  return base === '/' ? `/${lang}` : `/${lang}${base}`;
-};
 
 const LanguageSwitcher: React.FC = () => {
   const { i18n } = useTranslation();
@@ -30,7 +19,7 @@ const LanguageSwitcher: React.FC = () => {
 
   const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0];
 
-  const handleLanguageChange = (code: string) => {
+  const handleLanguageChange = (code: Lang) => {
     const targetPath = buildPathForLang(location.pathname, code);
     localStorage.setItem('vericore-language', code);
     // Full page navigation pour recharger le HTML prérendu dans la bonne langue

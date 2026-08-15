@@ -2,9 +2,9 @@ export const nl = {
   common: {
     brand: 'Vericore',
     tagline: 'Onderhoud & Renovatie',
-    phone: '+32 4 96 84 73 74',
+    phone: '+32 496 84 73 74',
     email: 'contact@vericore.be',
-    address: 'Esseghemlaan 43, 1090 Brussel',
+    address: 'Esseghemlaan 43, 1090 Jette',
     city: 'Brussel, België',
     cta: {
       contact: 'Contacteer ons',
@@ -435,8 +435,8 @@ export const nl = {
         description: 'Werkzaamheden conform Belgische normen. Garantie op al onze diensten.'
       },
       certification: {
-        title: 'Gecertificeerd Bedrijf',
-        description: 'Erkend bedrijf BE1005.585.934. Volledige verzekering voor uw gemoedsrust.'
+        title: 'Geregistreerd bedrijf',
+        description: 'BTW BE1005.585.934. Professionele aansprakelijkheidsverzekering.'
       },
       team: {
         title: 'Gekwalificeerd Team',
@@ -613,7 +613,7 @@ export const nl = {
       placeholders: {
         select: 'Selecteer',
         name: 'Jan Janssen',
-        phone: '+32 123 456 789',
+        phone: '+32 4XX XX XX XX',
         email: 'jan@voorbeeld.be',
         siteAddress: 'Wetstraat 100, 1000 Brussel',
         message: 'Beschrijf uw behoefte...'
@@ -678,7 +678,7 @@ export const nl = {
         placeholders: {
           name: 'Jan Janssen',
           email: 'jan@voorbeeld.be',
-          phone: '+32 123 456 789',
+          phone: '+32 4XX XX XX XX',
           select: 'Selecteer',
           presentation: 'Presenteer uw parcours, uw vaardigheden en uw motivatie...'
         },

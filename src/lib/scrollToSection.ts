@@ -20,7 +20,7 @@ export const scrollToSection = (sectionId: string, offset: number = 80): void =>
 
 /**
  * Get formatted WhatsApp URL
- * @param phoneNumber - Phone number (e.g., "+32 396 847 374")
+ * @param phoneNumber - Phone number (e.g., "+32 496 84 73 74")
  * @param message - Optional pre-filled message
  */
 export const getWhatsAppUrl = (phoneNumber: string, message?: string): string => {

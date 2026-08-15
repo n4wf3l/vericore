@@ -2,6 +2,8 @@ import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Check } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { buildPathForLang } from '../../lib/urlLang';
+import type { Lang } from '../../data/serviceContent';
 
 interface MobileLanguageOverlayProps {
   isOpen: boolean;
@@ -11,24 +13,21 @@ interface MobileLanguageOverlayProps {
 const MobileLanguageOverlay: React.FC<MobileLanguageOverlayProps> = ({ isOpen, onClose }) => {
   const { i18n, t } = useTranslation();
 
-  const languages = [
+  const languages: { code: Lang; name: string; flag: string }[] = [
     { code: 'fr', name: 'Français', flag: '🇫🇷' },
     { code: 'nl', name: 'Nederlands', flag: '🇳🇱' },
     { code: 'en', name: 'English', flag: '🇬🇧' },
   ];
 
-  const handleLanguageChange = (langCode: string) => {
+  const handleLanguageChange = (langCode: Lang) => {
     i18n.changeLanguage(langCode);
     localStorage.setItem('vericore-language', langCode);
     onClose();
-    // Navigation vers l'URL correspondant à la langue choisie
-    const path = window.location.pathname;
-    const stripped =
-      path === '/nl' || path === '/en' ? '/'
-      : path.startsWith('/nl/') || path.startsWith('/en/') ? path.slice(3)
-      : path;
-    const target = langCode === 'fr' ? (stripped || '/') : (stripped === '/' ? `/${langCode}` : `/${langCode}${stripped}`);
-    if (target !== path) window.location.assign(target + window.location.search + window.location.hash);
+    // Navigation vers l'URL (slug métier traduit) correspondant à la langue choisie
+    const target = buildPathForLang(window.location.pathname, langCode);
+    if (target !== window.location.pathname) {
+      window.location.assign(target + window.location.search + window.location.hash);
+    }
   };
 
   return (

@@ -2,9 +2,9 @@ export const fr = {
   common: {
     brand: 'Vericore',
     tagline: 'Maintenance & Rénovation',
-    phone: '+32 4 96 84 73 74',
+    phone: '+32 496 84 73 74',
     email: 'contact@vericore.be',
-    address: 'Rue Esseghem 43, 1090 Bruxelles',
+    address: 'Rue Esseghem 43, 1090 Jette',
     city: 'Bruxelles, Belgique',
     cta: {
       contact: 'Nous contacter',
@@ -435,8 +435,8 @@ export const fr = {
         description: 'Travaux conformes aux normes belges. Garantie sur toutes nos prestations.'
       },
       certification: {
-        title: 'Entreprise Certifiée',
-        description: 'Société agréée BE1005.585.934. Assurance complète pour votre tranquillité.'
+        title: 'Entreprise enregistrée',
+        description: 'TVA BE1005.585.934. Assurance responsabilité civile professionnelle.'
       },
       team: {
         title: 'Équipe Qualifiée',
@@ -613,7 +613,7 @@ export const fr = {
       placeholders: {
         select: 'Sélectionnez',
         name: 'Jean Dupont',
-        phone: '+32 123 456 789',
+        phone: '+32 4XX XX XX XX',
         email: 'jean@exemple.be',
         siteAddress: 'Rue de la Loi 100, 1000 Bruxelles',
         message: 'Décrivez votre besoin...'
@@ -678,7 +678,7 @@ export const fr = {
         placeholders: {
           name: 'Jean Dupont',
           email: 'jean@exemple.be',
-          phone: '+32 123 456 789',
+          phone: '+32 4XX XX XX XX',
           select: 'Sélectionnez',
           presentation: 'Présentez votre parcours, vos compétences et votre motivation...'
         },
