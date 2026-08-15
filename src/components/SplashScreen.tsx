@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Check } from 'lucide-react';
 import logo from '../assets/icon..png';
+import { buildPathForLang } from '../lib/urlLang';
+import type { Lang } from '../data/serviceContent';
 
 interface SplashScreenProps {
   onLanguageSelect: () => void;
@@ -12,13 +14,13 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onLanguageSelect }) => {
   const { i18n } = useTranslation();
   const [selectedLanguage, setSelectedLanguage] = useState<string | null>(null);
 
-  const languages = [
+  const languages: { code: Lang; name: string; flag: string }[] = [
     { code: 'fr', name: 'Français', flag: '🇫🇷' },
     { code: 'nl', name: 'Nederlands', flag: '🇳🇱' },
     { code: 'en', name: 'English', flag: '🇬🇧' }
   ];
 
-  const handleLanguageSelect = (langCode: string) => {
+  const handleLanguageSelect = (langCode: Lang) => {
     setSelectedLanguage(langCode);
     i18n.changeLanguage(langCode);
     localStorage.setItem('vericore-language', langCode);
@@ -26,14 +28,11 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onLanguageSelect }) => {
     // Delay to show selection animation before navigating
     setTimeout(() => {
       onLanguageSelect();
-      // Navigation vers la variante URL correspondant à la langue choisie
-      const path = window.location.pathname;
-      const stripped =
-        path === '/nl' || path === '/en' ? '/'
-        : path.startsWith('/nl/') || path.startsWith('/en/') ? path.slice(3)
-        : path;
-      const target = langCode === 'fr' ? (stripped || '/') : (stripped === '/' ? `/${langCode}` : `/${langCode}${stripped}`);
-      if (target !== path) window.location.assign(target + window.location.search + window.location.hash);
+      // Navigation vers l'URL (slug métier traduit) correspondant à la langue choisie
+      const target = buildPathForLang(window.location.pathname, langCode);
+      if (target !== window.location.pathname) {
+        window.location.assign(target + window.location.search + window.location.hash);
+      }
     }, 500);
   };
 

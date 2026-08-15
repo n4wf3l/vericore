@@ -49,13 +49,13 @@ const Contact: React.FC = () => {
     {
       icon: MapPin,
       title: 'Adresse',
-      content: 'Rue Esseghem 43, 1090 Bruxelles',
-      link: 'https://maps.google.com/?q=Rue+Esseghem+43+1090+Bruxelles'
+      content: 'Rue Esseghem 43, 1090 Jette',
+      link: 'https://maps.google.com/?q=Rue+Esseghem+43+1090+Jette'
     },
     {
       icon: Phone,
       title: 'Téléphone',
-      content: '+32 396 847 374',
+      content: '+32 496 84 73 74',
       link: 'tel:+32496847374'
     },
     {
@@ -321,7 +321,7 @@ const Contact: React.FC = () => {
           {/* Map */}
           <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-200 h-64 md:h-80">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.2!2d4.3!3d50.87!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDUyJzEzLjIiTiA0wrAxNycwNi4wIkU!5e0!3m2!1sen!2sbe!4v1234567890"
+              src="https://maps.google.com/maps?q=Vericore+SRL%2C+Rue+Esseghem+43%2C+1090+Jette&t=&z=15&ie=UTF8&iwloc=B&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
