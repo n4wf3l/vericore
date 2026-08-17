@@ -2,6 +2,7 @@ import React from 'react';
 import { Check } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import type { Plan } from '../data/plans';
+import { goToContact } from '../lib/scrollToSection';
 
 interface PlanCardProps {
   plan: Plan;
@@ -99,6 +100,7 @@ const PlanCard: React.FC<PlanCardProps> = ({ plan, isActive, position: _position
         </div>
         <a
           href="#contact"
+          onClick={(e) => { e.preventDefault(); goToContact(80); }}
           className={`w-full inline-block text-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${colors.button} shadow-sm hover:shadow-md`}
         >
           {t('plans.cta')}

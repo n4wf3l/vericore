@@ -4,6 +4,7 @@ import { ArrowRight, MessageCircle, CheckCircle, Clock, MapPin, Shield, Phone } 
 import { useTranslation } from 'react-i18next';
 import Button from '../components/Button';
 import Badge from '../components/Badge';
+import { goToContact } from '../lib/scrollToSection';
 
 const Hero: React.FC = () => {
   const { t } = useTranslation();
@@ -96,7 +97,11 @@ const Hero: React.FC = () => {
                 className="space-y-3 sm:space-y-3.5"
               >
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-3.5">
-                  <a href="#contact" className="w-full sm:w-auto">
+                  <a
+                    href="#contact"
+                    onClick={(e) => { e.preventDefault(); goToContact(80); }}
+                    className="w-full sm:w-auto"
+                  >
                     <Button variant="primary" size="lg" className="w-full sm:w-auto text-base">
                       {t('hero.primaryCta')}
                       <ArrowRight className="w-5 h-5 ml-2" />

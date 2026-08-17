@@ -6,7 +6,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Button from './Button';
 import MegaMenu from './MegaMenu';
 import MobileLanguageOverlay from './mobile/MobileLanguageOverlay';
-import { scrollToSection } from '../lib/scrollToSection';
+import { scrollToSection, goToContact } from '../lib/scrollToSection';
 import logo from '../assets/logo.jpeg';
 
 interface HeaderProps {
@@ -94,30 +94,29 @@ const Header: React.FC<HeaderProps> = ({ onOpenLanguageSelector }) => {
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, link: { href: string; isRoute: boolean }) => {
     e.preventDefault();
     setIsOpen(false);
-    
+
     if (link.isRoute) {
-      // Navigate to route
       navigate(link.href);
       window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    // Ancre : #contact utilise le helper bulletproof (multilang + full-page fallback)
+    if (link.href === '#contact') {
+      goToContact(80);
+      return;
+    }
+
+    // Autres ancres (#about, etc.) : scroll si sur homepage, sinon nav vers homepage
+    const path = location.pathname;
+    const isOnHomePage = path === '/' || path === '/nl' || path === '/en';
+    if (isOnHomePage) {
+      scrollToSection(link.href, 80);
     } else {
-      // Anchor link - check if we're on home page
-      const isOnHomePage = location.pathname === '/';
-      
-      if (isOnHomePage) {
-        // Already on home page, just scroll to section
-        const element = document.querySelector(link.href);
-        if (element) {
-          const offset = 80;
-          const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-          window.scrollTo({
-            top: elementPosition - offset,
-            behavior: 'smooth'
-          });
-        }
-      } else {
-        // Not on home page, navigate to home with hash
-        navigate('/' + link.href);
-      }
+      const langPath = path.startsWith('/nl/') || path === '/nl' ? '/nl'
+        : path.startsWith('/en/') || path === '/en' ? '/en'
+        : '';
+      window.location.href = `${langPath}/${link.href}`;
     }
   };
 
@@ -253,12 +252,7 @@ const Header: React.FC<HeaderProps> = ({ onOpenLanguageSelector }) => {
                     <button
                       onClick={() => {
                         setIsOpen(false);
-                        const isOnHomePage = location.pathname === '/';
-                        if (isOnHomePage) {
-                          scrollToSection('contact');
-                        } else {
-                          navigate('/#contact');
-                        }
+                        goToContact(80);
                       }}
                       className="w-full flex items-center gap-3 px-4 py-3 bg-primary-50 hover:bg-primary-100 text-primary-700 rounded-xl font-semibold transition-colors"
                     >

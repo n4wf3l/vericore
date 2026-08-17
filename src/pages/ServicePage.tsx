@@ -4,7 +4,6 @@
  */
 
 import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SEOHead from '../components/SEOHead';
 import StructuredData from '../components/StructuredData';
@@ -15,6 +14,7 @@ import type { ServiceSchema, FAQSchema } from '../types/seo';
 import { getServiceContentByLang, SERVICE_CONTENT, type ServiceContent, type Lang } from '../data/serviceContent';
 import { getCommuneContentByLang } from '../data/communeContent';
 import { getServiceLabels } from '../data/uiLabels';
+import { goToContact } from '../lib/scrollToSection';
 
 const WHATSAPP_URL = `https://wa.me/${COMPANY_INFO.whatsapp.replace(/\s|\+/g, '')}`;
 
@@ -42,7 +42,6 @@ interface ServicePageProps {
  * Composant réutilisable pour les pages services
  */
 export const ServicePage: React.FC<ServicePageProps> = ({ service, city = 'Bruxelles', lang = 'fr' }) => {
-  const navigate = useNavigate();
   const { i18n } = useTranslation();
   const labels = getServiceLabels(lang);
 
@@ -78,14 +77,7 @@ export const ServicePage: React.FC<ServicePageProps> = ({ service, city = 'Bruxe
     questions: serviceContent.faq,
   };
 
-  const scrollToContact = () => {
-    const existing = document.getElementById('contact');
-    if (existing) {
-      existing.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      navigate(lang === 'fr' ? '/#contact' : `/${lang}/#contact`);
-    }
-  };
+  const scrollToContact = () => goToContact();
 
   return (
     <>
