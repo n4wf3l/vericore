@@ -2,13 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Phone, MessageCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate, useLocation } from 'react-router-dom';
-import { scrollToSection, getWhatsAppUrl } from '../../lib/scrollToSection';
+import { goToContact, getWhatsAppUrl } from '../../lib/scrollToSection';
 
 const MobileStickyCTA: React.FC = () => {
   const { t } = useTranslation();
-  const navigate = useNavigate();
-  const location = useLocation();
   const [isVisible, setIsVisible] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -47,14 +44,7 @@ const MobileStickyCTA: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollY]);
 
-  const handleQuoteClick = () => {
-    const isOnHomePage = location.pathname === '/';
-    if (isOnHomePage) {
-      scrollToSection('contact', 80);
-    } else {
-      navigate('/#contact');
-    }
-  };
+  const handleQuoteClick = () => goToContact(80);
 
   const handleWhatsAppClick = () => {
     const phoneNumber = t('common.phone');

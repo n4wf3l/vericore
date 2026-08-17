@@ -5,6 +5,7 @@ import { Card, CardHeader, CardContent } from '../components/Card';
 import { services } from '../data/content';
 import type { Service } from '../data/content';
 import { ArrowRight } from 'lucide-react';
+import { goToContact } from '../lib/scrollToSection';
 
 const Services: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<'all' | 'renovation' | 'maintenance' | 'specialty'>('all');
@@ -78,8 +79,9 @@ const Services: React.FC = () => {
                   <p className="text-gray-600 leading-relaxed mb-4">
                     {service.description}
                   </p>
-                  <a 
+                  <a
                     href="#contact"
+                    onClick={(e) => { e.preventDefault(); goToContact(80); }}
                     className="inline-flex items-center text-primary-600 font-semibold hover:gap-2 transition-all group/link"
                   >
                     En savoir plus
@@ -102,7 +104,10 @@ const Services: React.FC = () => {
         <p className="text-gray-600 mb-6 text-lg">
           Vous ne trouvez pas ce que vous cherchez ?
         </p>
-        <a href="#contact">
+        <a
+          href="#contact"
+          onClick={(e) => { e.preventDefault(); goToContact(80); }}
+        >
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

@@ -4,7 +4,7 @@
  */
 
 import { useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SEOHead from '../components/SEOHead';
 import StructuredData from '../components/StructuredData';
@@ -13,6 +13,7 @@ import Button from '../components/Button';
 import { Phone, MessageSquare, CheckCircle2, MapPin } from 'lucide-react';
 import type { Lang } from '../data/serviceContent';
 import { getCommuneLabels } from '../data/uiLabels';
+import { goToContact } from '../lib/scrollToSection';
 
 interface CommunePageProps {
   lang?: Lang;
@@ -23,7 +24,6 @@ interface CommunePageProps {
  */
 export const CommunePage: React.FC<CommunePageProps> = ({ lang = 'fr' }) => {
   const { commune } = useParams<{ commune: string }>();
-  const navigate = useNavigate();
   const { i18n } = useTranslation();
   const labels = getCommuneLabels(lang);
 
@@ -54,14 +54,7 @@ export const CommunePage: React.FC<CommunePageProps> = ({ lang = 'fr' }) => {
   // Quartiers de la commune
   const neighborhoods = getCommuneNeighborhoods(communeName);
 
-  const scrollToContact = () => {
-    const existing = document.getElementById('contact');
-    if (existing) {
-      existing.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      navigate(lang === 'fr' ? '/#contact' : `/${lang}/#contact`);
-    }
-  };
+  const scrollToContact = () => goToContact();
 
   return (
     <>

@@ -10,6 +10,7 @@ import { BASE_URL } from '../config/seo.config';
 import { Clock, User, Calendar, Tag, ArrowLeft } from 'lucide-react';
 import Button from '../components/Button';
 import ReactMarkdown from 'react-markdown';
+import { goToContact } from '../lib/scrollToSection';
 
 export const BlogPostPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -71,9 +72,7 @@ export const BlogPostPage: React.FC = () => {
     },
   };
 
-  const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-  };
+  const scrollToContact = () => goToContact();
 
   return (
     <>

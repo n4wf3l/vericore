@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { FileCheck, MessageCircle, Award, Gem, Crown, Sparkles, Home } from 'lucide-react';
 import PlansTrioSlider from '../components/PlansTrioSlider';
+import { goToContact } from '../lib/scrollToSection';
 
 const MaintenancePlansSection: React.FC = () => {
   const { t } = useTranslation();
@@ -92,6 +93,7 @@ const MaintenancePlansSection: React.FC = () => {
         >
           <a
             href="#contact"
+            onClick={(e) => { e.preventDefault(); goToContact(80); }}
             className="group inline-flex items-center gap-3 px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-primary-500/50"
           >
             <FileCheck className="w-5 h-5" />

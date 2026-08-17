@@ -5,6 +5,7 @@ import { Section, SectionTitle } from '../components/Section';
 import ExpertiseCard from '../components/ExpertiseCard';
 import ExpertisePopover from '../components/ExpertisePopover';
 import { useHoverCapable } from '../hooks/useHoverCapable';
+import { goToContact } from '../lib/scrollToSection';
 import { 
   Clock, 
   AlertTriangle, 
@@ -166,6 +167,7 @@ const ExpertisesSection: React.FC = () => {
         </p>
         <a
           href="#contact"
+          onClick={(e) => { e.preventDefault(); goToContact(80); }}
           className="inline-flex items-center gap-2 px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-primary-500/50"
         >
           {t('expertises.cta.button')}
