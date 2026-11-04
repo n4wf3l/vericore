@@ -13,7 +13,7 @@ jobs:
   deploy:
     name: Build and FTP deploy
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 60
 
     steps:
       - name: Checkout
