@@ -1,0 +1,46 @@
+name: Deploy to production
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Build and FTP deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build (prerender 486 pages + bundle)
+        env:
+          VITE_BASE_URL: https://vericore.be
+          VITE_WEB3FORMS_ACCESS_KEY: ${{ secrets.VITE_WEB3FORMS_ACCESS_KEY }}
+          VITE_EMAIL_TO: ${{ secrets.VITE_EMAIL_TO }}
+        run: npm run build:seo
+
+      - name: Deploy to Hostinger via FTP
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_PORT: ${{ secrets.FTP_PORT }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASS: ${{ secrets.FTP_PASS }}
+          FTP_SECURE: ${{ secrets.FTP_SECURE }}
+          FTP_REMOTE: ${{ secrets.FTP_REMOTE }}
+        run: node scripts/deploy-ftp.mjs
