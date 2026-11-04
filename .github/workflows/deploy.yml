@@ -36,11 +36,22 @@ jobs:
         run: npm run build:seo
 
       - name: Deploy to Hostinger via FTP
-        env:
-          FTP_HOST: ${{ secrets.FTP_HOST }}
-          FTP_PORT: ${{ secrets.FTP_PORT }}
-          FTP_USER: ${{ secrets.FTP_USER }}
-          FTP_PASS: ${{ secrets.FTP_PASS }}
-          FTP_SECURE: ${{ secrets.FTP_SECURE }}
-          FTP_REMOTE: ${{ secrets.FTP_REMOTE }}
-        run: node scripts/deploy-ftp.mjs
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          port: ${{ secrets.FTP_PORT }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          protocol: ftp
+          local-dir: ./dist/
+          server-dir: ${{ secrets.FTP_REMOTE }}/
+          # Delta sync : seuls les fichiers modifiés sont uploadés (via .ftp-deploy-sync-state.json)
+          state-name: .ftp-deploy-sync-state.json
+          # Ignorer le fichier state lui-même + éviter de re-uploader des caches
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/stats.html
+          timeout: 60000
+          log-level: standard
