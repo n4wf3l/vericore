@@ -42,7 +42,7 @@ jobs:
           port: ${{ secrets.FTP_PORT }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
-          protocol: ftp
+          protocol: ftps
           local-dir: ./dist/
           server-dir: ${{ secrets.FTP_REMOTE }}/
           # Delta sync : seuls les fichiers modifiés sont uploadés (via .ftp-deploy-sync-state.json)
