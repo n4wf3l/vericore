@@ -84,6 +84,7 @@ export const generateSitemapURLs = (): SitemapURL[] => {
   // Pages légales
   const legalPages = [
     '/mentions-legales',
+    '/politique-de-confidentialite',
     '/politique-confidentialite',
     '/conditions-generales',
     '/garanties',

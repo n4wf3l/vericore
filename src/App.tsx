@@ -15,6 +15,7 @@ const BlogPage = lazy(() => import('./pages/BlogPage'));
 const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
 const GuaranteesPage = lazy(() => import('./pages/GuaranteesPage'));
 const LegalPage = lazy(() => import('./pages/LegalPage'));
+const PrivacyPage = lazy(() => import('./pages/PrivacyPage'));
 const GoogleBusinessPage = lazy(() => import('./pages/GoogleBusinessPage'));
 const CommunePage = lazy(() => import('./pages/CommunePage'));
 const SlugDispatcher = lazy(() => import('./pages/SlugDispatcher'));
@@ -66,6 +67,7 @@ function App() {
               <Route path="/blog/:slug" element={<BlogPostPage />} />
               <Route path="/garanties" element={<GuaranteesPage />} />
               <Route path="/mentions-legales" element={<LegalPage />} />
+              <Route path="/politique-de-confidentialite" element={<PrivacyPage />} />
               <Route path="/google-business" element={<GoogleBusinessPage />} />
               <Route path="/commune/:commune" element={<CommunePage lang="fr" />} />
               <Route path="/:slug" element={<SlugDispatcher lang="fr" />} />
@@ -79,6 +81,7 @@ function App() {
               <Route path="/nl/blog/:slug" element={<BlogPostPage />} />
               <Route path="/nl/garanties" element={<GuaranteesPage />} />
               <Route path="/nl/mentions-legales" element={<LegalPage />} />
+              <Route path="/nl/politique-de-confidentialite" element={<PrivacyPage />} />
               <Route path="/nl/google-business" element={<GoogleBusinessPage />} />
               <Route path="/nl/commune/:commune" element={<CommunePage lang="nl" />} />
               <Route path="/nl/:slug" element={<SlugDispatcher lang="nl" />} />
@@ -92,6 +95,7 @@ function App() {
               <Route path="/en/blog/:slug" element={<BlogPostPage />} />
               <Route path="/en/garanties" element={<GuaranteesPage />} />
               <Route path="/en/mentions-legales" element={<LegalPage />} />
+              <Route path="/en/politique-de-confidentialite" element={<PrivacyPage />} />
               <Route path="/en/google-business" element={<GoogleBusinessPage />} />
               <Route path="/en/commune/:commune" element={<CommunePage lang="en" />} />
               <Route path="/en/:slug" element={<SlugDispatcher lang="en" />} />

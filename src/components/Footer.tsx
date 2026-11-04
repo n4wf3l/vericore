@@ -197,6 +197,10 @@ const Footer: React.FC = () => {
             {t('footer.copyright', { year: currentYear })}
           </p>
           <p className="text-gray-500 text-center md:text-right">
+            <a href={`${langPrefix}/politique-de-confidentialite`} className="hover:text-primary-400 transition-colors">
+              {lang === 'nl' ? 'Privacybeleid' : lang === 'en' ? 'Privacy policy' : 'Politique de confidentialité'}
+            </a>
+            {' · '}
             {t('footer.vat')}
           </p>
         </div>

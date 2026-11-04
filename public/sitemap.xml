@@ -4,7 +4,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://vericore.be/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/" />
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/" />
@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/" />
@@ -42,7 +42,7 @@
   </url>
   <url>
     <loc>https://vericore.be/expertises/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/expertises/" />
@@ -52,7 +52,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/expertises/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/expertises/" />
@@ -62,7 +62,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/expertises/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/expertises/" />
@@ -72,7 +72,7 @@
   </url>
   <url>
     <loc>https://vericore.be/projects/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/projects/" />
@@ -82,7 +82,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/projects/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/projects/" />
@@ -92,7 +92,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/projects/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/projects/" />
@@ -102,7 +102,7 @@
   </url>
   <url>
     <loc>https://vericore.be/faq/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/faq/" />
@@ -112,7 +112,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/faq/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/faq/" />
@@ -122,7 +122,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/faq/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/faq/" />
@@ -132,7 +132,7 @@
   </url>
   <url>
     <loc>https://vericore.be/garanties/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/garanties/" />
@@ -142,7 +142,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/garanties/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/garanties/" />
@@ -152,7 +152,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/garanties/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/garanties/" />
@@ -162,7 +162,7 @@
   </url>
   <url>
     <loc>https://vericore.be/google-business/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/google-business/" />
@@ -172,7 +172,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/google-business/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/google-business/" />
@@ -182,7 +182,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/google-business/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/google-business/" />
@@ -192,7 +192,7 @@
   </url>
   <url>
     <loc>https://vericore.be/blog/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/blog/" />
@@ -202,7 +202,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/blog/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/blog/" />
@@ -212,7 +212,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/blog/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/blog/" />
@@ -222,7 +222,7 @@
   </url>
   <url>
     <loc>https://vericore.be/renovation-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-anderlecht/" />
@@ -236,7 +236,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/renovatie-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-anderlecht/" />
@@ -246,7 +246,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/renovation-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-anderlecht/" />
@@ -256,7 +256,7 @@
   </url>
   <url>
     <loc>https://vericore.be/renovation-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-auderghem/" />
@@ -270,7 +270,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/renovatie-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-auderghem/" />
@@ -280,7 +280,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/renovation-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-auderghem/" />
@@ -290,7 +290,7 @@
   </url>
   <url>
     <loc>https://vericore.be/renovation-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-berchem-sainte-agathe/" />
@@ -304,7 +304,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/renovatie-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-berchem-sainte-agathe/" />
@@ -314,7 +314,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/renovation-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-berchem-sainte-agathe/" />
@@ -324,7 +324,7 @@
   </url>
   <url>
     <loc>https://vericore.be/renovation-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-bruxelles/" />
@@ -338,7 +338,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/renovatie-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-bruxelles/" />
@@ -348,7 +348,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/renovation-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-bruxelles/" />
@@ -358,7 +358,7 @@
   </url>
   <url>
     <loc>https://vericore.be/renovation-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-etterbeek/" />
@@ -372,7 +372,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/renovatie-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-etterbeek/" />
@@ -382,7 +382,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/renovation-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-etterbeek/" />
@@ -392,7 +392,7 @@
   </url>
   <url>
     <loc>https://vericore.be/renovation-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-evere/" />
@@ -406,7 +406,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/renovatie-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-evere/" />
@@ -416,7 +416,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/renovation-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-evere/" />
@@ -426,7 +426,7 @@
   </url>
   <url>
     <loc>https://vericore.be/renovation-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-forest/" />
@@ -440,7 +440,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/renovatie-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-forest/" />
@@ -450,7 +450,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/renovation-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-forest/" />
@@ -460,7 +460,7 @@
   </url>
   <url>
     <loc>https://vericore.be/renovation-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-ganshoren/" />
@@ -474,7 +474,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/renovatie-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-ganshoren/" />
@@ -484,7 +484,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/renovation-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-ganshoren/" />
@@ -494,7 +494,7 @@
   </url>
   <url>
     <loc>https://vericore.be/renovation-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-ixelles/" />
@@ -508,7 +508,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/renovatie-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-ixelles/" />
@@ -518,7 +518,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/renovation-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-ixelles/" />
@@ -528,7 +528,7 @@
   </url>
   <url>
     <loc>https://vericore.be/renovation-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-jette/" />
@@ -542,7 +542,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/renovatie-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-jette/" />
@@ -552,7 +552,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/renovation-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-jette/" />
@@ -562,7 +562,7 @@
   </url>
   <url>
     <loc>https://vericore.be/renovation-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-koekelberg/" />
@@ -576,7 +576,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/renovatie-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-koekelberg/" />
@@ -586,7 +586,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/renovation-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-koekelberg/" />
@@ -596,7 +596,7 @@
   </url>
   <url>
     <loc>https://vericore.be/renovation-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-molenbeek-saint-jean/" />
@@ -610,7 +610,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/renovatie-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-molenbeek-saint-jean/" />
@@ -620,7 +620,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/renovation-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-molenbeek-saint-jean/" />
@@ -630,7 +630,7 @@
   </url>
   <url>
     <loc>https://vericore.be/renovation-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-saint-gilles/" />
@@ -644,7 +644,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/renovatie-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-saint-gilles/" />
@@ -654,7 +654,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/renovation-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-saint-gilles/" />
@@ -664,7 +664,7 @@
   </url>
   <url>
     <loc>https://vericore.be/renovation-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-saint-josse-ten-noode/" />
@@ -678,7 +678,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/renovatie-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-saint-josse-ten-noode/" />
@@ -688,7 +688,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/renovation-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-saint-josse-ten-noode/" />
@@ -698,7 +698,7 @@
   </url>
   <url>
     <loc>https://vericore.be/renovation-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-schaerbeek/" />
@@ -712,7 +712,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/renovatie-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-schaerbeek/" />
@@ -722,7 +722,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/renovation-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-schaerbeek/" />
@@ -732,7 +732,7 @@
   </url>
   <url>
     <loc>https://vericore.be/renovation-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-uccle/" />
@@ -746,7 +746,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/renovatie-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-uccle/" />
@@ -756,7 +756,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/renovation-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-uccle/" />
@@ -766,7 +766,7 @@
   </url>
   <url>
     <loc>https://vericore.be/renovation-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-watermael-boitsfort/" />
@@ -780,7 +780,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/renovatie-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-watermael-boitsfort/" />
@@ -790,7 +790,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/renovation-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-watermael-boitsfort/" />
@@ -800,7 +800,7 @@
   </url>
   <url>
     <loc>https://vericore.be/renovation-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-woluwe-saint-lambert/" />
@@ -814,7 +814,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/renovatie-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-woluwe-saint-lambert/" />
@@ -824,7 +824,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/renovation-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-woluwe-saint-lambert/" />
@@ -834,7 +834,7 @@
   </url>
   <url>
     <loc>https://vericore.be/renovation-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-woluwe-saint-pierre/" />
@@ -848,7 +848,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/renovatie-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-woluwe-saint-pierre/" />
@@ -858,7 +858,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/renovation-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/renovation-woluwe-saint-pierre/" />
@@ -868,7 +868,7 @@
   </url>
   <url>
     <loc>https://vericore.be/electricien-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-anderlecht/" />
@@ -878,7 +878,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/elektricien-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-anderlecht/" />
@@ -888,7 +888,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/electrician-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-anderlecht/" />
@@ -898,7 +898,7 @@
   </url>
   <url>
     <loc>https://vericore.be/electricien-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-auderghem/" />
@@ -908,7 +908,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/elektricien-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-auderghem/" />
@@ -918,7 +918,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/electrician-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-auderghem/" />
@@ -928,7 +928,7 @@
   </url>
   <url>
     <loc>https://vericore.be/electricien-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-berchem-sainte-agathe/" />
@@ -938,7 +938,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/elektricien-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-berchem-sainte-agathe/" />
@@ -948,7 +948,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/electrician-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-berchem-sainte-agathe/" />
@@ -958,7 +958,7 @@
   </url>
   <url>
     <loc>https://vericore.be/electricien-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-bruxelles/" />
@@ -968,7 +968,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/elektricien-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-bruxelles/" />
@@ -978,7 +978,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/electrician-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-bruxelles/" />
@@ -988,7 +988,7 @@
   </url>
   <url>
     <loc>https://vericore.be/electricien-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-etterbeek/" />
@@ -998,7 +998,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/elektricien-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-etterbeek/" />
@@ -1008,7 +1008,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/electrician-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-etterbeek/" />
@@ -1018,7 +1018,7 @@
   </url>
   <url>
     <loc>https://vericore.be/electricien-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-evere/" />
@@ -1028,7 +1028,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/elektricien-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-evere/" />
@@ -1038,7 +1038,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/electrician-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-evere/" />
@@ -1048,7 +1048,7 @@
   </url>
   <url>
     <loc>https://vericore.be/electricien-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-forest/" />
@@ -1058,7 +1058,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/elektricien-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-forest/" />
@@ -1068,7 +1068,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/electrician-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-forest/" />
@@ -1078,7 +1078,7 @@
   </url>
   <url>
     <loc>https://vericore.be/electricien-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-ganshoren/" />
@@ -1088,7 +1088,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/elektricien-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-ganshoren/" />
@@ -1098,7 +1098,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/electrician-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-ganshoren/" />
@@ -1108,7 +1108,7 @@
   </url>
   <url>
     <loc>https://vericore.be/electricien-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-ixelles/" />
@@ -1118,7 +1118,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/elektricien-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-ixelles/" />
@@ -1128,7 +1128,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/electrician-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-ixelles/" />
@@ -1138,7 +1138,7 @@
   </url>
   <url>
     <loc>https://vericore.be/electricien-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-jette/" />
@@ -1148,7 +1148,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/elektricien-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-jette/" />
@@ -1158,7 +1158,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/electrician-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-jette/" />
@@ -1168,7 +1168,7 @@
   </url>
   <url>
     <loc>https://vericore.be/electricien-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-koekelberg/" />
@@ -1178,7 +1178,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/elektricien-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-koekelberg/" />
@@ -1188,7 +1188,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/electrician-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-koekelberg/" />
@@ -1198,7 +1198,7 @@
   </url>
   <url>
     <loc>https://vericore.be/electricien-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-molenbeek-saint-jean/" />
@@ -1208,7 +1208,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/elektricien-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-molenbeek-saint-jean/" />
@@ -1218,7 +1218,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/electrician-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-molenbeek-saint-jean/" />
@@ -1228,7 +1228,7 @@
   </url>
   <url>
     <loc>https://vericore.be/electricien-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-saint-gilles/" />
@@ -1238,7 +1238,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/elektricien-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-saint-gilles/" />
@@ -1248,7 +1248,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/electrician-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-saint-gilles/" />
@@ -1258,7 +1258,7 @@
   </url>
   <url>
     <loc>https://vericore.be/electricien-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-saint-josse-ten-noode/" />
@@ -1268,7 +1268,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/elektricien-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-saint-josse-ten-noode/" />
@@ -1278,7 +1278,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/electrician-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-saint-josse-ten-noode/" />
@@ -1288,7 +1288,7 @@
   </url>
   <url>
     <loc>https://vericore.be/electricien-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-schaerbeek/" />
@@ -1298,7 +1298,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/elektricien-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-schaerbeek/" />
@@ -1308,7 +1308,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/electrician-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-schaerbeek/" />
@@ -1318,7 +1318,7 @@
   </url>
   <url>
     <loc>https://vericore.be/electricien-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-uccle/" />
@@ -1328,7 +1328,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/elektricien-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-uccle/" />
@@ -1338,7 +1338,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/electrician-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-uccle/" />
@@ -1348,7 +1348,7 @@
   </url>
   <url>
     <loc>https://vericore.be/electricien-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-watermael-boitsfort/" />
@@ -1358,7 +1358,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/elektricien-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-watermael-boitsfort/" />
@@ -1368,7 +1368,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/electrician-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-watermael-boitsfort/" />
@@ -1378,7 +1378,7 @@
   </url>
   <url>
     <loc>https://vericore.be/electricien-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-woluwe-saint-lambert/" />
@@ -1388,7 +1388,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/elektricien-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-woluwe-saint-lambert/" />
@@ -1398,7 +1398,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/electrician-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-woluwe-saint-lambert/" />
@@ -1408,7 +1408,7 @@
   </url>
   <url>
     <loc>https://vericore.be/electricien-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-woluwe-saint-pierre/" />
@@ -1418,7 +1418,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/elektricien-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-woluwe-saint-pierre/" />
@@ -1428,7 +1428,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/electrician-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/electricien-woluwe-saint-pierre/" />
@@ -1438,7 +1438,7 @@
   </url>
   <url>
     <loc>https://vericore.be/plombier-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-anderlecht/" />
@@ -1448,7 +1448,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/loodgieter-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-anderlecht/" />
@@ -1458,7 +1458,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/plumber-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-anderlecht/" />
@@ -1468,7 +1468,7 @@
   </url>
   <url>
     <loc>https://vericore.be/plombier-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-auderghem/" />
@@ -1478,7 +1478,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/loodgieter-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-auderghem/" />
@@ -1488,7 +1488,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/plumber-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-auderghem/" />
@@ -1498,7 +1498,7 @@
   </url>
   <url>
     <loc>https://vericore.be/plombier-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-berchem-sainte-agathe/" />
@@ -1508,7 +1508,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/loodgieter-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-berchem-sainte-agathe/" />
@@ -1518,7 +1518,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/plumber-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-berchem-sainte-agathe/" />
@@ -1528,7 +1528,7 @@
   </url>
   <url>
     <loc>https://vericore.be/plombier-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-bruxelles/" />
@@ -1538,7 +1538,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/loodgieter-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-bruxelles/" />
@@ -1548,7 +1548,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/plumber-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-bruxelles/" />
@@ -1558,7 +1558,7 @@
   </url>
   <url>
     <loc>https://vericore.be/plombier-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-etterbeek/" />
@@ -1568,7 +1568,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/loodgieter-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-etterbeek/" />
@@ -1578,7 +1578,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/plumber-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-etterbeek/" />
@@ -1588,7 +1588,7 @@
   </url>
   <url>
     <loc>https://vericore.be/plombier-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-evere/" />
@@ -1598,7 +1598,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/loodgieter-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-evere/" />
@@ -1608,7 +1608,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/plumber-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-evere/" />
@@ -1618,7 +1618,7 @@
   </url>
   <url>
     <loc>https://vericore.be/plombier-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-forest/" />
@@ -1628,7 +1628,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/loodgieter-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-forest/" />
@@ -1638,7 +1638,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/plumber-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-forest/" />
@@ -1648,7 +1648,7 @@
   </url>
   <url>
     <loc>https://vericore.be/plombier-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-ganshoren/" />
@@ -1658,7 +1658,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/loodgieter-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-ganshoren/" />
@@ -1668,7 +1668,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/plumber-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-ganshoren/" />
@@ -1678,7 +1678,7 @@
   </url>
   <url>
     <loc>https://vericore.be/plombier-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-ixelles/" />
@@ -1688,7 +1688,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/loodgieter-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-ixelles/" />
@@ -1698,7 +1698,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/plumber-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-ixelles/" />
@@ -1708,7 +1708,7 @@
   </url>
   <url>
     <loc>https://vericore.be/plombier-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-jette/" />
@@ -1718,7 +1718,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/loodgieter-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-jette/" />
@@ -1728,7 +1728,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/plumber-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-jette/" />
@@ -1738,7 +1738,7 @@
   </url>
   <url>
     <loc>https://vericore.be/plombier-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-koekelberg/" />
@@ -1748,7 +1748,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/loodgieter-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-koekelberg/" />
@@ -1758,7 +1758,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/plumber-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-koekelberg/" />
@@ -1768,7 +1768,7 @@
   </url>
   <url>
     <loc>https://vericore.be/plombier-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-molenbeek-saint-jean/" />
@@ -1778,7 +1778,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/loodgieter-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-molenbeek-saint-jean/" />
@@ -1788,7 +1788,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/plumber-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-molenbeek-saint-jean/" />
@@ -1798,7 +1798,7 @@
   </url>
   <url>
     <loc>https://vericore.be/plombier-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-saint-gilles/" />
@@ -1808,7 +1808,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/loodgieter-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-saint-gilles/" />
@@ -1818,7 +1818,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/plumber-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-saint-gilles/" />
@@ -1828,7 +1828,7 @@
   </url>
   <url>
     <loc>https://vericore.be/plombier-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-saint-josse-ten-noode/" />
@@ -1838,7 +1838,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/loodgieter-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-saint-josse-ten-noode/" />
@@ -1848,7 +1848,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/plumber-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-saint-josse-ten-noode/" />
@@ -1858,7 +1858,7 @@
   </url>
   <url>
     <loc>https://vericore.be/plombier-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-schaerbeek/" />
@@ -1868,7 +1868,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/loodgieter-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-schaerbeek/" />
@@ -1878,7 +1878,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/plumber-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-schaerbeek/" />
@@ -1888,7 +1888,7 @@
   </url>
   <url>
     <loc>https://vericore.be/plombier-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-uccle/" />
@@ -1898,7 +1898,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/loodgieter-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-uccle/" />
@@ -1908,7 +1908,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/plumber-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-uccle/" />
@@ -1918,7 +1918,7 @@
   </url>
   <url>
     <loc>https://vericore.be/plombier-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-watermael-boitsfort/" />
@@ -1928,7 +1928,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/loodgieter-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-watermael-boitsfort/" />
@@ -1938,7 +1938,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/plumber-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-watermael-boitsfort/" />
@@ -1948,7 +1948,7 @@
   </url>
   <url>
     <loc>https://vericore.be/plombier-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-woluwe-saint-lambert/" />
@@ -1958,7 +1958,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/loodgieter-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-woluwe-saint-lambert/" />
@@ -1968,7 +1968,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/plumber-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-woluwe-saint-lambert/" />
@@ -1978,7 +1978,7 @@
   </url>
   <url>
     <loc>https://vericore.be/plombier-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-woluwe-saint-pierre/" />
@@ -1988,7 +1988,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/loodgieter-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-woluwe-saint-pierre/" />
@@ -1998,7 +1998,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/plumber-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/plombier-woluwe-saint-pierre/" />
@@ -2008,7 +2008,7 @@
   </url>
   <url>
     <loc>https://vericore.be/chauffagiste-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-anderlecht/" />
@@ -2018,7 +2018,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/verwarmingsinstallateur-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-anderlecht/" />
@@ -2028,7 +2028,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/heating-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-anderlecht/" />
@@ -2038,7 +2038,7 @@
   </url>
   <url>
     <loc>https://vericore.be/chauffagiste-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-auderghem/" />
@@ -2048,7 +2048,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/verwarmingsinstallateur-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-auderghem/" />
@@ -2058,7 +2058,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/heating-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-auderghem/" />
@@ -2068,7 +2068,7 @@
   </url>
   <url>
     <loc>https://vericore.be/chauffagiste-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-berchem-sainte-agathe/" />
@@ -2078,7 +2078,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/verwarmingsinstallateur-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-berchem-sainte-agathe/" />
@@ -2088,7 +2088,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/heating-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-berchem-sainte-agathe/" />
@@ -2098,7 +2098,7 @@
   </url>
   <url>
     <loc>https://vericore.be/chauffagiste-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-bruxelles/" />
@@ -2108,7 +2108,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/verwarmingsinstallateur-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-bruxelles/" />
@@ -2118,7 +2118,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/heating-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-bruxelles/" />
@@ -2128,7 +2128,7 @@
   </url>
   <url>
     <loc>https://vericore.be/chauffagiste-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-etterbeek/" />
@@ -2138,7 +2138,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/verwarmingsinstallateur-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-etterbeek/" />
@@ -2148,7 +2148,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/heating-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-etterbeek/" />
@@ -2158,7 +2158,7 @@
   </url>
   <url>
     <loc>https://vericore.be/chauffagiste-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-evere/" />
@@ -2168,7 +2168,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/verwarmingsinstallateur-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-evere/" />
@@ -2178,7 +2178,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/heating-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-evere/" />
@@ -2188,7 +2188,7 @@
   </url>
   <url>
     <loc>https://vericore.be/chauffagiste-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-forest/" />
@@ -2198,7 +2198,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/verwarmingsinstallateur-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-forest/" />
@@ -2208,7 +2208,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/heating-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-forest/" />
@@ -2218,7 +2218,7 @@
   </url>
   <url>
     <loc>https://vericore.be/chauffagiste-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-ganshoren/" />
@@ -2228,7 +2228,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/verwarmingsinstallateur-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-ganshoren/" />
@@ -2238,7 +2238,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/heating-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-ganshoren/" />
@@ -2248,7 +2248,7 @@
   </url>
   <url>
     <loc>https://vericore.be/chauffagiste-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-ixelles/" />
@@ -2258,7 +2258,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/verwarmingsinstallateur-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-ixelles/" />
@@ -2268,7 +2268,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/heating-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-ixelles/" />
@@ -2278,7 +2278,7 @@
   </url>
   <url>
     <loc>https://vericore.be/chauffagiste-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-jette/" />
@@ -2288,7 +2288,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/verwarmingsinstallateur-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-jette/" />
@@ -2298,7 +2298,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/heating-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-jette/" />
@@ -2308,7 +2308,7 @@
   </url>
   <url>
     <loc>https://vericore.be/chauffagiste-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-koekelberg/" />
@@ -2318,7 +2318,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/verwarmingsinstallateur-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-koekelberg/" />
@@ -2328,7 +2328,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/heating-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-koekelberg/" />
@@ -2338,7 +2338,7 @@
   </url>
   <url>
     <loc>https://vericore.be/chauffagiste-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-molenbeek-saint-jean/" />
@@ -2348,7 +2348,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/verwarmingsinstallateur-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-molenbeek-saint-jean/" />
@@ -2358,7 +2358,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/heating-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-molenbeek-saint-jean/" />
@@ -2368,7 +2368,7 @@
   </url>
   <url>
     <loc>https://vericore.be/chauffagiste-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-saint-gilles/" />
@@ -2378,7 +2378,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/verwarmingsinstallateur-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-saint-gilles/" />
@@ -2388,7 +2388,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/heating-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-saint-gilles/" />
@@ -2398,7 +2398,7 @@
   </url>
   <url>
     <loc>https://vericore.be/chauffagiste-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-saint-josse-ten-noode/" />
@@ -2408,7 +2408,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/verwarmingsinstallateur-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-saint-josse-ten-noode/" />
@@ -2418,7 +2418,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/heating-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-saint-josse-ten-noode/" />
@@ -2428,7 +2428,7 @@
   </url>
   <url>
     <loc>https://vericore.be/chauffagiste-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-schaerbeek/" />
@@ -2438,7 +2438,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/verwarmingsinstallateur-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-schaerbeek/" />
@@ -2448,7 +2448,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/heating-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-schaerbeek/" />
@@ -2458,7 +2458,7 @@
   </url>
   <url>
     <loc>https://vericore.be/chauffagiste-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-uccle/" />
@@ -2468,7 +2468,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/verwarmingsinstallateur-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-uccle/" />
@@ -2478,7 +2478,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/heating-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-uccle/" />
@@ -2488,7 +2488,7 @@
   </url>
   <url>
     <loc>https://vericore.be/chauffagiste-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-watermael-boitsfort/" />
@@ -2498,7 +2498,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/verwarmingsinstallateur-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-watermael-boitsfort/" />
@@ -2508,7 +2508,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/heating-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-watermael-boitsfort/" />
@@ -2518,7 +2518,7 @@
   </url>
   <url>
     <loc>https://vericore.be/chauffagiste-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-woluwe-saint-lambert/" />
@@ -2528,7 +2528,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/verwarmingsinstallateur-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-woluwe-saint-lambert/" />
@@ -2538,7 +2538,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/heating-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-woluwe-saint-lambert/" />
@@ -2548,7 +2548,7 @@
   </url>
   <url>
     <loc>https://vericore.be/chauffagiste-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-woluwe-saint-pierre/" />
@@ -2558,7 +2558,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/verwarmingsinstallateur-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-woluwe-saint-pierre/" />
@@ -2568,7 +2568,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/heating-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/chauffagiste-woluwe-saint-pierre/" />
@@ -2578,7 +2578,7 @@
   </url>
   <url>
     <loc>https://vericore.be/climatisation-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-anderlecht/" />
@@ -2592,7 +2592,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/airco-installateur-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-anderlecht/" />
@@ -2602,7 +2602,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/air-conditioning-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-anderlecht/" />
@@ -2612,7 +2612,7 @@
   </url>
   <url>
     <loc>https://vericore.be/climatisation-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-auderghem/" />
@@ -2626,7 +2626,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/airco-installateur-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-auderghem/" />
@@ -2636,7 +2636,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/air-conditioning-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-auderghem/" />
@@ -2646,7 +2646,7 @@
   </url>
   <url>
     <loc>https://vericore.be/climatisation-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-berchem-sainte-agathe/" />
@@ -2660,7 +2660,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/airco-installateur-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-berchem-sainte-agathe/" />
@@ -2670,7 +2670,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/air-conditioning-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-berchem-sainte-agathe/" />
@@ -2680,7 +2680,7 @@
   </url>
   <url>
     <loc>https://vericore.be/climatisation-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-bruxelles/" />
@@ -2694,7 +2694,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/airco-installateur-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-bruxelles/" />
@@ -2704,7 +2704,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/air-conditioning-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-bruxelles/" />
@@ -2714,7 +2714,7 @@
   </url>
   <url>
     <loc>https://vericore.be/climatisation-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-etterbeek/" />
@@ -2728,7 +2728,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/airco-installateur-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-etterbeek/" />
@@ -2738,7 +2738,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/air-conditioning-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-etterbeek/" />
@@ -2748,7 +2748,7 @@
   </url>
   <url>
     <loc>https://vericore.be/climatisation-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-evere/" />
@@ -2762,7 +2762,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/airco-installateur-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-evere/" />
@@ -2772,7 +2772,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/air-conditioning-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-evere/" />
@@ -2782,7 +2782,7 @@
   </url>
   <url>
     <loc>https://vericore.be/climatisation-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-forest/" />
@@ -2796,7 +2796,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/airco-installateur-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-forest/" />
@@ -2806,7 +2806,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/air-conditioning-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-forest/" />
@@ -2816,7 +2816,7 @@
   </url>
   <url>
     <loc>https://vericore.be/climatisation-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-ganshoren/" />
@@ -2830,7 +2830,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/airco-installateur-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-ganshoren/" />
@@ -2840,7 +2840,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/air-conditioning-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-ganshoren/" />
@@ -2850,7 +2850,7 @@
   </url>
   <url>
     <loc>https://vericore.be/climatisation-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-ixelles/" />
@@ -2864,7 +2864,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/airco-installateur-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-ixelles/" />
@@ -2874,7 +2874,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/air-conditioning-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-ixelles/" />
@@ -2884,7 +2884,7 @@
   </url>
   <url>
     <loc>https://vericore.be/climatisation-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-jette/" />
@@ -2898,7 +2898,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/airco-installateur-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-jette/" />
@@ -2908,7 +2908,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/air-conditioning-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-jette/" />
@@ -2918,7 +2918,7 @@
   </url>
   <url>
     <loc>https://vericore.be/climatisation-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-koekelberg/" />
@@ -2932,7 +2932,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/airco-installateur-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-koekelberg/" />
@@ -2942,7 +2942,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/air-conditioning-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-koekelberg/" />
@@ -2952,7 +2952,7 @@
   </url>
   <url>
     <loc>https://vericore.be/climatisation-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-molenbeek-saint-jean/" />
@@ -2966,7 +2966,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/airco-installateur-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-molenbeek-saint-jean/" />
@@ -2976,7 +2976,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/air-conditioning-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-molenbeek-saint-jean/" />
@@ -2986,7 +2986,7 @@
   </url>
   <url>
     <loc>https://vericore.be/climatisation-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-saint-gilles/" />
@@ -3000,7 +3000,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/airco-installateur-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-saint-gilles/" />
@@ -3010,7 +3010,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/air-conditioning-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-saint-gilles/" />
@@ -3020,7 +3020,7 @@
   </url>
   <url>
     <loc>https://vericore.be/climatisation-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-saint-josse-ten-noode/" />
@@ -3034,7 +3034,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/airco-installateur-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-saint-josse-ten-noode/" />
@@ -3044,7 +3044,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/air-conditioning-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-saint-josse-ten-noode/" />
@@ -3054,7 +3054,7 @@
   </url>
   <url>
     <loc>https://vericore.be/climatisation-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-schaerbeek/" />
@@ -3068,7 +3068,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/airco-installateur-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-schaerbeek/" />
@@ -3078,7 +3078,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/air-conditioning-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-schaerbeek/" />
@@ -3088,7 +3088,7 @@
   </url>
   <url>
     <loc>https://vericore.be/climatisation-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-uccle/" />
@@ -3102,7 +3102,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/airco-installateur-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-uccle/" />
@@ -3112,7 +3112,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/air-conditioning-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-uccle/" />
@@ -3122,7 +3122,7 @@
   </url>
   <url>
     <loc>https://vericore.be/climatisation-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-watermael-boitsfort/" />
@@ -3136,7 +3136,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/airco-installateur-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-watermael-boitsfort/" />
@@ -3146,7 +3146,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/air-conditioning-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-watermael-boitsfort/" />
@@ -3156,7 +3156,7 @@
   </url>
   <url>
     <loc>https://vericore.be/climatisation-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-woluwe-saint-lambert/" />
@@ -3170,7 +3170,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/airco-installateur-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-woluwe-saint-lambert/" />
@@ -3180,7 +3180,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/air-conditioning-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-woluwe-saint-lambert/" />
@@ -3190,7 +3190,7 @@
   </url>
   <url>
     <loc>https://vericore.be/climatisation-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-woluwe-saint-pierre/" />
@@ -3204,7 +3204,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/airco-installateur-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-woluwe-saint-pierre/" />
@@ -3214,7 +3214,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/air-conditioning-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/climatisation-woluwe-saint-pierre/" />
@@ -3224,7 +3224,7 @@
   </url>
   <url>
     <loc>https://vericore.be/menuisier-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-anderlecht/" />
@@ -3234,7 +3234,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schrijnwerker-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-anderlecht/" />
@@ -3244,7 +3244,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/carpenter-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-anderlecht/" />
@@ -3254,7 +3254,7 @@
   </url>
   <url>
     <loc>https://vericore.be/menuisier-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-auderghem/" />
@@ -3264,7 +3264,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schrijnwerker-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-auderghem/" />
@@ -3274,7 +3274,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/carpenter-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-auderghem/" />
@@ -3284,7 +3284,7 @@
   </url>
   <url>
     <loc>https://vericore.be/menuisier-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-berchem-sainte-agathe/" />
@@ -3294,7 +3294,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schrijnwerker-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-berchem-sainte-agathe/" />
@@ -3304,7 +3304,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/carpenter-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-berchem-sainte-agathe/" />
@@ -3314,7 +3314,7 @@
   </url>
   <url>
     <loc>https://vericore.be/menuisier-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-bruxelles/" />
@@ -3324,7 +3324,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schrijnwerker-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-bruxelles/" />
@@ -3334,7 +3334,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/carpenter-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-bruxelles/" />
@@ -3344,7 +3344,7 @@
   </url>
   <url>
     <loc>https://vericore.be/menuisier-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-etterbeek/" />
@@ -3354,7 +3354,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schrijnwerker-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-etterbeek/" />
@@ -3364,7 +3364,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/carpenter-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-etterbeek/" />
@@ -3374,7 +3374,7 @@
   </url>
   <url>
     <loc>https://vericore.be/menuisier-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-evere/" />
@@ -3384,7 +3384,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schrijnwerker-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-evere/" />
@@ -3394,7 +3394,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/carpenter-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-evere/" />
@@ -3404,7 +3404,7 @@
   </url>
   <url>
     <loc>https://vericore.be/menuisier-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-forest/" />
@@ -3414,7 +3414,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schrijnwerker-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-forest/" />
@@ -3424,7 +3424,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/carpenter-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-forest/" />
@@ -3434,7 +3434,7 @@
   </url>
   <url>
     <loc>https://vericore.be/menuisier-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-ganshoren/" />
@@ -3444,7 +3444,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schrijnwerker-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-ganshoren/" />
@@ -3454,7 +3454,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/carpenter-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-ganshoren/" />
@@ -3464,7 +3464,7 @@
   </url>
   <url>
     <loc>https://vericore.be/menuisier-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-ixelles/" />
@@ -3474,7 +3474,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schrijnwerker-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-ixelles/" />
@@ -3484,7 +3484,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/carpenter-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-ixelles/" />
@@ -3494,7 +3494,7 @@
   </url>
   <url>
     <loc>https://vericore.be/menuisier-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-jette/" />
@@ -3504,7 +3504,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schrijnwerker-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-jette/" />
@@ -3514,7 +3514,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/carpenter-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-jette/" />
@@ -3524,7 +3524,7 @@
   </url>
   <url>
     <loc>https://vericore.be/menuisier-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-koekelberg/" />
@@ -3534,7 +3534,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schrijnwerker-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-koekelberg/" />
@@ -3544,7 +3544,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/carpenter-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-koekelberg/" />
@@ -3554,7 +3554,7 @@
   </url>
   <url>
     <loc>https://vericore.be/menuisier-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-molenbeek-saint-jean/" />
@@ -3564,7 +3564,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schrijnwerker-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-molenbeek-saint-jean/" />
@@ -3574,7 +3574,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/carpenter-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-molenbeek-saint-jean/" />
@@ -3584,7 +3584,7 @@
   </url>
   <url>
     <loc>https://vericore.be/menuisier-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-saint-gilles/" />
@@ -3594,7 +3594,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schrijnwerker-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-saint-gilles/" />
@@ -3604,7 +3604,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/carpenter-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-saint-gilles/" />
@@ -3614,7 +3614,7 @@
   </url>
   <url>
     <loc>https://vericore.be/menuisier-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-saint-josse-ten-noode/" />
@@ -3624,7 +3624,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schrijnwerker-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-saint-josse-ten-noode/" />
@@ -3634,7 +3634,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/carpenter-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-saint-josse-ten-noode/" />
@@ -3644,7 +3644,7 @@
   </url>
   <url>
     <loc>https://vericore.be/menuisier-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-schaerbeek/" />
@@ -3654,7 +3654,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schrijnwerker-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-schaerbeek/" />
@@ -3664,7 +3664,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/carpenter-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-schaerbeek/" />
@@ -3674,7 +3674,7 @@
   </url>
   <url>
     <loc>https://vericore.be/menuisier-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-uccle/" />
@@ -3684,7 +3684,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schrijnwerker-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-uccle/" />
@@ -3694,7 +3694,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/carpenter-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-uccle/" />
@@ -3704,7 +3704,7 @@
   </url>
   <url>
     <loc>https://vericore.be/menuisier-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-watermael-boitsfort/" />
@@ -3714,7 +3714,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schrijnwerker-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-watermael-boitsfort/" />
@@ -3724,7 +3724,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/carpenter-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-watermael-boitsfort/" />
@@ -3734,7 +3734,7 @@
   </url>
   <url>
     <loc>https://vericore.be/menuisier-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-woluwe-saint-lambert/" />
@@ -3744,7 +3744,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schrijnwerker-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-woluwe-saint-lambert/" />
@@ -3754,7 +3754,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/carpenter-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-woluwe-saint-lambert/" />
@@ -3764,7 +3764,7 @@
   </url>
   <url>
     <loc>https://vericore.be/menuisier-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-woluwe-saint-pierre/" />
@@ -3774,7 +3774,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schrijnwerker-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-woluwe-saint-pierre/" />
@@ -3784,7 +3784,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/carpenter-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/menuisier-woluwe-saint-pierre/" />
@@ -3794,7 +3794,7 @@
   </url>
   <url>
     <loc>https://vericore.be/peintre-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-anderlecht/" />
@@ -3804,7 +3804,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schilder-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-anderlecht/" />
@@ -3814,7 +3814,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/painter-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-anderlecht/" />
@@ -3824,7 +3824,7 @@
   </url>
   <url>
     <loc>https://vericore.be/peintre-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-auderghem/" />
@@ -3834,7 +3834,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schilder-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-auderghem/" />
@@ -3844,7 +3844,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/painter-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-auderghem/" />
@@ -3854,7 +3854,7 @@
   </url>
   <url>
     <loc>https://vericore.be/peintre-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-berchem-sainte-agathe/" />
@@ -3864,7 +3864,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schilder-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-berchem-sainte-agathe/" />
@@ -3874,7 +3874,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/painter-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-berchem-sainte-agathe/" />
@@ -3884,7 +3884,7 @@
   </url>
   <url>
     <loc>https://vericore.be/peintre-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-bruxelles/" />
@@ -3894,7 +3894,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schilder-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-bruxelles/" />
@@ -3904,7 +3904,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/painter-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-bruxelles/" />
@@ -3914,7 +3914,7 @@
   </url>
   <url>
     <loc>https://vericore.be/peintre-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-etterbeek/" />
@@ -3924,7 +3924,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schilder-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-etterbeek/" />
@@ -3934,7 +3934,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/painter-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-etterbeek/" />
@@ -3944,7 +3944,7 @@
   </url>
   <url>
     <loc>https://vericore.be/peintre-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-evere/" />
@@ -3954,7 +3954,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schilder-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-evere/" />
@@ -3964,7 +3964,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/painter-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-evere/" />
@@ -3974,7 +3974,7 @@
   </url>
   <url>
     <loc>https://vericore.be/peintre-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-forest/" />
@@ -3984,7 +3984,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schilder-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-forest/" />
@@ -3994,7 +3994,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/painter-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-forest/" />
@@ -4004,7 +4004,7 @@
   </url>
   <url>
     <loc>https://vericore.be/peintre-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-ganshoren/" />
@@ -4014,7 +4014,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schilder-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-ganshoren/" />
@@ -4024,7 +4024,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/painter-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-ganshoren/" />
@@ -4034,7 +4034,7 @@
   </url>
   <url>
     <loc>https://vericore.be/peintre-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-ixelles/" />
@@ -4044,7 +4044,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schilder-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-ixelles/" />
@@ -4054,7 +4054,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/painter-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-ixelles/" />
@@ -4064,7 +4064,7 @@
   </url>
   <url>
     <loc>https://vericore.be/peintre-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-jette/" />
@@ -4074,7 +4074,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schilder-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-jette/" />
@@ -4084,7 +4084,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/painter-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-jette/" />
@@ -4094,7 +4094,7 @@
   </url>
   <url>
     <loc>https://vericore.be/peintre-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-koekelberg/" />
@@ -4104,7 +4104,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schilder-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-koekelberg/" />
@@ -4114,7 +4114,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/painter-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-koekelberg/" />
@@ -4124,7 +4124,7 @@
   </url>
   <url>
     <loc>https://vericore.be/peintre-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-molenbeek-saint-jean/" />
@@ -4134,7 +4134,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schilder-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-molenbeek-saint-jean/" />
@@ -4144,7 +4144,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/painter-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-molenbeek-saint-jean/" />
@@ -4154,7 +4154,7 @@
   </url>
   <url>
     <loc>https://vericore.be/peintre-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-saint-gilles/" />
@@ -4164,7 +4164,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schilder-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-saint-gilles/" />
@@ -4174,7 +4174,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/painter-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-saint-gilles/" />
@@ -4184,7 +4184,7 @@
   </url>
   <url>
     <loc>https://vericore.be/peintre-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-saint-josse-ten-noode/" />
@@ -4194,7 +4194,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schilder-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-saint-josse-ten-noode/" />
@@ -4204,7 +4204,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/painter-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-saint-josse-ten-noode/" />
@@ -4214,7 +4214,7 @@
   </url>
   <url>
     <loc>https://vericore.be/peintre-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-schaerbeek/" />
@@ -4224,7 +4224,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schilder-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-schaerbeek/" />
@@ -4234,7 +4234,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/painter-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-schaerbeek/" />
@@ -4244,7 +4244,7 @@
   </url>
   <url>
     <loc>https://vericore.be/peintre-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-uccle/" />
@@ -4254,7 +4254,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schilder-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-uccle/" />
@@ -4264,7 +4264,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/painter-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-uccle/" />
@@ -4274,7 +4274,7 @@
   </url>
   <url>
     <loc>https://vericore.be/peintre-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-watermael-boitsfort/" />
@@ -4284,7 +4284,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schilder-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-watermael-boitsfort/" />
@@ -4294,7 +4294,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/painter-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-watermael-boitsfort/" />
@@ -4304,7 +4304,7 @@
   </url>
   <url>
     <loc>https://vericore.be/peintre-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-woluwe-saint-lambert/" />
@@ -4314,7 +4314,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schilder-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-woluwe-saint-lambert/" />
@@ -4324,7 +4324,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/painter-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-woluwe-saint-lambert/" />
@@ -4334,7 +4334,7 @@
   </url>
   <url>
     <loc>https://vericore.be/peintre-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-woluwe-saint-pierre/" />
@@ -4344,7 +4344,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/schilder-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-woluwe-saint-pierre/" />
@@ -4354,7 +4354,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/painter-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/peintre-woluwe-saint-pierre/" />
@@ -4364,7 +4364,7 @@
   </url>
   <url>
     <loc>https://vericore.be/carreleur-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-anderlecht/" />
@@ -4374,7 +4374,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/tegelzetter-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-anderlecht/" />
@@ -4384,7 +4384,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/tiler-anderlecht/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-anderlecht/" />
@@ -4394,7 +4394,7 @@
   </url>
   <url>
     <loc>https://vericore.be/carreleur-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-auderghem/" />
@@ -4404,7 +4404,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/tegelzetter-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-auderghem/" />
@@ -4414,7 +4414,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/tiler-auderghem/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-auderghem/" />
@@ -4424,7 +4424,7 @@
   </url>
   <url>
     <loc>https://vericore.be/carreleur-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-berchem-sainte-agathe/" />
@@ -4434,7 +4434,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/tegelzetter-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-berchem-sainte-agathe/" />
@@ -4444,7 +4444,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/tiler-berchem-sainte-agathe/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-berchem-sainte-agathe/" />
@@ -4454,7 +4454,7 @@
   </url>
   <url>
     <loc>https://vericore.be/carreleur-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-bruxelles/" />
@@ -4464,7 +4464,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/tegelzetter-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-bruxelles/" />
@@ -4474,7 +4474,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/tiler-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-bruxelles/" />
@@ -4484,7 +4484,7 @@
   </url>
   <url>
     <loc>https://vericore.be/carreleur-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-etterbeek/" />
@@ -4494,7 +4494,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/tegelzetter-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-etterbeek/" />
@@ -4504,7 +4504,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/tiler-etterbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-etterbeek/" />
@@ -4514,7 +4514,7 @@
   </url>
   <url>
     <loc>https://vericore.be/carreleur-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-evere/" />
@@ -4524,7 +4524,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/tegelzetter-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-evere/" />
@@ -4534,7 +4534,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/tiler-evere/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-evere/" />
@@ -4544,7 +4544,7 @@
   </url>
   <url>
     <loc>https://vericore.be/carreleur-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-forest/" />
@@ -4554,7 +4554,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/tegelzetter-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-forest/" />
@@ -4564,7 +4564,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/tiler-forest/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-forest/" />
@@ -4574,7 +4574,7 @@
   </url>
   <url>
     <loc>https://vericore.be/carreleur-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-ganshoren/" />
@@ -4584,7 +4584,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/tegelzetter-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-ganshoren/" />
@@ -4594,7 +4594,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/tiler-ganshoren/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-ganshoren/" />
@@ -4604,7 +4604,7 @@
   </url>
   <url>
     <loc>https://vericore.be/carreleur-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-ixelles/" />
@@ -4614,7 +4614,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/tegelzetter-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-ixelles/" />
@@ -4624,7 +4624,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/tiler-ixelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-ixelles/" />
@@ -4634,7 +4634,7 @@
   </url>
   <url>
     <loc>https://vericore.be/carreleur-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-jette/" />
@@ -4644,7 +4644,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/tegelzetter-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-jette/" />
@@ -4654,7 +4654,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/tiler-jette/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-jette/" />
@@ -4664,7 +4664,7 @@
   </url>
   <url>
     <loc>https://vericore.be/carreleur-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-koekelberg/" />
@@ -4674,7 +4674,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/tegelzetter-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-koekelberg/" />
@@ -4684,7 +4684,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/tiler-koekelberg/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-koekelberg/" />
@@ -4694,7 +4694,7 @@
   </url>
   <url>
     <loc>https://vericore.be/carreleur-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-molenbeek-saint-jean/" />
@@ -4704,7 +4704,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/tegelzetter-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-molenbeek-saint-jean/" />
@@ -4714,7 +4714,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/tiler-molenbeek-saint-jean/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-molenbeek-saint-jean/" />
@@ -4724,7 +4724,7 @@
   </url>
   <url>
     <loc>https://vericore.be/carreleur-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-saint-gilles/" />
@@ -4734,7 +4734,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/tegelzetter-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-saint-gilles/" />
@@ -4744,7 +4744,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/tiler-saint-gilles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-saint-gilles/" />
@@ -4754,7 +4754,7 @@
   </url>
   <url>
     <loc>https://vericore.be/carreleur-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-saint-josse-ten-noode/" />
@@ -4764,7 +4764,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/tegelzetter-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-saint-josse-ten-noode/" />
@@ -4774,7 +4774,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/tiler-saint-josse-ten-noode/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-saint-josse-ten-noode/" />
@@ -4784,7 +4784,7 @@
   </url>
   <url>
     <loc>https://vericore.be/carreleur-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-schaerbeek/" />
@@ -4794,7 +4794,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/tegelzetter-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-schaerbeek/" />
@@ -4804,7 +4804,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/tiler-schaerbeek/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-schaerbeek/" />
@@ -4814,7 +4814,7 @@
   </url>
   <url>
     <loc>https://vericore.be/carreleur-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-uccle/" />
@@ -4824,7 +4824,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/tegelzetter-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-uccle/" />
@@ -4834,7 +4834,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/tiler-uccle/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-uccle/" />
@@ -4844,7 +4844,7 @@
   </url>
   <url>
     <loc>https://vericore.be/carreleur-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-watermael-boitsfort/" />
@@ -4854,7 +4854,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/tegelzetter-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-watermael-boitsfort/" />
@@ -4864,7 +4864,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/tiler-watermael-boitsfort/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-watermael-boitsfort/" />
@@ -4874,7 +4874,7 @@
   </url>
   <url>
     <loc>https://vericore.be/carreleur-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-woluwe-saint-lambert/" />
@@ -4884,7 +4884,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/tegelzetter-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-woluwe-saint-lambert/" />
@@ -4894,7 +4894,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/tiler-woluwe-saint-lambert/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-woluwe-saint-lambert/" />
@@ -4904,7 +4904,7 @@
   </url>
   <url>
     <loc>https://vericore.be/carreleur-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-woluwe-saint-pierre/" />
@@ -4914,7 +4914,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/tegelzetter-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-woluwe-saint-pierre/" />
@@ -4924,7 +4924,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/tiler-woluwe-saint-pierre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/carreleur-woluwe-saint-pierre/" />
@@ -4934,7 +4934,7 @@
   </url>
   <url>
     <loc>https://vericore.be/blog/cout-renovation-bruxelles-2026/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/blog/cout-renovation-bruxelles-2026/" />
@@ -4944,7 +4944,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/blog/cout-renovation-bruxelles-2026/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/blog/cout-renovation-bruxelles-2026/" />
@@ -4954,7 +4954,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/blog/cout-renovation-bruxelles-2026/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/blog/cout-renovation-bruxelles-2026/" />
@@ -4964,7 +4964,7 @@
   </url>
   <url>
     <loc>https://vericore.be/blog/electricite-mise-aux-normes-rgie-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/blog/electricite-mise-aux-normes-rgie-bruxelles/" />
@@ -4974,7 +4974,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/blog/electricite-mise-aux-normes-rgie-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/blog/electricite-mise-aux-normes-rgie-bruxelles/" />
@@ -4984,7 +4984,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/blog/electricite-mise-aux-normes-rgie-bruxelles/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/blog/electricite-mise-aux-normes-rgie-bruxelles/" />
@@ -4994,7 +4994,7 @@
   </url>
   <url>
     <loc>https://vericore.be/blog/10-erreurs-renovation-eviter/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/blog/10-erreurs-renovation-eviter/" />
@@ -5004,7 +5004,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/blog/10-erreurs-renovation-eviter/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/blog/10-erreurs-renovation-eviter/" />
@@ -5014,7 +5014,7 @@
   </url>
   <url>
     <loc>https://vericore.be/en/blog/10-erreurs-renovation-eviter/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/blog/10-erreurs-renovation-eviter/" />
@@ -5024,7 +5024,7 @@
   </url>
   <url>
     <loc>https://vericore.be/mentions-legales/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/mentions-legales/" />
@@ -5034,7 +5034,7 @@
   </url>
   <url>
     <loc>https://vericore.be/nl/mentions-legales/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/mentions-legales/" />
@@ -5044,12 +5044,42 @@
   </url>
   <url>
     <loc>https://vericore.be/en/mentions-legales/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/mentions-legales/" />
     <xhtml:link rel="alternate" hreflang="nl-be" href="https://vericore.be/nl/mentions-legales/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://vericore.be/en/mentions-legales/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vericore.be/mentions-legales/" />
+  </url>
+  <url>
+    <loc>https://vericore.be/politique-de-confidentialite/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/politique-de-confidentialite/" />
+    <xhtml:link rel="alternate" hreflang="nl-be" href="https://vericore.be/nl/politique-de-confidentialite/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vericore.be/en/politique-de-confidentialite/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vericore.be/politique-de-confidentialite/" />
+  </url>
+  <url>
+    <loc>https://vericore.be/nl/politique-de-confidentialite/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/politique-de-confidentialite/" />
+    <xhtml:link rel="alternate" hreflang="nl-be" href="https://vericore.be/nl/politique-de-confidentialite/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vericore.be/en/politique-de-confidentialite/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vericore.be/politique-de-confidentialite/" />
+  </url>
+  <url>
+    <loc>https://vericore.be/en/politique-de-confidentialite/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr-be" href="https://vericore.be/politique-de-confidentialite/" />
+    <xhtml:link rel="alternate" hreflang="nl-be" href="https://vericore.be/nl/politique-de-confidentialite/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vericore.be/en/politique-de-confidentialite/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vericore.be/politique-de-confidentialite/" />
   </url>
 </urlset>

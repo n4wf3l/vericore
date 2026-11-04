@@ -46,6 +46,7 @@ const STATIC_PAGES = [
   '/blog',
   '/garanties',
   '/mentions-legales',
+  '/politique-de-confidentialite',
   '/google-business',
 ]
 

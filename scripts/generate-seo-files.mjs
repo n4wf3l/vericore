@@ -129,6 +129,7 @@ function generateSitemapURLs() {
   });
 
   pushWithAlternates('/mentions-legales', { changefreq: 'yearly', priority: 0.3 });
+  pushWithAlternates('/politique-de-confidentialite', { changefreq: 'yearly', priority: 0.3 });
 
   return urls;
 }
