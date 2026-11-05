@@ -1,5 +1,5 @@
 # Vericore SRL - Robots.txt
-# Mise à jour: 2026-08-06
+# Mise à jour: 2026-11-04
 
 # Règles pour tous les robots
 User-agent: *

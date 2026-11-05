@@ -227,7 +227,7 @@ const ContactForm: React.FC = () => {
         />
         <label htmlFor="rgpdConsent" className="text-sm text-gray-600 leading-snug">
           J'accepte que mes données personnelles (nom, téléphone, email, adresse) soient utilisées par Vericore SRL pour traiter ma demande. Elles ne seront jamais transmises à des tiers. Voir la{' '}
-          <a href="/mentions-legales" className="text-primary-600 hover:underline">politique de confidentialité</a>.
+          <a href="/politique-de-confidentialite" className="text-primary-600 hover:underline">politique de confidentialité</a>.
         </label>
       </div>
       {errors.rgpdConsent && <p className="text-red-500 text-sm">{errors.rgpdConsent.message}</p>}

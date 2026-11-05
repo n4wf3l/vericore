@@ -109,7 +109,7 @@ const CookieBanner: React.FC = () => {
       </div>
 
       <a
-        href={`${langPrefix}/mentions-legales`}
+        href={`${langPrefix}/politique-de-confidentialite`}
         className="block mt-3 text-xs text-gray-500 hover:text-primary-600 underline text-center"
       >
         {labels.learnMore}

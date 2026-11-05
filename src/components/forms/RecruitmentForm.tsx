@@ -263,6 +263,12 @@ const RecruitmentForm: React.FC = () => {
           </div>
         )}
 
+        {/* RGPD: how the candidate's data is used */}
+        <p className="text-sm text-gray-600 leading-snug">
+          Vos données sont utilisées par Vericore SRL pour traiter votre candidature. Voir la{' '}
+          <a href="/politique-de-confidentialite" className="text-primary-600 hover:underline">politique de confidentialité</a>.
+        </p>
+
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4">
           <motion.button
