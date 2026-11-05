@@ -44,7 +44,8 @@ jobs:
           password: ${{ secrets.FTP_PASS }}
           protocol: ftps
           local-dir: ./dist/
-          server-dir: ${{ secrets.FTP_REMOTE }}/
+          # L'utilisateur FTP Hostinger landing direct dans /public_html, donc "./" = racine du site
+          server-dir: ./
           # Delta sync : seuls les fichiers modifiés sont uploadés (via .ftp-deploy-sync-state.json)
           state-name: .ftp-deploy-sync-state.json
           # Ignorer le fichier state lui-même + éviter de re-uploader des caches
