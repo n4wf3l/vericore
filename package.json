@@ -15,7 +15,7 @@
     "@hookform/resolvers": "^5.2.2",
     "clsx": "^2.1.1",
     "framer-motion": "^12.31.0",
-    "i18next": "^25.8.4",
+    "i18next": "^27.2.7",
     "lucide-react": "^0.563.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
